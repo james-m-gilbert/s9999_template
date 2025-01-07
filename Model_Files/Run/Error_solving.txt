@@ -1,0 +1,2 @@
+1921/10/31 cycle 14 (sjrbase): Infeasible.
+1921/10/31 cycle 14 (sjrbase): Linear relaxation not feasible.

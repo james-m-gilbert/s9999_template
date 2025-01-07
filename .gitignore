@@ -1,0 +1,14 @@
+*.dss
+*.dsc
+*.dsd
+*.dsk
+*.log
+*.ifs
+*.mps
+*.cols
+*.lp
+*.rows
+/Model_Files/Run/=ILP=
+*.par
+/Model_Files/Run/CVGroundwater/Data/Restart
+
