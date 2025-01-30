@@ -15,7 +15,7 @@ NAMING TAKES THE FOLLOWING FORMS:
 !============================== 
 
 goal setGPmin_60S_PA2     {GP_60S_PA2 > GPmin_60S_PA2 * AWo_60S_PA2 * (1+ RPF_60S_PA2 - RUFo_60S_PA2) + GPmin_60S_PA2 * AWr_60S_PA2 * (1+ RPF_60S_PA2 - RUFr_60S_PA2)}
-!goal setGPmax_60S_PA2     {GP_60S_PA2 < GPmax_60S_PA2 * AWo_60S_PA2 * (1+ RPF_60S_PA2 - RUFo_60S_PA2) + GPmax_60S_PA2 * AWr_60S_PA2 * (1+ RPF_60S_PA2 - RUFr_60S_PA2)}
+goal setGPmax_60S_PA2     {GP_60S_PA2 < GPmax_60S_PA2 * AWo_60S_PA2 * (1+ RPF_60S_PA2 - RUFo_60S_PA2) + GPmax_60S_PA2 * AWr_60S_PA2 * (1+ RPF_60S_PA2 - RUFr_60S_PA2)}
 
 goal set_GP_WBATotal_60S  {GP_WBATotal_60S
                     - GP_60S_PA1
@@ -31,9 +31,9 @@ goal set_GP_WBATotal_60S  {GP_WBATotal_60S
 !=============================
 
 goal setGPmin_61_PA1_D       {GP_61_PA1_D > GPmin_61_PA1_D * AWo_61_PA1 * (1+ RPF_61_PA1 - RUFo_61_PA1) + GPmin_61_PA1_D * AWr_61_PA1 * (1+ RPF_61_PA1 - RUFr_61_PA1)}
-!goal setGPmax_61_PA1_D       {GP_61_PA1_D < GPmax_61_PA1_D * AWo_61_PA1 * (1+ RPF_61_PA1 - RUFo_61_PA1) + GPmax_61_PA1_D * AWr_61_PA1 * (1+ RPF_61_PA1 - RUFr_61_PA1)}
+goal setGPmax_61_PA1_D       {GP_61_PA1_D < GPmax_61_PA1_D * AWo_61_PA1 * (1+ RPF_61_PA1 - RUFo_61_PA1) + GPmax_61_PA1_D * AWr_61_PA1 * (1+ RPF_61_PA1 - RUFr_61_PA1)}
 goal setGPmin_61_PA1_P       {GP_61_PA1_P > GPmin_61_PA1_P * AWo_61_PA1 * (1+ RPF_61_PA1 - RUFo_61_PA1) + GPmin_61_PA1_P * AWr_61_PA1 * (1+ RPF_61_PA1 - RUFr_61_PA1)}
-!goal setGPmax_61_PA1_P       {GP_61_PA1_P < GPmax_61_PA1_P * AWo_61_PA1 * (1+ RPF_61_PA1 - RUFo_61_PA1) + GPmax_61_PA1_P * AWr_61_PA1 * (1+ RPF_61_PA1 - RUFr_61_PA1)}
+goal setGPmax_61_PA1_P       {GP_61_PA1_P < GPmax_61_PA1_P * AWo_61_PA1 * (1+ RPF_61_PA1 - RUFo_61_PA1) + GPmax_61_PA1_P * AWr_61_PA1 * (1+ RPF_61_PA1 - RUFr_61_PA1)}
 goal setGP_61_PA1tot          {GP_61_PA1= GP_61_PA1_D + GP_61_PA1_P}
 
 !==============================
@@ -41,9 +41,9 @@ goal setGP_61_PA1tot          {GP_61_PA1= GP_61_PA1_D + GP_61_PA1_P}
 !==============================
 
 goal setGPmin_61_PA2_D       {GP_61_PA2_D > GPmin_61_PA2_D * AWo_61_PA2 * (1+ RPF_61_PA2 - RUFo_61_PA2) + GPmin_61_PA2_D * AWr_61_PA2 * (1+ RPF_61_PA2 - RUFr_61_PA2)}
-!goal setGPmax_61_PA2_D       {GP_61_PA2_D < GPmax_61_PA2_D * AWo_61_PA2 * (1+ RPF_61_PA2 - RUFo_61_PA2) + GPmax_61_PA2_D * AWr_61_PA2 * (1+ RPF_61_PA2 - RUFr_61_PA2)}
+goal setGPmax_61_PA2_D       {GP_61_PA2_D < GPmax_61_PA2_D * AWo_61_PA2 * (1+ RPF_61_PA2 - RUFo_61_PA2) + GPmax_61_PA2_D * AWr_61_PA2 * (1+ RPF_61_PA2 - RUFr_61_PA2)}
 goal setGPmin_61_PA2_P       {GP_61_PA2_P > GPmin_61_PA2_P * AWo_61_PA2 * (1+ RPF_61_PA2 - RUFo_61_PA2) + GPmin_61_PA2_P * AWr_61_PA2 * (1+ RPF_61_PA2 - RUFr_61_PA2)}
-!goal setGPmax_61_PA2_P       {GP_61_PA2_P < GPmax_61_PA2_P * AWo_61_PA2 * (1+ RPF_61_PA2 - RUFo_61_PA2) + GPmax_61_PA2_P * AWr_61_PA2 * (1+ RPF_61_PA2 - RUFr_61_PA2)}
+goal setGPmax_61_PA2_P       {GP_61_PA2_P < GPmax_61_PA2_P * AWo_61_PA2 * (1+ RPF_61_PA2 - RUFo_61_PA2) + GPmax_61_PA2_P * AWr_61_PA2 * (1+ RPF_61_PA2 - RUFr_61_PA2)}
 goal setGP_61_PA2tot          {GP_61_PA2= GP_61_PA2_D + GP_61_PA2_P}
 
 !==============================
@@ -51,15 +51,16 @@ goal setGP_61_PA2tot          {GP_61_PA2= GP_61_PA2_D + GP_61_PA2_P}
 !=============================
 
 goal setGPmin_61_PA3_D       {GP_61_PA3_D > GPmin_61_PA3_D * AWo_61_PA3 * (1+ RPF_61_PA3 - RUFo_61_PA3) + GPmin_61_PA3_D * AWr_61_PA3 * (1+ RPF_61_PA3 - RUFr_61_PA3)}
-!goal setGPmax_61_PA3_D       {GP_61_PA3_D < GPmax_61_PA3_D * AWo_61_PA3 * (1+ RPF_61_PA3 - RUFo_61_PA3) + GPmax_61_PA3_D * AWr_61_PA3 * (1+ RPF_61_PA3 - RUFr_61_PA3)}
+goal setGPmax_61_PA3_D       {GP_61_PA3_D < GPmax_61_PA3_D * AWo_61_PA3 * (1+ RPF_61_PA3 - RUFo_61_PA3) + GPmax_61_PA3_D * AWr_61_PA3 * (1+ RPF_61_PA3 - RUFr_61_PA3)}
 goal setGPmin_61_PA3_P       {GP_61_PA3_P > GPmin_61_PA3_P * AWo_61_PA3 * (1+ RPF_61_PA3 - RUFo_61_PA3) + GPmin_61_PA3_P * AWr_61_PA3 * (1+ RPF_61_PA3 - RUFr_61_PA3)}
-!goal setGPmax_61_PA3_P       {GP_61_PA3_P < GPmax_61_PA3_P * AWo_61_PA3 * (1+ RPF_61_PA3 - RUFo_61_PA3) + GPmax_61_PA3_P * AWr_61_PA3 * (1+ RPF_61_PA3 - RUFr_61_PA3)}
+goal setGPmax_61_PA3_P       {GP_61_PA3_P < GPmax_61_PA3_P * AWo_61_PA3 * (1+ RPF_61_PA3 - RUFo_61_PA3) + GPmax_61_PA3_P * AWr_61_PA3 * (1+ RPF_61_PA3 - RUFr_61_PA3)}
 goal setGP_61_PA3tot          {GP_61_PA3= GP_61_PA3_D + GP_61_PA3_P}
 
 
 !==============================
 ! 61_NA1 - East of Modesto ID and Oakdale ID - Ag - gw only
 !==============================
+goal setGPmax_61_NA1       {GP_61_NA1 < GPmax_61_NA1 * AWo_61_NA1 * (1+ RPF_61_NA1 - RUFo_61_NA1) + GPmax_61_NA1 * AWr_61_NA1 * (1+ RPF_61_NA1 - RUFr_61_NA1)}
 
 !==============================
 ! 61_NA2 - Modesto ID - Ag
@@ -67,29 +68,29 @@ goal setGP_61_PA3tot          {GP_61_PA3= GP_61_PA3_D + GP_61_PA3_P}
 goal setGPmin_61_NA2_DP       {GP_61_NA2   > (GPmin_61_NA2_D+GPmin_61_NA2_P) * AWo_61_NA2 * (1+ RPF_61_NA2 - RUFo_61_NA2) 
                                           + (GPmin_61_NA2_D+GPmin_61_NA2_P) * AWr_61_NA2 * (1+ RPF_61_NA2 - RUFr_61_NA2)}
                                           
-!goal setGPmax_61_NA2_DP       {GP_61_NA2   < min(GPmax_61_NA2_D,GPmax_61_NA2_P) * AWo_61_NA2 * (1+ RPF_61_NA2 - RUFo_61_NA2) 
-!                                          + min(GPmax_61_NA2_D,GPmax_61_NA2_P) * AWr_61_NA2 * (1+ RPF_61_NA2 - RUFr_61_NA2)}
+goal setGPmax_61_NA2_DP       {GP_61_NA2   < min(GPmax_61_NA2_D,GPmax_61_NA2_P) * AWo_61_NA2 * (1+ RPF_61_NA2 - RUFo_61_NA2) 
+                                          + min(GPmax_61_NA2_D,GPmax_61_NA2_P) * AWr_61_NA2 * (1+ RPF_61_NA2 - RUFr_61_NA2)}
 
 !==============================
 ! 61_NA3 - Tuolumne River Diversions (north bank) - Riparian Ag
 !============================== 
 
 goal setGPmin_61_NA3       {GP_61_NA3 > GPmin_61_NA3 * AWo_61_NA3 * (1+ RPF_61_NA3 - RUFo_61_NA3) + GPmin_61_NA3 * AWr_61_NA3 * (1+ RPF_61_NA3 - RUFr_61_NA3)}
-!goal setGPmax_61_NA3       {GP_61_NA3 < GPmax_61_NA3 * AWo_61_NA3 * (1+ RPF_61_NA3 - RUFo_61_NA3) + GPmax_61_NA3 * AWr_61_NA3 * (1+ RPF_61_NA3 - RUFr_61_NA3)}
+goal setGPmax_61_NA3       {GP_61_NA3 < GPmax_61_NA3 * AWo_61_NA3 * (1+ RPF_61_NA3 - RUFo_61_NA3) + GPmax_61_NA3 * AWr_61_NA3 * (1+ RPF_61_NA3 - RUFr_61_NA3)}
 
 !==============================
 ! 61_NA4 - Stanislaus River Diversions - Riparian Ag
 !==============================
 
 goal setGPmin_61_NA4       {GP_61_NA4 > GPmin_61_NA4 * AWo_61_NA4 * (1+ RPF_61_NA4 - RUFo_61_NA4) + GPmin_61_NA4 * AWr_61_NA4 * (1+ RPF_61_NA4 - RUFr_61_NA4)}
-!goal setGPmax_61_NA4       {GP_61_NA4 < GPmax_61_NA4 * AWo_61_NA4 * (1+ RPF_61_NA4 - RUFo_61_NA4) + GPmax_61_NA4 * AWr_61_NA4 * (1+ RPF_61_NA4 - RUFr_61_NA4)}
+goal setGPmax_61_NA4       {GP_61_NA4 < GPmax_61_NA4 * AWo_61_NA4 * (1+ RPF_61_NA4 - RUFo_61_NA4) + GPmax_61_NA4 * AWr_61_NA4 * (1+ RPF_61_NA4 - RUFr_61_NA4)}
 
 !==============================
 ! 61_NA5 - East Bank of SJR, Tuolumne to Stanislaus - Riparian Ag
 !==============================
 
 goal setGPmin_61_NA5       {GP_61_NA5 > GPmin_61_NA5 * AWo_61_NA5 * (1+ RPF_61_NA5 - RUFo_61_NA5) + GPmin_61_NA5 * AWr_61_NA5 * (1+ RPF_61_NA5 - RUFr_61_NA5)}
-!goal setGPmax_61_NA5       {GP_61_NA5 < GPmax_61_NA5 * AWo_61_NA5 * (1+ RPF_61_NA5 - RUFo_61_NA5) + GPmax_61_NA5 * AWr_61_NA5 * (1+ RPF_61_NA5 - RUFr_61_NA5)}
+goal setGPmax_61_NA5       {GP_61_NA5 < GPmax_61_NA5 * AWo_61_NA5 * (1+ RPF_61_NA5 - RUFo_61_NA5) + GPmax_61_NA5 * AWr_61_NA5 * (1+ RPF_61_NA5 - RUFr_61_NA5)}
 
 
 !==============================
@@ -97,7 +98,7 @@ goal setGPmin_61_NA5       {GP_61_NA5 > GPmin_61_NA5 * AWo_61_NA5 * (1+ RPF_61_N
 !==============================
 
 goal setGPmin_61_NA6       {GP_61_NA6 > GPmin_61_NA6 * AWo_61_NA6 * (1+ RPF_61_NA6 - RUFo_61_NA6) + GPmin_61_NA6 * AWr_61_NA6 * (1+ RPF_61_NA6 - RUFr_61_NA6)}
-!goal setGPmax_61_NA6       {GP_61_NA6 < GPmax_61_NA6 * AWo_61_NA6 * (1+ RPF_61_NA6 - RUFo_61_NA6) + GPmax_61_NA6 * AWr_61_NA6 * (1+ RPF_61_NA6 - RUFr_61_NA6)}
+goal setGPmax_61_NA6       {GP_61_NA6 < GPmax_61_NA6 * AWo_61_NA6 * (1+ RPF_61_NA6 - RUFo_61_NA6) + GPmax_61_NA6 * AWr_61_NA6 * (1+ RPF_61_NA6 - RUFr_61_NA6)}
 
 !==============================
 ! 61_NU1 - City of Modesto - M&I
@@ -137,22 +138,23 @@ goal set_GP_WBATotal_61  {GP_WBATotal_61
 !==============================
 ! 62_NA1 - East of Turlock, DAU 209 - Ag - gw only
 !==============================
+goal setGPmax_62_NA1 {GP_62_NA1 < GPmax_62_NA1 * AWo_62_NA1 * (1+ RPF_62_NA1 - RUFo_62_NA1) + GPmax_62_NA1 * AWr_62_NA1 * (1+ RPF_62_NA1 - RUFr_62_NA1)}
 
 !==============================
 ! 62_NA2 - Merced River Diversions (north bank) - Riparian Ag
 !==============================
 
 goal setGPmin_62_NA2        {GP_62_NA2 > GPmin_62_NA2 * AWo_62_NA2 * (1+ RPF_62_NA2 - RUFo_62_NA2) + GPmin_62_NA2 * AWr_62_NA2 * (1+ RPF_62_NA2 - RUFr_62_NA2)}
-!goal setGPmax_62_NA2        {GP_62_NA2 < GPmax_62_NA2 * AWo_62_NA2 * (1+ RPF_62_NA2 - RUFo_62_NA2) + GPmax_62_NA2 * AWr_62_NA2 * (1+ RPF_62_NA2 - RUFr_62_NA2)}
+goal setGPmax_62_NA2        {GP_62_NA2 < GPmax_62_NA2 * AWo_62_NA2 * (1+ RPF_62_NA2 - RUFo_62_NA2) + GPmax_62_NA2 * AWr_62_NA2 * (1+ RPF_62_NA2 - RUFr_62_NA2)}
 
 !==============================
 ! 62_NA3 - Turlock ID - Ag
 !==============================
 
 goal setGPmin_62_NA3_D       {GP_62_NA3_D > GPmin_62_NA3_D * AWo_62_NA3 * (1+ RPF_62_NA3 - RUFo_62_NA3) + GPmin_62_NA3_D * AWr_62_NA3 * (1+ RPF_62_NA3 - RUFr_62_NA3)}
-!goal setGPmax_62_NA3_D       {GP_62_NA3_D < GPmax_62_NA3_D * AWo_62_NA3 * (1+ RPF_62_NA3 - RUFo_62_NA3) + GPmax_62_NA3_D * AWr_62_NA3 * (1+ RPF_62_NA3 - RUFr_62_NA3)}
+goal setGPmax_62_NA3_D       {GP_62_NA3_D < GPmax_62_NA3_D * AWo_62_NA3 * (1+ RPF_62_NA3 - RUFo_62_NA3) + GPmax_62_NA3_D * AWr_62_NA3 * (1+ RPF_62_NA3 - RUFr_62_NA3)}
 goal setGPmin_62_NA3_P       {GP_62_NA3_P > GPmin_62_NA3_P * AWo_62_NA3 * (1+ RPF_62_NA3 - RUFo_62_NA3) + GPmin_62_NA3_P * AWr_62_NA3 * (1+ RPF_62_NA3 - RUFr_62_NA3)}
-!goal setGPmax_62_NA3_P       {GP_62_NA3_P < GPmax_62_NA3_P * AWo_62_NA3 * (1+ RPF_62_NA3 - RUFo_62_NA3) + GPmax_62_NA3_P * AWr_62_NA3 * (1+ RPF_62_NA3 - RUFr_62_NA3)}
+goal setGPmax_62_NA3_P       {GP_62_NA3_P < GPmax_62_NA3_P * AWo_62_NA3 * (1+ RPF_62_NA3 - RUFo_62_NA3) + GPmax_62_NA3_P * AWr_62_NA3 * (1+ RPF_62_NA3 - RUFr_62_NA3)}
 goal setGP_62_NA3tot          {GP_62_NA3= GP_62_NA3_D + GP_62_NA3_P}
 
 !==============================
@@ -160,23 +162,23 @@ goal setGP_62_NA3tot          {GP_62_NA3= GP_62_NA3_D + GP_62_NA3_P}
 !==============================
 
 goal setGPmin_62_NA4        {GP_62_NA4 > GPmin_62_NA4 * AWo_62_NA4 * (1+ RPF_62_NA4 - RUFo_62_NA4) + GPmin_62_NA4 * AWr_62_NA4 * (1+ RPF_62_NA4 - RUFr_62_NA4)}
-!goal setGPmax_62_NA4        {GP_62_NA4 < GPmax_62_NA4 * AWo_62_NA4 * (1+ RPF_62_NA4 - RUFo_62_NA4) + GPmax_62_NA4 * AWr_62_NA4 * (1+ RPF_62_NA4 - RUFr_62_NA4)}
+goal setGPmax_62_NA4        {GP_62_NA4 < GPmax_62_NA4 * AWo_62_NA4 * (1+ RPF_62_NA4 - RUFo_62_NA4) + GPmax_62_NA4 * AWr_62_NA4 * (1+ RPF_62_NA4 - RUFr_62_NA4)}
 
 !==============================
 ! 62_NA5 - East Bank of SJR, Merced to Tuolumne - Riparian Ag
 !==============================
 
 goal setGPmin_62_NA5        {GP_62_NA5 > GPmin_62_NA5 * AWo_62_NA5 * (1+ RPF_62_NA5 - RUFo_62_NA5) + GPmin_62_NA5 * AWr_62_NA5 * (1+ RPF_62_NA5 - RUFr_62_NA5)}
-!goal setGPmax_62_NA5        {GP_62_NA5 < GPmax_62_NA5 * AWo_62_NA5 * (1+ RPF_62_NA5 - RUFo_62_NA5) + GPmax_62_NA5 * AWr_62_NA5 * (1+ RPF_62_NA5 - RUFr_62_NA5)}
+goal setGPmax_62_NA5        {GP_62_NA5 < GPmax_62_NA5 * AWo_62_NA5 * (1+ RPF_62_NA5 - RUFo_62_NA5) + GPmax_62_NA5 * AWr_62_NA5 * (1+ RPF_62_NA5 - RUFr_62_NA5)}
 
 !==============================
 ! 62_NA6 - Merced ID (north of Merced River) - Ag
 !==============================
 
 goal setGPmin_62_NA6_D       {GP_62_NA6_D > GPmin_62_NA6_D * AWo_62_NA6 * (1+ RPF_62_NA6 - RUFo_62_NA6) + GPmin_62_NA6_D * AWr_62_NA6 * (1+ RPF_62_NA6 - RUFr_62_NA6)}
-!goal setGPmax_62_NA6_D       {GP_62_NA6_D < GPmax_62_NA6_D * AWo_62_NA6 * (1+ RPF_62_NA6 - RUFo_62_NA6) + GPmax_62_NA6_D * AWr_62_NA6 * (1+ RPF_62_NA6 - RUFr_62_NA6)}
+goal setGPmax_62_NA6_D       {GP_62_NA6_D < GPmax_62_NA6_D * AWo_62_NA6 * (1+ RPF_62_NA6 - RUFo_62_NA6) + GPmax_62_NA6_D * AWr_62_NA6 * (1+ RPF_62_NA6 - RUFr_62_NA6)}
 goal setGPmin_62_NA6_P       {GP_62_NA6_P > GPmin_62_NA6_P * AWo_62_NA6 * (1+ RPF_62_NA6 - RUFo_62_NA6) + GPmin_62_NA6_P * AWr_62_NA6 * (1+ RPF_62_NA6 - RUFr_62_NA6)}
-!goal setGPmax_62_NA6_P       {GP_62_NA6_P < GPmax_62_NA6_P * AWo_62_NA6 * (1+ RPF_62_NA6 - RUFo_62_NA6) + GPmax_62_NA6_P * AWr_62_NA6 * (1+ RPF_62_NA6 - RUFr_62_NA6)}
+goal setGPmax_62_NA6_P       {GP_62_NA6_P < GPmax_62_NA6_P * AWo_62_NA6 * (1+ RPF_62_NA6 - RUFo_62_NA6) + GPmax_62_NA6_P * AWr_62_NA6 * (1+ RPF_62_NA6 - RUFr_62_NA6)}
 goal setGP_62_NA6tot          {GP_62_NA6= GP_62_NA6_D + GP_62_NA6_P}
 
 !==============================
@@ -224,14 +226,14 @@ goal setGPmin_63_PR3        {GP_63_PR3 > GPmin_63_PR3 * AWo_63_PR3 * (1+ RPF_63_
 ! 63_NA1 - East of Merced ID, DAU 211 - Ag
 !==============================
 goal setGPmin_63_NA1        {GP_63_NA1 > GPmin_63_NA1 * AWo_63_NA1 * (1+ RPF_63_NA1 - RUFo_63_NA1) + GPmin_63_NA1 * AWr_63_NA1 * (1+ RPF_63_NA1 - RUFr_63_NA1)}
-!goal setGPmax_63_NA1        {GP_63_NA1 < GPmax_63_NA1 * AWo_63_NA1 * (1+ RPF_63_NA1 - RUFo_63_NA1) + GPmax_63_NA1 * AWr_63_NA1 * (1+ RPF_63_NA1 - RUFr_63_NA1)}
+goal setGPmax_63_NA1        {GP_63_NA1 < GPmax_63_NA1 * AWo_63_NA1 * (1+ RPF_63_NA1 - RUFo_63_NA1) + GPmax_63_NA1 * AWr_63_NA1 * (1+ RPF_63_NA1 - RUFr_63_NA1)}
 
 !==============================
 ! 63_NA2 - Merced River Diversions (south bank) - Riparian Ag
 !==============================
 
 goal setGPmin_63_NA2        {GP_63_NA2 > GPmin_63_NA2 * AWo_63_NA2 * (1+ RPF_63_NA2 - RUFo_63_NA2) + GPmin_63_NA2 * AWr_63_NA2 * (1+ RPF_63_NA2 - RUFr_63_NA2)}
-!goal setGPmax_63_NA2        {GP_63_NA2 < GPmax_63_NA2 * AWo_63_NA2 * (1+ RPF_63_NA2 - RUFo_63_NA2) + GPmax_63_NA2 * AWr_63_NA2 * (1+ RPF_63_NA2 - RUFr_63_NA2)}
+goal setGPmax_63_NA2        {GP_63_NA2 < GPmax_63_NA2 * AWo_63_NA2 * (1+ RPF_63_NA2 - RUFo_63_NA2) + GPmax_63_NA2 * AWr_63_NA2 * (1+ RPF_63_NA2 - RUFr_63_NA2)}
 
 
 !==============================
@@ -239,9 +241,9 @@ goal setGPmin_63_NA2        {GP_63_NA2 > GPmin_63_NA2 * AWo_63_NA2 * (1+ RPF_63_
 !==============================
 
 goal setGPmin_63_NA3_D       {GP_63_NA3_D > GPmin_63_NA3_D * AWo_63_NA3 * (1+ RPF_63_NA3 - RUFo_63_NA3) + GPmin_63_NA3_D * AWr_63_NA3 * (1+ RPF_63_NA3 - RUFr_63_NA3)}
-!goal setGPmax_63_NA3_D       {GP_63_NA3_D < GPmax_63_NA3_D * AWo_63_NA3 * (1+ RPF_63_NA3 - RUFo_63_NA3) + GPmax_63_NA3_D * AWr_63_NA3 * (1+ RPF_63_NA3 - RUFr_63_NA3)}
+goal setGPmax_63_NA3_D       {GP_63_NA3_D < GPmax_63_NA3_D * AWo_63_NA3 * (1+ RPF_63_NA3 - RUFo_63_NA3) + GPmax_63_NA3_D * AWr_63_NA3 * (1+ RPF_63_NA3 - RUFr_63_NA3)}
 goal setGPmin_63_NA3_P       {GP_63_NA3_P > GPmin_63_NA3_P * AWo_63_NA3 * (1+ RPF_63_NA3 - RUFo_63_NA3) + GPmin_63_NA3_P * AWr_63_NA3 * (1+ RPF_63_NA3 - RUFr_63_NA3)}
-!goal setGPmax_63_NA3_P       {GP_63_NA3_P < GPmax_63_NA3_P * AWo_63_NA3 * (1+ RPF_63_NA3 - RUFo_63_NA3) + GPmax_63_NA3_P * AWr_63_NA3 * (1+ RPF_63_NA3 - RUFr_63_NA3)}
+goal setGPmax_63_NA3_P       {GP_63_NA3_P < GPmax_63_NA3_P * AWo_63_NA3 * (1+ RPF_63_NA3 - RUFo_63_NA3) + GPmax_63_NA3_P * AWr_63_NA3 * (1+ RPF_63_NA3 - RUFr_63_NA3)}
 goal setGP_63_NA3tot          {GP_63_NA3= GP_63_NA3_D + GP_63_NA3_P}
 
 !==============================
@@ -249,7 +251,7 @@ goal setGP_63_NA3tot          {GP_63_NA3= GP_63_NA3_D + GP_63_NA3_P}
 !==============================
 
 goal setGPmin_63_NA4        {GP_63_NA4 > GPmin_63_NA4 * AWo_63_NA4 * (1+ RPF_63_NA4 - RUFo_63_NA4) + GPmin_63_NA4 * AWr_63_NA4 * (1+ RPF_63_NA4 - RUFr_63_NA4)}
-!goal setGPmax_63_NA4        {GP_63_NA4 < GPmax_63_NA4 * AWo_63_NA4 * (1+ RPF_63_NA4 - RUFo_63_NA4) + GPmax_63_NA4 * AWr_63_NA4 * (1+ RPF_63_NA4 - RUFr_63_NA4)}
+goal setGPmax_63_NA4        {GP_63_NA4 < GPmax_63_NA4 * AWo_63_NA4 * (1+ RPF_63_NA4 - RUFo_63_NA4) + GPmax_63_NA4 * AWr_63_NA4 * (1+ RPF_63_NA4 - RUFr_63_NA4)}
 
 !==============================
 ! 63_NU - Cities of Merced, Atwater, Livingston, Winton, Planada, LeGrande & Small Communities - M&I gw only
@@ -280,37 +282,38 @@ goal set_GP_WBATotal_63  {GP_WBATotal_63
 ! gross surface water diversions
 
 ! goal meetGPmin_64_PA1     {GP_64_PA1 > min((AWO_64_PA1+AWR_64_PA1), GPmin_64_PA1)}
-
+goal setGPmax_64_PA1        {GP_64_PA1 < GPmax_64_PA1 * AWo_64_PA1 * (1+ RPF_64_PA1 - RUFo_64_PA1) + GPmax_64_PA1 * AWr_64_PA1 * (1+ RPF_64_PA1 - RUFr_64_PA1)}
 
 !==============================
 ! 64_PA2 - Chowchilla ID - Ag
 !==============================
 goal setGPmin_64_PA2        {GP_64_PA2 > GPmin_64_PA2 * AWo_64_PA2 * (1+ RPF_64_PA2 - RUFo_64_PA2) + GPmin_64_PA2 * AWr_64_PA2 * (1+ RPF_64_PA2 - RUFr_64_PA2)}
-!goal setGPmax_64_PA2        {GP_64_PA2 < GPmax_64_PA2 * AWo_64_PA2 * (1+ RPF_64_PA2 - RUFo_64_PA2) + GPmax_64_PA2 * AWr_64_PA2 * (1+ RPF_64_PA2 - RUFr_64_PA2)}
+goal setGPmax_64_PA2        {GP_64_PA2 < GPmax_64_PA2 * AWo_64_PA2 * (1+ RPF_64_PA2 - RUFo_64_PA2) + GPmax_64_PA2 * AWr_64_PA2 * (1+ RPF_64_PA2 - RUFr_64_PA2)}
 
 !==============================
 ! 64_PA3 - Gravelly Ford and Root Creek Water Districts - Ag
 !==============================
 goal setGPmin_64_PA3        {GP_64_PA3 > GPmin_64_PA3 * AWo_64_PA3 * (1+ RPF_64_PA3 - RUFo_64_PA3) + GPmin_64_PA3 * AWr_64_PA3 * (1+ RPF_64_PA3 - RUFr_64_PA3)}
-!goal setGPmax_64_PA3        {GP_64_PA3 < GPmax_64_PA3 * AWo_64_PA3 * (1+ RPF_64_PA3 - RUFo_64_PA3) + GPmax_64_PA3 * AWr_64_PA3 * (1+ RPF_64_PA3 - RUFr_64_PA3)}
+goal setGPmax_64_PA3        {GP_64_PA3 < GPmax_64_PA3 * AWo_64_PA3 * (1+ RPF_64_PA3 - RUFo_64_PA3) + GPmax_64_PA3 * AWr_64_PA3 * (1+ RPF_64_PA3 - RUFr_64_PA3)}
 
 !==============================
 ! 64_XA - Columbia Canal Co. (Exchange Contractor) - Ag
 !==============================
-!zrc@ goal setGPmin_64_XA        {GP_64_XA > GPmin_64_XA * AWo_64_XA * (1+ RPF_64_XA - RUFo_64_XA) + GPmin_64_XA * AWr_64_XA * (1+ RPF_64_XA - RUFr_64_XA)}
-!zrc@ goal setGPmax_64_XA        {GP_64_XA < GPmax_64_XA * AWo_64_XA * (1+ RPF_64_XA - RUFo_64_XA) + GPmax_64_XA * AWr_64_XA * (1+ RPF_64_XA - RUFr_64_XA)}
+goal setGPmin_64_XA        {GP_64_XA > GPmin_64_XA * AWo_64_XA * (1+ RPF_64_XA - RUFo_64_XA) + GPmin_64_XA * AWr_64_XA * (1+ RPF_64_XA - RUFr_64_XA)}
+goal setGPmax_64_XA        {GP_64_XA < GPmax_64_XA * AWo_64_XA * (1+ RPF_64_XA - RUFo_64_XA) + GPmax_64_XA * AWr_64_XA * (1+ RPF_64_XA - RUFr_64_XA)}
 
 !==============================
 ! 64_NA1 - East of Madera ID and Non District DAU 213 - Ag
 !==============================
-!goal setGPmin_64_NA1        {GP_64_NA1 > GPmin_64_NA1 * AWo_64_NA1 * (1+ RPF_64_NA1 - RUFo_64_NA1) + GPmin_64_NA1 * AWr_64_NA1 * (1+ RPF_64_NA1 - RUFr_64_NA1)}
-!goal setGPmax_64_NA1        {GP_64_NA1 < GPmax_64_NA1 * AWo_64_NA1 * (1+ RPF_64_NA1 - RUFo_64_NA1) + GPmax_64_NA1 * AWr_64_NA1 * (1+ RPF_64_NA1 - RUFr_64_NA1)}
+! No surface water deliveries, so limit pumping based on applied water demands
+goal setGPmin_64_NA1        {GP_64_NA1 > GPmin_64_NA1 * AWo_64_NA1 }
+goal setGPmax_64_NA1        {GP_64_NA1 < GPmax_64_NA1 * AWo_64_NA1 }
 
 !==============================
 ! 64_NA2 - West of Madera ID and Chowchilla ID - Ag
 !==============================
 goal setGPmin_64_NA2        {GP_64_NA2 > GPmin_64_NA2 * AWo_64_NA2 * (1+ RPF_64_NA2 - RUFo_64_NA2) + GPmin_64_NA2 * AWr_64_NA2 * (1+ RPF_64_NA2 - RUFr_64_NA2)}
-!goal setGPmax_64_NA2        {GP_64_NA2 < GPmax_64_NA2 * AWo_64_NA2 * (1+ RPF_64_NA2 - RUFo_64_NA2) + GPmax_64_NA2 * AWr_64_NA2 * (1+ RPF_64_NA2 - RUFr_64_NA2)}
+goal setGPmax_64_NA2        {GP_64_NA2 < GPmax_64_NA2 * AWo_64_NA2 * (1+ RPF_64_NA2 - RUFo_64_NA2) + GPmax_64_NA2 * AWr_64_NA2 * (1+ RPF_64_NA2 - RUFr_64_NA2)}
 
 !==============================
 ! 64_NU - Cities of Madera, Chowchilla, Madera Acres & Small Communities - M&I gw only

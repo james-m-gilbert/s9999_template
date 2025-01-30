@@ -10,5 +10,5 @@
 *.rows
 /Model_Files/Run/=ILP=
 *.par
-/Model_Files/Run/CVGroundwater/Data/Restart
+/Model_Files/Run/CVGroundwater/Data/Restart/*.dat
 

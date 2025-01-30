@@ -27,27 +27,27 @@ Naming takes the following form:
 
 ! 60N_NA1 Jackson Valley ID
 goal setGPmin_60N_NA1   {GP_60N_NA1 > GPmin_60N_NA1 * AWo_60N_NA1 * (1+ RPF_60N_NA1 - RUFo_60N_NA1) + GPmin_60N_NA1 * AWr_60N_NA1 * (1+ RPF_60N_NA1 - RUFr_60N_NA1)}
-!goal setGPmax_60N_NA1   {GP_60N_NA1 < GPmax_60N_NA1 * AWo_60N_NA1 * (1+ RPF_60N_NA1 - RUFo_60N_NA1) + GPmax_60N_NA1 * AWr_60N_NA1 * (1+ RPF_60N_NA1 - RUFr_60N_NA1)}
+goal setGPmax_60N_NA1   {GP_60N_NA1 < GPmax_60N_NA1 * AWo_60N_NA1 * (1+ RPF_60N_NA1 - RUFo_60N_NA1) + GPmax_60N_NA1 * AWr_60N_NA1 * (1+ RPF_60N_NA1 - RUFr_60N_NA1)}
 
 
 ! 60N_NA2 Omochumne-Hartnell WD, Galt ID, Clay WD
 goal setGPmin_60N_NA2   {GP_60N_NA2 > GPmin_60N_NA2 * AWo_60N_NA2 * (1+ RPF_60N_NA2 - RUFo_60N_NA2) + GPmin_60N_NA2 * AWr_60N_NA2 * (1+ RPF_60N_NA2 - RUFr_60N_NA2)}
-!goal setGPmax_60N_NA2   {GP_60N_NA2 < GPmax_60N_NA2 * AWo_60N_NA2 * (1+ RPF_60N_NA2 - RUFo_60N_NA2) + GPmax_60N_NA2 * AWr_60N_NA2 * (1+ RPF_60N_NA2 - RUFr_60N_NA2)} !Causes an infeasibility
+goal setGPmax_60N_NA2   {GP_60N_NA2 < GPmax_60N_NA2 * AWo_60N_NA2 * (1+ RPF_60N_NA2 - RUFo_60N_NA2) + GPmax_60N_NA2 * AWr_60N_NA2 * (1+ RPF_60N_NA2 - RUFr_60N_NA2)} !Causes an infeasibility
 
 
 ! 60N_NA3 North San Joaquin WCD
 goal setGPmin_60N_NA3   {GP_60N_NA3 > GPmin_60N_NA3 * AWo_60N_NA3 * (1+ RPF_60N_NA3 - RUFo_60N_NA3) + GPmin_60N_NA3 * AWr_60N_NA3 * (1+ RPF_60N_NA3 - RUFr_60N_NA3)}
-!goal setGPmax_60N_NA3   {GP_60N_NA3 < GPmax_60N_NA3 * AWo_60N_NA3 * (1+ RPF_60N_NA3 - RUFo_60N_NA3) + GPmax_60N_NA3 * AWr_60N_NA3 * (1+ RPF_60N_NA3 - RUFr_60N_NA3)} !Causes an infeasibility
+goal setGPmax_60N_NA3   {GP_60N_NA3 < GPmax_60N_NA3 * AWo_60N_NA3 * (1+ RPF_60N_NA3 - RUFo_60N_NA3) + GPmax_60N_NA3 * AWr_60N_NA3 * (1+ RPF_60N_NA3 - RUFr_60N_NA3)} !Causes an infeasibility
 
 
 ! 60N_NA4 Woodbridge ID
 goal setGPmin_60N_NA4   {GP_60N_NA4 > GPmin_60N_NA4 * AWo_60N_NA4 * (1+ RPF_60N_NA4 - RUFo_60N_NA4) + GPmin_60N_NA4 * AWr_60N_NA4 * (1+ RPF_60N_NA4 - RUFr_60N_NA4)}
-!goal setGPmax_60N_NA4   {GP_60N_NA4 < GPmax_60N_NA4 * AWo_60N_NA4 * (1+ RPF_60N_NA4 - RUFo_60N_NA4) + GPmax_60N_NA4 * AWr_60N_NA4 * (1+ RPF_60N_NA4 - RUFr_60N_NA4)}
+goal setGPmax_60N_NA4   {GP_60N_NA4 < GPmax_60N_NA4 * AWo_60N_NA4 * (1+ RPF_60N_NA4 - RUFo_60N_NA4) + GPmax_60N_NA4 * AWr_60N_NA4 * (1+ RPF_60N_NA4 - RUFr_60N_NA4)}
 
 
 ! 60N_NA5 Mokelumne River riparian diversions Camanche Dam to Interstate 5
 goal setGPmin_60N_NA5   {GP_60N_NA5 > GPmin_60N_NA5 * AWo_60N_NA5 * (1+ RPF_60N_NA5 - RUFo_60N_NA5) + GPmin_60N_NA5 * AWr_60N_NA5 * (1+ RPF_60N_NA5 - RUFr_60N_NA5)}
-!goal setGPmax_60N_NA5   {GP_60N_NA5 < GPmax_60N_NA5 * AWo_60N_NA5 * (1+ RPF_60N_NA5 - RUFo_60N_NA5) + GPmax_60N_NA5 * AWr_60N_NA5 * (1+ RPF_60N_NA5 - RUFr_60N_NA5)}
+goal setGPmax_60N_NA5   {GP_60N_NA5 < GPmax_60N_NA5 * AWo_60N_NA5 * (1+ RPF_60N_NA5 - RUFo_60N_NA5) + GPmax_60N_NA5 * AWr_60N_NA5 * (1+ RPF_60N_NA5 - RUFr_60N_NA5)}
 
 
 ! 60N_NU1 City of Galt, Lodi, and small communities

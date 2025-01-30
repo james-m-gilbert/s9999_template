@@ -28,7 +28,7 @@ goal setDN_50_PA1b    {DN_SJR062_50_PA1 = D_SJR062_50_PA1  - DL_SJR062_50_PA1}
 goal setDN_50_PA1c    {DN_RFS71A_50_PA1 = D_RFS71A_50_PA1  - DL_RFS71A_50_PA1}
 goal setDN_50_PA1     {DN_50_PA1        = DG_50_PA1 - DL_50_PA1}
 ! Total Applied Water = net surface delivery + groundwater pumping
-goal meetAW_50_PA1    {AW_50_PA1 + RP_50_PA1 = DN_50_PA1 + GP_50_PA1 + RU_50_PA1} 
+goal meetAW_50_PA1    {AW_50_PA1 + RP_50_PA1 = DN_50_PA1 + GP_50_PA1 + RU_50_PA1+ GW_SHORT_50_PA1} 
 
 
 !==============================
@@ -56,7 +56,7 @@ goal setDG_71_PA1        {DG_71_PA1        = D_DMC030_71_PA1}
 goal setDN_71_PA1a       {DN_DMC030_71_PA1 = D_DMC030_71_PA1 - DL_DMC030_71_PA1}
 goal setDN_71_PA1        {DN_71_PA1        = DG_71_PA1 - DL_71_PA1}
 ! Total Applied Water = net surface delivery + groundwater pumping
-goal meetAW_71_PA1       {AW_71_PA1 + RP_71_PA1 = DN_71_PA1 + GP_71_PA1 + RU_71_PA1}
+goal meetAW_71_PA1       {AW_71_PA1 + RP_71_PA1 = DN_71_PA1 + GP_71_PA1 + RU_71_PA1 + GW_SHORT_71_PA1}
 
 
 !==============================
@@ -69,7 +69,7 @@ goal setDN_71_PA2a       {DN_DMC034_71_PA2 = D_DMC034_71_PA2 - DL_DMC034_71_PA2}
 goal setDN_71_PA2b       {DN_SJR082_71_PA2 = D_SJR082_71_PA2 - DL_SJR082_71_PA2}
 goal setDN_71_PA2        {DN_71_PA2        = DG_71_PA2 - DL_71_PA2}
 ! Total Applied Water = net surface delivery + groundwater pumping
-goal meetAW_71_PA2       {AW_71_PA2 + RP_71_PA2 = DN_71_PA2 + GP_71_PA2 + RU_71_PA2} 
+goal meetAW_71_PA2       {AW_71_PA2 + RP_71_PA2 = DN_71_PA2 + GP_71_PA2 + RU_71_PA2 + GW_SHORT_71_PA2} 
 
 
 !==============================
@@ -81,7 +81,7 @@ goal setDG_71_PA3        {DG_71_PA3        = D_DMC034_71_PA3}
 goal setDN_71_PA3a       {DN_DMC034_71_PA3 = D_DMC034_71_PA3 - DL_DMC034_71_PA3}
 goal setDN_71_PA3        {DN_71_PA3        = DG_71_PA3 - DL_71_PA3}
 ! Total Applied Water = net surface delivery + groundwater pumping
-goal meetAW_71_PA3       {AW_71_PA3 + RP_71_PA3 = DN_71_PA3 + GP_71_PA3 + RU_71_PA3} 
+goal meetAW_71_PA3       {AW_71_PA3 + RP_71_PA3 = DN_71_PA3 + GP_71_PA3 + RU_71_PA3 + GW_SHORT_71_PA3} 
 
 
 !==============================
@@ -94,7 +94,7 @@ goal setDG_71_PA4        {DG_71_PA4        = D_DMC044_71_PA4 + D_SJR096_71_PA4}
 goal setDN_71_PA4b       {DN_SJR096_71_PA4 = D_SJR096_71_PA4 - DL_SJR096_71_PA4}
 goal setDN_71_PA4        {DN_71_PA4        = DG_71_PA4 - DL_71_PA4}
 ! Total Applied Water = net surface delivery + groundwater pumping
-goal meetAW_71_PA4       {AW_71_PA4 + RP_71_PA4 = DN_71_PA4 + GP_71_PA4 + RU_71_PA4} 
+goal meetAW_71_PA4       {AW_71_PA4 + RP_71_PA4 = DN_71_PA4 + GP_71_PA4 + RU_71_PA4 + GW_SHORT_71_PA4} 
 
 
 !==============================
@@ -106,7 +106,7 @@ goal setDG_71_PA5        {DG_71_PA5        = D_DMC044_71_PA5}
 goal setDN_71_PA5a       {DN_DMC044_71_PA5 = D_DMC044_71_PA5 - DL_DMC044_71_PA5}
 goal setDN_71_PA5        {DN_71_PA5        = DG_71_PA5 - DL_71_PA5}
 ! Total Applied Water = net surface delivery + groundwater pumping
-goal meetAW_71_PA5       {AW_71_PA5 + RP_71_PA5 = DN_71_PA5 + GP_71_PA5 + RU_71_PA5}
+goal meetAW_71_PA5       {AW_71_PA5 + RP_71_PA5 = DN_71_PA5 + GP_71_PA5 + RU_71_PA5 + GW_SHORT_71_PA5}
 
 
 !==============================
@@ -118,7 +118,7 @@ goal setDG_71_PA6        {DG_71_PA6        = D_DMC064_71_PA6}
 goal setDN_71_PA6a       {DN_DMC064_71_PA6 = D_DMC064_71_PA6 - DL_DMC064_71_PA6}
 goal setDN_71_PA6        {DN_71_PA6        = DG_71_PA6 - DL_71_PA6}
 ! Total Applied Water = net surface delivery + groundwater pumping
-goal meetAW_71_PA6       {AW_71_PA6 + RP_71_PA6 = DN_71_PA6 + GP_71_PA6 + RU_71_PA6} 
+goal meetAW_71_PA6       {AW_71_PA6 + RP_71_PA6 = DN_71_PA6 + GP_71_PA6 + RU_71_PA6 + GW_SHORT_71_PA6} 
 
 
 !==============================
@@ -130,7 +130,7 @@ goal setDG_71_PA8        {DG_71_PA8        = D_DMC011_71_PA8 }
 goal setDN_71_PA8a       {DN_DMC011_71_PA8 = D_DMC011_71_PA8 - DL_DMC011_71_PA8}
 goal setDN_71_PA8        {DN_71_PA8        = DG_71_PA8 - DL_71_PA8}
 ! Total Applied Water = net surface delivery + groundwater pumping
-goal meetAW_71_PA8       {AW_71_PA8 + RP_71_PA8 = DN_71_PA8 + GP_71_PA8 + RU_71_PA8}
+goal meetAW_71_PA8       {AW_71_PA8 + RP_71_PA8 = DN_71_PA8 + GP_71_PA8 + RU_71_PA8 + GW_SHORT_71_PA8}
 
 
 !==============================
@@ -163,7 +163,7 @@ goal setDG_71_NA1        {DG_71_NA1        = D_SJR102_71_NA1}
 goal setDN_SJR102_71_NA1 {DN_SJR102_71_NA1 = D_SJR102_71_NA1 - DL_SJR102_71_NA1}
 goal setDN_71_NA1        {DN_71_NA1        = DG_71_NA1 - DL_71_NA1}
 ! Total Applied Water = net surface delivery + groundwater pumping
-goal meetAW_71_NA1       {AW_71_NA1 + RP_71_NA1 = DN_71_NA1 + GP_71_NA1 + RU_71_NA1} 
+goal meetAW_71_NA1       {AW_71_NA1 + RP_71_NA1 = DN_71_NA1 + GP_71_NA1 + RU_71_NA1 + GW_SHORT_71_NA1} 
 
 
 !==============================
@@ -175,7 +175,7 @@ goal setDG_71_NA2        {DG_71_NA2        = D_SJR090_71_NA2}
 goal setDN_SJR090_71_NA2 {DN_SJR090_71_NA2 = D_SJR090_71_NA2 - DL_SJR090_71_NA2}
 goal setDN_71_NA2        {DN_71_NA2        = DG_71_NA2 - DL_71_NA2}
 ! Total Applied Water = net surface delivery + groundwater pumping
-goal meetAW_71_NA2       {AW_71_NA2 + RP_71_NA2 = DN_71_NA2 + GP_71_NA2 + RU_71_NA2} 
+goal meetAW_71_NA2       {AW_71_NA2 + RP_71_NA2 = DN_71_NA2 + GP_71_NA2 + RU_71_NA2 + GW_SHORT_71_NA2} 
 
 
 !==============================
@@ -199,7 +199,7 @@ goal setDG_72_NA1         {DG_72_NA1 = D_SJR116_72_NA1}
 goal setDN_SJR116_72_NA1  {DN_SJR116_72_NA1 = D_SJR116_72_NA1 - DL_SJR116_72_NA1}
 goal setDN_72_NA1         {DN_72_NA1        = DG_72_NA1       - DL_72_NA1}
 ! Total Applied Water = net surface delivery + groundwater pumping
-goal meetAW_72_NA1        {AW_72_NA1 + RP_72_NA1 = DN_72_NA1 + GP_72_NA1 + RU_72_NA1}
+goal meetAW_72_NA1        {AW_72_NA1 + RP_72_NA1 = DN_72_NA1 + GP_72_NA1 + RU_72_NA1 + GW_SHORT_72_NA1}
 
 
 !==============================
@@ -208,7 +208,7 @@ goal meetAW_72_NA1        {AW_72_NA1 + RP_72_NA1 = DN_72_NA1 + GP_72_NA1 + RU_72
 ! no surface deliveries
 goal setDG_72_NA2        {DG_72_NA2 = 0.0}
 goal setDN_72_NA2        {DN_72_NA2 = 0.0}
-goal meetAW_72_NA2       {AW_72_NA2 = GP_72_NA2 } 
+goal meetAW_72_NA2       {AW_72_NA2 = GP_72_NA2 + GW_SHORT_72_NA2} 
 
 
 !==============================
@@ -220,7 +220,7 @@ goal setDG_72_PA         {DG_72_PA = D_XCC025_72_PA}
 goal setDN_XCC025_72_PA  {DN_XCC025_72_PA = D_XCC025_72_PA - DL_XCC025_72_PA}
 goal setDN_72_PA         {DN_72_PA        = DG_72_PA       - DL_72_PA}
 ! Total Applied Water = net surface delivery + groundwater pumping
-goal meetAW_72_PA        {AW_72_PA + RP_72_PA = DN_72_PA + GP_72_PA + RU_72_PA}
+goal meetAW_72_PA        {AW_72_PA + RP_72_PA = DN_72_PA + GP_72_PA + RU_72_PA + GW_SHORT_72_PA}
 
 
 !==============================
@@ -232,7 +232,7 @@ goal setDG_72_XA1        {DG_72_XA1 = D_ARY010_72_XA1}
 goal setDN_ARY010_72_XA1 {DN_ARY010_72_XA1 = D_ARY010_72_XA1 - DL_ARY010_72_XA1}
 goal setDN_72_XA1        {DN_72_XA1        = DG_72_XA1       - DL_72_XA1}
 ! Total Applied Water = net surface delivery + groundwater pumping
-goal meetAW_72_XA1       {AW_72_XA1 + RP_72_XA1 = DN_72_XA1 + GP_72_XA1 + RU_72_XA1} 
+goal meetAW_72_XA1       {AW_72_XA1 + RP_72_XA1 = DN_72_XA1 + GP_72_XA1 + RU_72_XA1 + GW_SHORT_72_XA1} 
 
 
 !==============================
@@ -244,7 +244,7 @@ goal setDG_72_XA2        {DG_72_XA2 = D_XCC010_72_XA2}
 goal setDN_XCC010_72_XA2 {DN_XCC010_72_XA2 = D_XCC010_72_XA2 - DL_XCC010_72_XA2}
 goal setDN_72_XA2        {DN_72_XA2        = DG_72_XA2       - DL_72_XA2}
 ! Total Applied Water = net surface delivery + groundwater pumping
-goal meetAW_72_XA2       {AW_72_XA2 + RP_72_XA2 = DN_72_XA2 + GP_72_XA2 + RU_72_XA2} 
+goal meetAW_72_XA2       {AW_72_XA2 + RP_72_XA2 = DN_72_XA2 + GP_72_XA2 + RU_72_XA2 + GW_SHORT_72_XA2} 
 
 
 !==============================
@@ -256,7 +256,7 @@ goal setDG_72_XA3        {DG_72_XA3 = D_XCC054_72_XA3}
 goal setDN_XCC054_72_XA3 {DN_XCC054_72_XA3 = D_XCC054_72_XA3 - DL_XCC054_72_XA3}
 goal setDN_72_XA3        {DN_72_XA3        = DG_72_XA3       - DL_72_XA3}
 ! Total Applied Water = net surface delivery + groundwater pumping
-goal meetAW_72_XA3       {AW_72_XA3 + RP_72_XA3 = DN_72_XA3 + GP_72_XA3 + RU_72_XA3}
+goal meetAW_72_XA3       {AW_72_XA3 + RP_72_XA3 = DN_72_XA3 + GP_72_XA3 + RU_72_XA3 + GW_SHORT_72_XA3}
 
 
 !===============================================================================
@@ -265,7 +265,7 @@ goal meetAW_72_XA3       {AW_72_XA3 + RP_72_XA3 = DN_72_XA3 + GP_72_XA3 + RU_72_
 goal setDG_72_PR1        {DG_72_PR1 = D_VLW008_72_PR1} ! gross surface water diversions
 goal setDN_VLW008_72_PR1 {DN_VLW008_72_PR1 = D_VLW008_72_PR1 - DL_VLW008_72_PR1}     ! net surface delivery = surface diversion - conveyance losses
 goal setDN_72_PR1        {DN_72_PR1        = DG_72_PR1       - DL_72_PR1}
-goal meetAW_72_PR1       {AW_72_PR1 + RP_72_PR1 = DN_72_PR1 + GP_72_PR1 + RU_72_PR1} ! Total Applied Water = net surface delivery + groundwater pumping
+goal meetAW_72_PR1       {AW_72_PR1 + RP_72_PR1 = DN_72_PR1 + GP_72_PR1 + RU_72_PR1 } ! Total Applied Water = net surface delivery + groundwater pumping
  
 
 
@@ -344,7 +344,7 @@ goal meetUD_72_PU        {UD_72_PU = GP_72_PU }
 ! no surface deliveries
 goal setDG_73_NA         {DG_73_NA = 0.0}
 goal setDN_73_NA         {DN_73_NA = 0.0}
-goal meetAW_73_NA        {AW_73_NA = GP_73_NA } 
+goal meetAW_73_NA        {AW_73_NA = GP_73_NA + GW_SHORT_73_NA } 
 
 
 !===============================================================================
@@ -357,7 +357,7 @@ goal setDN_DMC070_73_PA1 {DN_DMC070_73_PA1 = D_DMC070_73_PA1 - DL_DMC070_73_PA1}
 goal setDN_CAA087_73_PA1 {DN_CAA087_73_PA1 = D_CAA087_73_PA1 - DL_CAA087_73_PA1}
 goal setDN_73_PA1        {DN_73_PA1        = DG_73_PA1       - DL_73_PA1}
 ! Total Applied Water = net surface delivery + groundwater pumping
-goal meetAW_73_PA1       {AW_73_PA1 + RP_73_PA1 = DN_73_PA1 + GP_73_PA1 + RU_73_PA1} 
+goal meetAW_73_PA1       {AW_73_PA1 + RP_73_PA1 = DN_73_PA1 + GP_73_PA1 + RU_73_PA1 + GW_SHORT_73_PA1} 
 
 
 !===============================================================================
@@ -369,7 +369,7 @@ goal setDG_73_PA2        {DG_73_PA2 = D_DMC105_73_PA2}
 goal setDN_DMC105_73_PA2 {DN_DMC105_73_PA2 = D_DMC105_73_PA2 - DL_DMC105_73_PA2}
 goal setDN_73_PA2        {DN_73_PA2        = DG_73_PA2       - DL_73_PA2}
 ! Total Applied Water = net surface delivery + groundwater pumping
-goal meetAW_73_PA2       {AW_73_PA2 + RP_73_PA2 = DN_73_PA2 + GP_73_PA2 + RU_73_PA2} 
+goal meetAW_73_PA2       {AW_73_PA2 + RP_73_PA2 = DN_73_PA2 + GP_73_PA2 + RU_73_PA2 + GW_SHORT_73_PA2} 
 
 
 !===============================================================================
@@ -382,7 +382,7 @@ goal setDN_CAA109_73_PA3 {DN_CAA109_73_PA3 = D_CAA109_73_PA3 - DL_CAA109_73_PA3}
 goal setDN_DMC091_73_PA3 {DN_DMC091_73_PA3 = D_DMC091_73_PA3 - DL_DMC091_73_PA3}
 goal setDN_73_PA3        {DN_73_PA3        = DG_73_PA3       - DL_73_PA3}
 ! Total Applied Water = net surface delivery + groundwater pumping
-goal meetAW_73_PA3       {AW_73_PA3 + RP_73_PA3 = DN_73_PA3 + GP_73_PA3 + RU_73_PA3} 
+goal meetAW_73_PA3       {AW_73_PA3 + RP_73_PA3 = DN_73_PA3 + GP_73_PA3 + RU_73_PA3 + GW_SHORT_73_PA3} 
 
 
 !===============================================================================
@@ -402,7 +402,7 @@ goal setDN_DMC111_73_XA  {DN_DMC111_73_XA = D_DMC111_73_XA - DL_DMC111_73_XA}
 goal setDN_MDOTA_73_XA   {DN_MDOTA_73_XA  = D_MDOTA_73_XA  - DL_MDOTA_73_XA}
 goal setDN_73_XA         {DN_73_XA        = DG_73_XA       - DL_73_XA}
 ! Total Applied Water = net surface delivery + groundwater pumping
-goal meetAW_73_XA        {AW_73_XA + RP_73_XA = DN_73_XA + GP_73_XA + RU_73_XA}
+goal meetAW_73_XA        {AW_73_XA + RP_73_XA = DN_73_XA + GP_73_XA + RU_73_XA + GW_SHORT_73_XA}
 
 
 !===============================================================================
@@ -438,7 +438,7 @@ goal setDN_CAA172_90_PA1 {DN_CAA172_90_PA1 = D_CAA172_90_PA1 - DL_CAA172_90_PA1}
 goal setDN_MDOTA_90_PA1  {DN_MDOTA_90_PA1  = D_MDOTA_90_PA1  - DL_MDOTA_90_PA1}
 goal setDN_90_PA1        {DN_90_PA1        = DG_90_PA1       - DL_90_PA1}
 ! Total Applied Water = net surface delivery + groundwater pumping
-goal meetAW_90_PA1       {AW_90_PA1 + RP_90_PA1 = DN_90_PA1 + GP_90_PA1 + RU_90_PA1}
+goal meetAW_90_PA1       {AW_90_PA1 + RP_90_PA1 = DN_90_PA1 + GP_90_PA1 + RU_90_PA1 + GW_SHORT_90_PA1}
 
 !===============================================================================
 ! 90_PA2 - Westlands WD II - Ag
@@ -449,7 +449,7 @@ goal setDG_90_PA2        {DG_90_PA2 = D_CAA143_90_PA2}
 goal setDN_CAA143_90_PA2 {DN_CAA143_90_PA2 = D_CAA143_90_PA2 - DL_CAA143_90_PA2}
 goal setDN_90_PA2        {DN_90_PA2        = DG_90_PA2       - DL_90_PA2}
 ! Total Applied Water = net surface delivery + groundwater pumping
-goal meetAW_90_PA2       {AW_90_PA2 + RP_90_PA2= DN_90_PA2 + GP_90_PA2 + RU_90_PA2}
+goal meetAW_90_PA2       {AW_90_PA2 + RP_90_PA2= DN_90_PA2 + GP_90_PA2 + RU_90_PA2 + GW_SHORT_90_PA2}
 
 
 !===============================================================================
@@ -485,7 +485,7 @@ goal setDG_91_PA         {DG_91_PA = D_MDOTA_91_PA}
 !goal setDN_MDOTA_91_PA   {DN_MDOTA_91_PA = D_MDOTA_91_PA - DL_MDOTA_91_PA}
 goal setDN_91_PA         {DN_91_PA       = DG_91_PA      - DL_91_PA}
 ! Total Applied Water = net surface delivery + groundwater pumping
-goal meetAW_91_PA        {AW_91_PA + RP_91_PA = DN_91_PA + GP_91_PA + RU_91_PA} 
+goal meetAW_91_PA        {AW_91_PA + RP_91_PA = DN_91_PA + GP_91_PA + RU_91_PA + GW_SHORT_91_PA} 
 
 
 !===============================================================================

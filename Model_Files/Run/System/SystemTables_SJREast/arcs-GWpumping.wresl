@@ -19,31 +19,31 @@ GPmin_{Demand Unit} - Minimum Groundwater Pumping
 !60S_PA1 Stockton East WD
 define  GP_60S_PA1      {std kind 'GW-PUMPING'            units 'CFS'}         
 define  GPmin_60S_PA1   {value 0.0}!select minfraction from AgMinMaxgw where id = 1}       
-define  GPmax_60S_PA1   {value 1.0}!select maxfraction from AgMinMaxgw where id = 1}
+define  GPmax_60S_PA1   {select maxfraction from AgMinMaxgw where id = 164}
 
 
 ! 60S_PA2 Central San Joaquin WCD
 define  GP_60S_PA2       {std kind 'GW-PUMPING'            units 'CFS'}         
 define  GPmin_60S_PA2    {select minfraction from AgMinMaxgw where id = 75} 
-define  GPmax_60S_PA2    {select maxfraction from AgMinMaxgw where id = 75}
+define  GPmax_60S_PA2    {select maxfraction from AgMinMaxgw where id = 165}
 
 
 !60S_NA1 no surface water deliveries
 define  GP_60S_NA1      {std kind 'GW-PUMPING'            units 'CFS'}         
 define  GPmin_60S_NA1   {value 0.0}!select minfraction from AgMinMaxgw where id = 1}       
-define  GPmax_60S_NA1   {value 1.0}!select maxfraction from AgMinMaxgw where id = 1}
+define  GPmax_60S_NA1   {select maxfraction from AgMinMaxgw where id = 166}
 
 
 !60S_NA2 no surface water deliveries
 define  GP_60S_NA2      {std kind 'GW-PUMPING'            units 'CFS'}         
 define  GPmin_60S_NA2   {value 0.0}!select minfraction from AgMinMaxgw where id = 1}       
-define  GPmax_60S_NA2   {value 1.0}!select maxfraction from AgMinMaxgw where id = 1}
+define  GPmax_60S_NA2   {select maxfraction from AgMinMaxgw where id = 167}
 
 
 ! 60S_NU1 City of Stockton
 define  GP_60S_NU1      {std kind 'GW-PUMPING' units 'CFS'}         
 define  GPmin_60S_NU1   {value 0.0}!select minfraction from AgMinMaxgw where id = 1}       
-define  GPmax_60S_NU1   {value 1.0}!select maxfraction from AgMinMaxgw where id = 1}
+define  GPmax_60S_NU1   {select maxfraction from AgMinMaxgw where id = 168}
 
 
 ! 60S_NU2 Small communities

@@ -73,60 +73,60 @@ ID	MinFraction	MaxFraction
 69	0.04	1	!24_NA3	PCWA Zone 1
 70	0.57	1	!25_NA	North Delta WA, Non-District
 71	0.04	1	!25_PA1	Solano ID
-72	0	1	!25_PA2	Maine Prairie WD
-73	1	1	!26N_NA	Non-District
+72	0.00	1	!25_PA2	Maine Prairie WD
+73	1.00	1	!26N_NA	Non-District
 74	0.95	1	!26S_NA	Non-District           
 75	0.20	1	!60S_PA2 !to do assumed value - value not identified in AWMP but AWMP suggests high useage, citing 'historical reliance'
 76	0.03	1	!61_PA1_D/61_PA2_D OIDN/OIDS  From AWMP tables 5-13 - 5-15 
 77	0.09	1	!61_PA1_P/61_PA2_P OIDN/OIDS  From AWMP tables 5-13 - 5-15
 78	0.03	1	!61_PA3_D SSJID  From AWMP tables 5-13 - 5-16
 79	0.18	1	!61_PA3_P SSJID  From AWMP tables 5-13 - 5-16
-80	0.10	1	!61_NA1  @jmg 2017.05.09
-81	0.08	1	!61_NA2_D  !MID, value estimated quickly from 2012 AWMP data (gw supplies ~11% AW demand in '09), check. Increased as river divetsions too large, was 0.03
-82	0.17	1	!61_NA2_P  !MID, value estimated quickly from 2012 AWMP data, (gw supplies ~11% AW demand in '09), check. Increased as river divetsions too large, was 0.09
-83	0.10	1	!61_NA3   @jmg 2017.05.09
-84	0.10	1	!61_NA4   @jmg 2017.05.09
-85	0.10	1	!61_NA5   @jmg 2017.05.09
+80	0.10	0.65	!61_NA1  @jmg 2017.05.09
+81	0.08	0.65	!61_NA2_D  !MID, value estimated quickly from 2012 AWMP data (gw supplies ~11% AW demand in '09), check. Increased as river divetsions too large, was 0.03
+82	0.17	0.65	!61_NA2_P  !MID, value estimated quickly from 2012 AWMP data, (gw supplies ~11% AW demand in '09), check. Increased as river divetsions too large, was 0.09
+83	0.10	0.65	!61_NA3   @jmg 2017.05.09
+84	0.10	0.65	!61_NA4   @jmg 2017.05.09
+85	0.10	0.65	!61_NA5   @jmg 2017.05.09
 86	0.10	1	!61_NA6   @jmg 2017.05.09
 87	0.10	1	!61_NU1   @jmg 2017.05.09
 88	0.10	1	!61_NU2   @jmg 2017.05.09
 89	0.10	1	!61_NU3   @jmg 2017.05.09
-90	0.10	1	!62_NA1WD   @jmg 2017.05.09
-91	0.10	1	!62_NA2
+90	0.10	0.45	!62_NA1WD   @jmg 2017.05.09
+91	0.10	0.55	!62_NA2
 92	0.10	1	!62_NA3_D   @jmg 2017.05.09
 93	0.10	1	!62_NA3_P   @jmg 2017.05.09
 94	0.10	1	!62_NA4   @jmg 2017.05.09
 95	0.10	1	!62_NA5   @jmg 2017.05.09
-96	0.10	1	!62_NA6_D   @jmg 2017.05.09
-97	0.19	1	!62_NA6_P  @Ag water management plan 2016
+96	0.10	0.41	!62_NA6_D   @jmg 2017.05.09
+97	0.19	0.41	!62_NA6_P  @Ag water management plan 2016
 98	0.10	1	!62_NU   @jmg 2017.05.09
 99	0.00	1	!63_PR1
 100	0.00	1	!63_PR2
 101	0.00	1	!63_PR3
-102	0.10	1	!63_NA1   @jmg 2017.05.09
-103	0.10	1	!63_NA2   @jmg 2017.05.09
-104	0.10	1	!63_NA3_D   @jmg 2017.05.09
-105	0.19	1	!63_NA3_P   @Ag water management plant 2016
-106	0.00    1   !63_NA4   All surface water sources have upper bounds previously 0.935	
+102	0.10	0.57	!63_NA1   @jmg 2017.05.09
+103	0.10	0.57	!63_NA2   @jmg 2017.05.09
+104	0.10	0.57	!63_NA3_D   @jmg 2017.05.09
+105	0.19	0.57	!63_NA3_P   @Ag water management plant 2016
+106	0.00    0.74   !63_NA4   All surface water sources have upper bounds previously 0.935	
 107	0.10	1	!63_NU   @jmg 2017.05.09
-108	0.10	1	!64_NA1   @jmg 2017.05.09
-109	0.10	1	!64_NA2   @jmg 2017.05.09
-110	0.10	1	!64_PA1   @jmg 2017.05.09
-111	0.10	1	!64_PA2   @jmg 2017.05.09
-112	0.10	1	!64_PA3   @jmg 2017.05.09
+108	0.10	0.515	!64_NA1   @jmg 2017.05.09
+109	0.10	0.225	!64_NA2   @jmg 2017.05.09
+110	0.10	0.89	!64_PA1   @jmg 2017.05.09
+111	0.10	0.683	!64_PA2   @jmg 2017.05.09
+112	0.10	0.89	!64_PA3   @jmg 2017.05.09
 113	0.10	1	!64_XA   @jmg 2017.05.09
 114	0.10	1	!64_NU   @jmg 2017.05.09
 115	0.10	1	!50_PA1   @jmg 2017.05.09
 116	0.00	1	!50_PU   @jmg 2017.05.09
-117	0.00	1	!71_PA1
+117	0.00	0.65	!71_PA1
 118	0.00	1	!71_PA2
-119	0.00	1	!71_PA3
+119	0.00	0.65	!71_PA3
 120	0.00	1	!71_PA4
-121	0.00	1	!71_PA5
-122	0.00	1	!71_PA6
+121	0.00	0.65	!71_PA5
+122	0.00	0.65	!71_PA6
 123	0.00	1	!71_PA8
 124	0.00	1	!71_NA1
-125	0.00	1	!71_NA2
+125	0.00	0.26	!71_NA2
 126	0.00	1	!71_PU1
 127	0.00	1	!71_PU2
 128	0.00	1	!71_NU
@@ -144,18 +144,34 @@ ID	MinFraction	MaxFraction
 140	0.00	1	!72_PR6
 141	0.00	1	!72_NU
 142	0.00	1	!72_PU
-143	0.00	1	!73_NA
-144	0.00	1	!73_PA1
-145	0.00	1	!73_PA2
-146	0.00	1	!73_PA3
-147	0.00	1	!73_XA
+143	0.00	0.61	!73_NA
+144	0.00	0.61	!73_PA1
+145	0.00	0.61	!73_PA2
+146	0.00	0.61	!73_PA3
+147	0.00	0.61	!73_XA
 148	0.00	1	!73_NU
-149     0.00	1       !90_PA1
-150     0.00	1     	!90_PA2
-151     0.00	1     	!90_PU
-152     0.00	1     	!91_PA
-153     0.00	1     	!91_PR
-154     0.00	1     	!63_NA5
+149 0.00	0.94       !90_PA1
+150 0.00	0.94     	!90_PA2
+151 0.00	1     	!90_PU
+152 0.00	0.94     	!91_PA
+153 0.00	1     	!91_PR
+154 0.00	1     	!63_NA5
+155 0.00    0.79 ! 60N_NA1
+156 0.00    0.79 ! 60N_NA2
+157 0.00    0.79 ! 60N_NA3
+158 0.00    0.79 ! 60N_NA4
+159 0.00    0.79  ! 60N_NA5
+160 0.00    1.0  ! 60N_NU1
+161 0.00    1.0  ! 60N_NU2
+162 0.00    1.0  ! 60N_PU
+163 0.00    1.0  ! EBMUD
+164 0.00    1.0  ! 60S_PA1 - Stockton East WD
+165 0.00    1.0  ! 60S_PA2 - Central San Joaquin WCD
+166	0.00   1.0  ! 60S_NA1 - no surface water deliveries
+167 0.00   1.0  ! 60S_NA2 - no surface water deliveries
+168 0.00   1.0  ! 60S_NU1 - City of Stockton
+169 0.00   1.0  ! 60S_NU2 - Small communities
+ 
           
           
           

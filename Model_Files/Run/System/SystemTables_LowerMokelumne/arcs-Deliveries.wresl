@@ -37,6 +37,8 @@ define  TW_60N_NA1      {timeseries kind 'TAILWATER'      units 'TAF' convert 'C
 define  AW_60N_NA1      {std kind 'APPLIED-WATER'         units 'CFS'}         
 define  AWO_60N_NA1     {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
 define  AWR_60N_NA1     {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
+! 20250106@COEQWAL: testing gw shortage
+define GW_SHORT_60N_NA1      {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
 
 ! Omochumne-Hartnell WD, Galt ID, Clay WD
 define  DN_60N_NA2      {std kind 'SW_DELIVERY-NET'       units 'CFS'}            
@@ -47,6 +49,8 @@ define  TW_60N_NA2      {timeseries kind 'TAILWATER'      units 'TAF' convert 'C
 define  AW_60N_NA2      {std kind 'APPLIED-WATER'         units 'CFS'}         
 define  AWO_60N_NA2     {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
 define  AWR_60N_NA2     {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
+! 20250106@COEQWAL: testing gw shortage
+define GW_SHORT_60N_NA2      {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
 
 ! North San Joaquin WCD
 define  DN_60N_NA3      {std kind 'SW_DELIVERY-NET'       units 'CFS'}            
@@ -57,6 +61,8 @@ define  TW_60N_NA3      {timeseries kind 'TAILWATER'      units 'TAF' convert 'C
 define  AW_60N_NA3      {std kind 'APPLIED-WATER'         units 'CFS'}         
 define  AWO_60N_NA3     {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
 define  AWR_60N_NA3     {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
+! 20250106@COEQWAL: testing gw shortage
+define GW_SHORT_60N_NA3      {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
 
 ! Woodbridge ID
 define  DN_60N_NA4      {std kind 'SW_DELIVERY-NET'       units 'CFS'}            
@@ -67,6 +73,8 @@ define  TW_60N_NA4      {timeseries kind 'TAILWATER'      units 'TAF' convert 'C
 define  AW_60N_NA4      {std kind 'APPLIED-WATER'         units 'CFS'}         
 define  AWO_60N_NA4     {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
 define  AWR_60N_NA4     {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
+! 20250106@COEQWAL: testing gw shortage
+define GW_SHORT_60N_NA4      {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
 
 ! Mokelumne River riparian diversions Camanche Dam to Interstate 5
 define  DN_60N_NA5      {std kind 'SW_DELIVERY-NET'       units 'CFS'}            
@@ -77,6 +85,8 @@ define  TW_60N_NA5      {timeseries kind 'TAILWATER'      units 'TAF' convert 'C
 define  AW_60N_NA5      {std kind 'APPLIED-WATER'         units 'CFS'}         
 define  AWO_60N_NA5     {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
 define  AWR_60N_NA5     {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
+! 20250106@COEQWAL: testing gw shortage
+define GW_SHORT_60N_NA5      {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
 
 ! 60N_NU1 City of Galt, Lodi, and small communities
 define  DN_60N_NU1      {std kind 'SW_DELIVERY-NET' units 'CFS'}            

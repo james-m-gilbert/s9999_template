@@ -32,6 +32,8 @@ define  TW_50_PA1        {timeseries kind 'TAILWATER' units 'TAF' convert 'CFS'}
 define  AW_50_PA1        {std kind 'APPLIED-WATER'         units 'CFS'}         
 define  AWO_50_PA1       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
 define  AWR_50_PA1       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
+! 20250107@COEQWAL: testing gw shortage
+define GW_SHORT_50_PA1      {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
 
 
 ! 50_PU
@@ -54,6 +56,8 @@ define  TW_71_PA1        {timeseries kind 'TAILWATER'      units 'TAF' convert '
 define  AW_71_PA1        {std kind 'APPLIED-WATER'         units 'CFS'}
 define  AWO_71_PA1       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
 define  AWR_71_PA1       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
+! 20250107@COEQWAL: testing gw shortage
+define GW_SHORT_71_PA1      {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
 
 
 ! 71_PA2
@@ -67,6 +71,8 @@ define  TW_71_PA2        {timeseries kind 'TAILWATER'      units 'TAF' convert '
 define  AW_71_PA2        {std kind 'APPLIED-WATER'         units 'CFS'}
 define  AWO_71_PA2       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
 define  AWR_71_PA2       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
+! 20250107@COEQWAL: testing gw shortage
+define GW_SHORT_71_PA2      {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
 
 
 ! 71_PA3
@@ -79,6 +85,8 @@ define  TW_71_PA3        {timeseries kind 'TAILWATER'      units 'TAF' convert '
 define  AW_71_PA3        {std kind 'APPLIED-WATER'         units 'CFS'}
 define  AWO_71_PA3       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
 define  AWR_71_PA3       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
+! 20250107@COEQWAL: testing gw shortage
+define GW_SHORT_71_PA3      {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
 
 
 ! 71_PA4
@@ -92,6 +100,8 @@ define  TW_71_PA4        {timeseries kind 'TAILWATER'      units 'TAF' convert '
 define  AW_71_PA4        {std kind 'APPLIED-WATER'         units 'CFS'}
 define  AWO_71_PA4       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
 define  AWR_71_PA4       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
+! 20250107@COEQWAL: testing gw shortage
+define GW_SHORT_71_PA4      {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
 
 
 ! 71_PA5
@@ -104,6 +114,8 @@ define  TW_71_PA5        {timeseries kind 'TAILWATER'      units 'TAF' convert '
 define  AW_71_PA5        {std kind 'APPLIED-WATER'         units 'CFS'}
 define  AWO_71_PA5       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
 define  AWR_71_PA5       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
+! 20250107@COEQWAL: testing gw shortage
+define GW_SHORT_71_PA5      {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
 
 
 ! 71_PA6
@@ -116,6 +128,8 @@ define  TW_71_PA6        {timeseries kind 'TAILWATER'      units 'TAF' convert '
 define  AW_71_PA6        {std kind 'APPLIED-WATER'         units 'CFS'}
 define  AWO_71_PA6       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
 define  AWR_71_PA6       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
+! 20250107@COEQWAL: testing gw shortage
+define GW_SHORT_71_PA6      {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
 
 
 ! 71_PA8
@@ -128,6 +142,8 @@ define  TW_71_PA8        {timeseries kind 'TAILWATER'      units 'TAF' convert '
 define  AW_71_PA8        {std kind 'APPLIED-WATER'         units 'CFS'}
 define  AWO_71_PA8       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
 define  AWR_71_PA8       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
+! 20250107@COEQWAL: testing gw shortage
+define GW_SHORT_71_PA8      {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
 
 
 ! 71_NA1
@@ -140,6 +156,8 @@ define  TW_71_NA1        {timeseries kind 'TAILWATER'      units 'TAF' convert '
 define  AW_71_NA1        {std kind 'APPLIED-WATER'         units 'CFS'}
 define  AWO_71_NA1       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
 define  AWR_71_NA1       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
+! 20250107@COEQWAL: testing gw shortage
+define GW_SHORT_71_NA1      {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
 
 
 ! 71_NA2
@@ -152,6 +170,8 @@ define  TW_71_NA2        {timeseries kind 'TAILWATER'      units 'TAF' convert '
 define  AW_71_NA2        {std kind 'APPLIED-WATER'         units 'CFS'}
 define  AWO_71_NA2       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
 define  AWR_71_NA2       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
+! 20250107@COEQWAL: testing gw shortage
+define GW_SHORT_71_NA2      {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
 
 
 ! 71_PU1
@@ -184,6 +204,9 @@ define  TW_72_NA1        {timeseries kind 'TAILWATER'      units 'TAF' convert '
 define  AW_72_NA1        {std kind 'APPLIED-WATER'         units 'CFS'}
 define  AWO_72_NA1       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
 define  AWR_72_NA1       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
+! 20250107@COEQWAL: testing gw shortage
+define GW_SHORT_72_NA1      {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
+
 
 ! 72_NA2 -- no surface deliveries
 define  DN_72_NA2        {std kind 'SW_DELIVERY-NET'       units 'CFS'}            
@@ -191,6 +214,9 @@ define  DG_72_NA2        {std kind 'SW_DELIVERY-GROSS'     units 'CFS'}
 define  AW_72_NA2        {std kind 'APPLIED-WATER'         units 'CFS'}
 define  AWO_72_NA2       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
 define  AWR_72_NA2       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
+! 20250107@COEQWAL: testing gw shortage
+define GW_SHORT_72_NA2      {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
+
 
 ! 72_PA
 define  DN_XCC025_72_PA  {std kind 'SW_DELIVERY-NET'       units 'CFS'}            
@@ -202,6 +228,9 @@ define  TW_72_PA         {timeseries kind 'TAILWATER'      units 'TAF' convert '
 define  AW_72_PA         {std kind 'APPLIED-WATER'         units 'CFS'}
 define  AWO_72_PA        {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
 define  AWR_72_PA        {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
+! 20250107@COEQWAL: testing gw shortage
+define GW_SHORT_72_PA      {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
+
 
 ! 72_XA1
 define  DN_ARY010_72_XA1 {std kind 'SW_DELIVERY-NET'       units 'CFS'}            
@@ -213,6 +242,9 @@ define  TW_72_XA1        {timeseries kind 'TAILWATER'      units 'TAF' convert '
 define  AW_72_XA1        {std kind 'APPLIED-WATER'         units 'CFS'}
 define  AWO_72_XA1       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
 define  AWR_72_XA1       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
+! 20250107@COEQWAL: testing gw shortage
+define GW_SHORT_72_XA1      {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
+
 
 ! 72_XA2
 define  DN_XCC010_72_XA2 {std kind 'SW_DELIVERY-NET'       units 'CFS'}            
@@ -224,6 +256,9 @@ define  TW_72_XA2        {timeseries kind 'TAILWATER'      units 'TAF' convert '
 define  AW_72_XA2        {std kind 'APPLIED-WATER'         units 'CFS'}
 define  AWO_72_XA2       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
 define  AWR_72_XA2       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
+! 20250107@COEQWAL: testing gw shortage
+define GW_SHORT_72_XA2      {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
+
 
 ! 72_XA3
 define  DN_XCC054_72_XA3 {std kind 'SW_DELIVERY-NET'       units 'CFS'}            
@@ -235,6 +270,9 @@ define  TW_72_XA3        {timeseries kind 'TAILWATER'      units 'TAF' convert '
 define  AW_72_XA3        {std kind 'APPLIED-WATER'         units 'CFS'}
 define  AWO_72_XA3       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
 define  AWR_72_XA3       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}  
+! 20250107@COEQWAL: testing gw shortage
+define GW_SHORT_72_XA3      {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
+
 
 ! 72_PR1
 define  DN_VLW008_72_PR1 {std kind 'SW_DELIVERY-NET'       units 'CFS'}            
@@ -529,6 +567,9 @@ define  DG_73_NA        {std kind 'SW_DELIVERY-GROSS'     units 'CFS'}
 define  AW_73_NA        {std kind 'APPLIED-WATER'         units 'CFS'}
 define  AWO_73_NA       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
 define  AWR_73_NA       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
+! 20250107@COEQWAL: testing gw shortage
+define GW_SHORT_73_NA      {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
+
 
 ! 73_PA1
 define  DN_DMC070_73_PA1 {std kind 'SW_DELIVERY-NET'       units 'CFS'}            
@@ -541,6 +582,9 @@ define  TW_73_PA1        {timeseries kind 'TAILWATER'      units 'TAF' convert '
 define  AW_73_PA1        {std kind 'APPLIED-WATER'         units 'CFS'}
 define  AWO_73_PA1       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
 define  AWR_73_PA1       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
+! 20250107@COEQWAL: testing gw shortage
+define GW_SHORT_73_PA1     {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
+
 
 ! 73_PA2
 define  DN_DMC105_73_PA2 {std kind 'SW_DELIVERY-NET'       units 'CFS'}            
@@ -552,6 +596,9 @@ define  TW_73_PA2        {timeseries kind 'TAILWATER'      units 'TAF' convert '
 define  AW_73_PA2        {std kind 'APPLIED-WATER'         units 'CFS'}
 define  AWO_73_PA2       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
 define  AWR_73_PA2       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'} 
+! 20250107@COEQWAL: testing gw shortage
+define GW_SHORT_73_PA2     {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
+
  
 ! 73_PA3
 define  DN_DMC091_73_PA3 {std kind 'SW_DELIVERY-NET'       units 'CFS'}            
@@ -564,6 +611,9 @@ define  TW_73_PA3        {timeseries kind 'TAILWATER'      units 'TAF' convert '
 define  AW_73_PA3        {std kind 'APPLIED-WATER'         units 'CFS'}
 define  AWO_73_PA3       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
 define  AWR_73_PA3       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'} 
+! 20250107@COEQWAL: testing gw shortage
+define GW_SHORT_73_PA3     {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
+
 
 ! 73_XA
 define  DN_DMC111_73_XA  {std kind 'SW_DELIVERY-NET'       units 'CFS'}            
@@ -576,6 +626,9 @@ define  TW_73_XA         {timeseries kind 'TAILWATER'      units 'TAF' convert '
 define  AW_73_XA         {std kind 'APPLIED-WATER'         units 'CFS'}
 define  AWO_73_XA        {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
 define  AWR_73_XA        {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
+! 20250107@COEQWAL: testing gw shortage
+define GW_SHORT_73_XA     {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
+
 
 ! 73_NU -- no surface deliveries
 define  UD_73_NU         {timeseries kind 'URBAN-DEMAND' units 'TAF' convert 'CFS'}
@@ -601,6 +654,8 @@ define  TW_90_PA1        {timeseries kind 'TAILWATER'      units 'TAF' convert '
 define  AW_90_PA1        {std kind 'APPLIED-WATER'         units 'CFS'}
 define  AWO_90_PA1       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
 define  AWR_90_PA1       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'} 
+! 20250107@COEQWAL: testing gw shortage
+define GW_SHORT_90_PA1     {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
 
 ! 90_PA2
 define  DN_CAA143_90_PA2 {std kind 'SW_DELIVERY-NET'       units 'CFS'}            
@@ -612,6 +667,8 @@ define  TW_90_PA2        {timeseries kind 'TAILWATER'      units 'TAF' convert '
 define  AW_90_PA2        {std kind 'APPLIED-WATER'         units 'CFS'}
 define  AWO_90_PA2       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
 define  AWR_90_PA2       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
+! 20250107@COEQWAL: testing gw shortage
+define GW_SHORT_90_PA2     {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
 
 ! 90_PU
 define  DN_CAA143_90_PU  {std kind 'SW_DELIVERY-NET'       units 'CFS'}            
@@ -636,6 +693,8 @@ define  TW_91_PA         {timeseries kind 'TAILWATER'      units 'TAF' convert '
 define  AW_91_PA         {std kind 'APPLIED-WATER'         units 'CFS'}
 define  AWO_91_PA        {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
 define  AWR_91_PA        {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
+! 20250107@COEQWAL: testing gw shortage
+define GW_SHORT_91_PA     {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
 
 ! 91_PR
 define  DN_MDOTA_91_PR   {std kind 'SW_DELIVERY-NET'       units 'CFS'}            

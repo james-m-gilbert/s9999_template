@@ -45,7 +45,7 @@ goal setDN_60N_NA2  {DN_60N_NA2 = DG_60N_NA2 - DL_60N_NA2}
 ! meet minimum groundwater pumping
 !goal meetGPmin_60N_NA2  {GP_60N_NA2 > min((AWO_60N_NA2+AWR_60N_NA2),GPmin_60N_NA2)}
 ! Total Applied Water = net surface delivery + groundwater pumping
-goal meetAW_60N_NA2  {AW_60N_NA2 + RP_60N_NA2 = DN_60N_NA2 + GP_60N_NA2 + RU_60N_NA2 - OS_60N_NA2}
+goal meetAW_60N_NA2  {AW_60N_NA2 + RP_60N_NA2 = DN_60N_NA2 + GP_60N_NA2 + RU_60N_NA2 - OS_60N_NA2 + GW_SHORT_60N_NA2}
 
 
 !==============================
@@ -67,7 +67,7 @@ goal meetUD_60N_PU      {UD_60N_PU = DN_60N_PU + GP_60N_PU}
 goal setDG_60N_NA1  {DG_60N_NA1 = D_AMADR_60N_NA1}
 goal setDN_60N_NA1  {DN_60N_NA1 = DG_60N_NA1 - DL_60N_NA1}
 !goal meetGPmin_60N_NA1  {GP_60N_NA1 > min((AWO_60N_NA1+AWR_60N_NA1),GPmin_60N_NA1)}
-goal meetAW_60N_NA1 {AW_60N_NA1 + RP_60N_NA1 = DN_60N_NA1 + GP_60N_NA1 + RU_60N_NA1}
+goal meetAW_60N_NA1 {AW_60N_NA1 + RP_60N_NA1 = DN_60N_NA1 + GP_60N_NA1 + RU_60N_NA1 + GW_SHORT_60N_NA1}
 
 
 !==============================
@@ -80,7 +80,7 @@ goal setDN_60N_NA3  {DN_60N_NA3 = DG_60N_NA3 - DL_60N_NA3}
 ! meet minimum groundwater pumping
 !goal meetGPmin_60N_NA3  {GP_60N_NA3 > min((AWO_60N_NA3+AWR_60N_NA3),GPmin_60N_NA3)}
 ! Total Applied Water = net surface delivery + groundwater pumping
-goal meetAW_60N_NA3 {AW_60N_NA3 + RP_60N_NA3 = DN_60N_NA3 + GP_60N_NA3 + RU_60N_NA3}
+goal meetAW_60N_NA3 {AW_60N_NA3 + RP_60N_NA3 = DN_60N_NA3 + GP_60N_NA3 + RU_60N_NA3 + GW_SHORT_60N_NA3}
 
 
 !==============================
@@ -93,7 +93,7 @@ goal setDN_60N_NA4  {DN_60N_NA4 = DG_60N_NA4 - DL_60N_NA4}
 ! meet minimum groundwater pumping
 !goal meetGPmin_60N_NA4  {GP_60N_NA4 > min((AWO_60N_NA4+AWR_60N_NA4),GPmin_60N_NA4)} CAUSES INFEASIBILITY!!!!
 ! Total Applied Water = net surface delivery + groundwater pumping
-goal meetAW_60N_NA4 {AW_60N_NA4 + RP_60N_NA4 = DN_60N_NA4 + GP_60N_NA4 + RU_60N_NA4}
+goal meetAW_60N_NA4 {AW_60N_NA4 + RP_60N_NA4 = DN_60N_NA4 + GP_60N_NA4 + RU_60N_NA4 + GW_SHORT_60N_NA4}
 
 
 !==============================
@@ -106,7 +106,7 @@ goal setDN_60N_NA5      {DN_60N_NA5 = DG_60N_NA5 - DL_60N_NA5}
 ! meet minimum groundwater pumping
 !goal meetGPmin_60N_NA5  {GP_60N_NA5 > min((AWO_60N_NA5+AWR_60N_NA4),GPmin_60N_NA3)}
 ! Total Applied Water = net surface delivery + groundwater pumping
-goal meetAW_60N_NA5     {AW_60N_NA5 + RP_60N_NA5 = DN_60N_NA5 + GP_60N_NA5 + RU_60N_NA5}
+goal meetAW_60N_NA5     {AW_60N_NA5 + RP_60N_NA5 = DN_60N_NA5 + GP_60N_NA5 + RU_60N_NA5 + GW_SHORT_60N_NA5}
 
 
 !==============================

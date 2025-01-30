@@ -15,6 +15,11 @@ Objective obj_SYS_MOK = {
 [GP_60N_NU1, -1000],
 [GP_60N_NU2, -1000],
 [GP_EBMUD, -1000],
+[GW_SHORT_60N_NA1, -1001],
+[GW_SHORT_60N_NA2, -1001],
+[GW_SHORT_60N_NA3, -1001],
+[GW_SHORT_60N_NA4, -1001],
+[GW_SHORT_60N_NA5, -1001],
 
 !====================================================
 !Instream Flow Requirement Weights
