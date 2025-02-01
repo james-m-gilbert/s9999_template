@@ -12,4 +12,27 @@ goal meet_min_C_KSWCK { C_KSWCK_MIF1 < effective_c_KSWCKmin1} ! Minimum required
 !goal set_C_SAC049_MIF {C_SAC049_MIF < ERP_C169MIF}
 goal set_C_SAC097_MIF {C_SAC097_MIF = 0.0}
 goal set_C_SAC201_NCP {C_SAC201_MIF = 0.0}
-                                               
+ 
+
+! @coeqwal - eflows - setting flow reqt for Sac at Bend Bridge location 
+define sacatbend_eflows {value 0.0} ! TODO - update when data available; timeseries 'EFLOWS_SAC257' kind 'FLOW-MIN-EFLOW' units 'TAF' convert 'CFS'} ! eflows for Sac at Bend Bridge
+define sacatbend_dv {alias sacatbend_eflows kind 'flow-min-eflow' units 'CFS'} 
+
+! @coeqwal - eflows - allow option from main file
+define sacbend_flow_select {
+	case no_sacbend_flow_reqt {
+	condition sacbendflow_opt < 0.5  ! sacbendflow_opt set in main file
+	value 0.
+	}
+	case sacbend_eflows_v1 {
+	condition sacbendflow_opt < 1.5  ! sacbendflow_opt = 1 in main file 
+	value sacatbend_eflows
+	}
+	case otherwise {
+	condition always
+	value 0.0}
+}
+
+goal setC_SAC257_MIF {C_SAC257_MIF < sacbend_flow_select} !sacatbend_eflows} 
+
+define sacbend_flow_selectdv {alias sacbend_flow_select kind 'FLOW-MIN-EFLOW' units 'CFS'}

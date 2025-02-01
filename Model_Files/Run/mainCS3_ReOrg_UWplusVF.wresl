@@ -44,6 +44,21 @@ svar simulateCAM                {value 0.} !1-CAM, 0-WSIDI
 
 !ANN Option for Different Sea Level Rise
 svar simulateANNSLR                {value 0.} !2 - 30 cm SLR,,1 - 15 cm SLR, 0 - 0 cm SLR
+
+!#################################################################################
+!###      @COEQWAL - operations switches                                       ###
+!#################################################################################
+
+! minimum flows/eflows options
+!*********************************************************************************
+! stanislaus
+svar stanflow_opt            {value 0}  ! 0 = existing Stan flow req; 1 = eflow opt1
+svar sacbendflow_opt         {value 0}  ! 0 = no flow req; 1 - eflow opt1
+
+! SGMA
+!*********************************************************************************
+
+
 !*******************************************************************
 
 

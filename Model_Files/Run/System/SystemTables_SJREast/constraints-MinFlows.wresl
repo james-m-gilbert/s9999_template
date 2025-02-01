@@ -14,7 +14,7 @@ Original formulation: C. Olson (MWH) April 2007
 goal   C_STS059total {C_STS059 = C_STS059_MIF + C_STS059_EXC}
 
 ! @coeqwal - eflows
-goal C_STS011total {C_STS011 = C_STS011_MIF + C_STS011_EXC}
+goal C_STS011total {C_STS011 = C_STS011_EXC + C_STS011_MIF }
 
 !==============================
 ! Tuolumne River below Modesto and Turlock IDs

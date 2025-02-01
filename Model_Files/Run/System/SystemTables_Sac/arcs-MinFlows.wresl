@@ -17,6 +17,10 @@ define C_LWSTN_ADD  {std kind 'FLOW-ADDITIONAL-INSTREAM' units 'CFS'}
 define C_KSWCK_MIF  {std kind 'FLOW-MIN-INSTREAM' units 'CFS'}
 define C_KSWCK_ADD  {std kind 'FLOW-ADDITIONAL-INSTREAM' units 'CFS'}
 
+!@coeqwal - eflows
+define C_SAC257_MIF   	{std kind 'FLOW-MIN-INSTREAM' units 'CFS'} ! Bend Bridge - eflows 
+define C_SAC257_ADD     {std kind 'FLOW-ADDITIONAL-INSTREAM' units 'CFS'} 
+
 define C_SAC240_MIF     {std kind 'FLOW-MIN-INSTREAM' units 'CFS'} ! Red Bluff Diversion Dam
 define C_SAC240_ADD     {std kind 'FLOW-ADDITIONAL-INSTREAM' units 'CFS'}
 

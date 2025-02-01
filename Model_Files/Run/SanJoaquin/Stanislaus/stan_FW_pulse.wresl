@@ -43,4 +43,33 @@ goal setC_STS059cycle3 {C_STS059_mif < stanpulse}
 define stan_eflows {timeseries 'EFLOWS_STS011' kind 'FLOW-MIN-EFLOW' units 'TAF' convert 'CFS'} ! eflows for lower Stanislaus
 !define stan_eflows_dv {alias stan_eflows kind 'flow-min-eflow' units 'CFS'}
 
-goal setC_STS011cycle3 {C_STS011_MIF < stan_eflows}
+! @coeqwal - eflows - allow option from main file
+define stanmin_select {
+	case no_lowerstan_flow_reqt {
+	condition stanflow_opt < 0.5  ! stanflow_opt set in main file
+	value 0.
+	}
+	case lowerstan_eflows_v1 {
+	condition stanflow_opt < 1.5  ! stanflow_opt = 1 in main file 
+	value stan_eflows
+	}
+	case otherwise {
+	condition always
+	value 0.0}
+}
+
+goal setC_STS011cycle3 {C_STS011_MIF < stanmin_select } !stan_eflows}
+/*goal setC_STS011cycle1 {
+	lhs C_STS011_MIF
+	case no_lowerstan_flow_reqt2 {
+		condition stanflow_opt <0.5
+		rhs stanmin_select
+		lhs > rhs penalty 99999}
+	case lowerstan_eflows_v1 {
+		condition stanflow_opt < 1.5
+		rhs stanmin_select
+		lhs > rhs penalty 0
+		lhs < rhs penalty 99999}
+	}*/
+! save the stanmin_selection for reference
+define stanmin_pulse_selectdv {alias stanmin_select kind 'FLOW-MIN-EFLOW' units 'cfs'}

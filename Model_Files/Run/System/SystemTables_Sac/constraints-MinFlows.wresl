@@ -12,6 +12,9 @@ goal   C_LWSTNtotal  {C_LWSTN = C_LWSTN_MIF + C_LWSTN_ADD}
 
 goal   C_KSWCKtotal  {C_KSWCK = C_KSWCK_MIF + C_KSWCK_ADD}
 
+! @coeqwal - eflows
+goal C_SAC257total {C_SAC257 = C_SAC257_MIF + C_SAC257_ADD}  ! Bend Bridge - eflows
+
 goal   C_SAC240total {C_SAC240 = C_SAC240_MIF + C_SAC240_ADD}  ! Red Bluff Diversion Dam
 
 goal   C_SAC201total {C_SAC201 = C_SAC201_MIF + C_SAC201_ADD}  ! Hamilton City
