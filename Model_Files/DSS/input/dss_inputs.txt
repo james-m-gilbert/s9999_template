@@ -1,0 +1,9 @@
+coeqwal_s9999_SV_v0.0.dss:
+  - SV
+  - DWR DCR2023 Historical Adjusted Hydrology
+  - https://drive.google.com/file/d/1n2r447PamdvC1Lk-j5m7gxGR1hVjbuZi/view?usp=drive_link
+CS3_L2020_INIT_v4.dss:
+  - INIT
+  - DWR DCR2023 Historical Adjusted Hydrology
+  - https://drive.google.com/file/d/1rOn8ymROkr1qKI4BTpnxF_xqn3kckIsw/view?usp=drive_link
+
