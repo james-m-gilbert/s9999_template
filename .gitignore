@@ -10,7 +10,7 @@
 *.rows
 /Model_Files/Run/=ILP=
 *.par
-Model_Files/Run/CVGroundwater/Data/Restart/*.dat
+Model_Files\Run\CVGroundwater\Data\Restart\CVInitial_Restart_*.dat
 *.bin
 *.out
 
