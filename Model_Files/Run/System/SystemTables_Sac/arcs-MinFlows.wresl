@@ -11,6 +11,18 @@ Naming takes the following form:
 
 
 ! Instream flow requirements
+
+! added DB022025
+define C_SAC289_MIF  {std kind 'FLOW-MIN-INSTREAM' units 'CFS'}
+define C_SAC289_ADD  {std kind 'FLOW-ADDITIONAL-INSTREAM' units 'CFS'}
+
+! added DB022425
+!USGS 11272500 Merced R nr Stevinson
+define C_SAC148_MIF  {std kind 'FLOW-MIN-INSTREAM' units 'CFS'}
+define C_SAC148_ADD  {std kind 'FLOW-ADDITIONAL-INSTREAM' units 'CFS'}
+define C_SAC049_MIF  {std kind 'FLOW-MIN-INSTREAM' units 'CFS'}
+define C_SAC049_ADD  {std kind 'FLOW-ADDITIONAL-INSTREAM' units 'CFS'}
+
 define C_LWSTN_MIF  {std kind 'FLOW-MIN-INSTREAM' units 'CFS'}
 define C_LWSTN_ADD  {std kind 'FLOW-ADDITIONAL-INSTREAM' units 'CFS'}
 

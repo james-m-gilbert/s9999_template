@@ -9,6 +9,15 @@ Naming takes the following form:
 
 */
 
+! added DB022025
+!UPSTREAM OF CONFLUENCE WITH SAN JOAQUIN RIVER
+define C_TUO003_MIF  {std kind 'FLOW-MIN-INSTREAM' units 'CFS'}
+define C_TUO003_ADD  {std kind 'FLOW-ADDITIONAL-INSTREAM' units 'CFS'}
+! added DB022425
+!USGS 11272500 Merced R nr Stevinson
+define C_MCD005_MIF  {std kind 'FLOW-MIN-INSTREAM' units 'CFS'}
+define C_MCD005_ADD  {std kind 'FLOW-ADDITIONAL-INSTREAM' units 'CFS'}
+
 !==============================
 ! Stanislaus River below Goodwin
 !==============================

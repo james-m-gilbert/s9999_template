@@ -1,1 +1,3 @@
-1922/4/30 cycle 20 (sjr_pulse), setc_sts011cycle3 in constraint definition: stan_eflows is not defined before used.
+1921/10/31 cycle 14 (sjrbase), c_yub002total in constraint definition: c_yub002 is not defined before used.
+1921/10/31 cycle 14 (sjrbase), c_yub002total in constraint definition: c_yub002_mif is not defined before used.
+1921/10/31 cycle 14 (sjrbase), c_yub002total in constraint definition: c_yub002_add is not defined before used.

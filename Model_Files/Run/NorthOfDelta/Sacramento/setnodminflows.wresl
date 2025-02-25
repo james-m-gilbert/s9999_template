@@ -1,6 +1,86 @@
 ! This file sets the minimum required flows at Below Keswick, Nimbus and Whiskeytown Dams
 ! Sean Sou 10/3/01
 
+! Added DB022025 (SKIP FOR NOW)
+/*
+!define YUB002_eflows {timeseries ‘EFLOWS_YUB002’ kind ‘FLOW-MIN-EFLOW’ units ‘TAF’ convert ‘CFS’}
+define YUB002_eflows {value 0.0}
+define YUB002_flow_select {
+	case no_YUB002_flow_reqt {
+	condition YUB002flow_opt < 0.5  ! YUB002flow_opt set in main file
+	value 0.
+	}
+	case YUB002_eflows_v1 {
+	condition YUB002flow_opt < 1.5  ! YUB002flow_opt = 1 in main file 
+	value YUB002_eflows
+	}
+	case otherwise {
+	condition always
+	value 0.0}
+}
+goal setC_YUB002_MIF {C_YUB002_MIF < YUB002_flow_select}
+define YUB002_dv {alias YUB002_eflows kind 'flow-min-eflow' units 'CFS'}
+define YUB002_flow_selectdv {alias YUB002_flow_select kind 'FLOW-MIN-EFLOW' units 'CFS'}
+*/
+
+! Added DB022025
+!define SAC289_eflows {timeseries ‘EFLOWS_SAC289’ kind ‘FLOW-MIN-EFLOW’ units ‘TAF’ convert ‘CFS’}
+define SAC289_eflows {value 0.0}
+define SAC289_flow_select {
+	case no_SAC289_flow_reqt {
+	condition SAC289flow_opt < 0.5  ! SAC289flow_opt set in main file
+	value 0.
+	}
+	case SAC289_eflows_v1 {
+	condition SAC289flow_opt < 1.5  ! SAC289flow_opt = 1 in main file 
+	value SAC289_eflows
+	}
+	case otherwise {
+	condition always
+	value 0.0}
+}
+goal setC_SAC289_MIF {C_SAC289_MIF < SAC289_flow_select}
+define SAC289_dv {alias SAC289_eflows kind 'flow-min-eflow' units 'CFS'}
+define SAC289_flow_selectdv {alias SAC289_flow_select kind 'FLOW-MIN-EFLOW' units 'CFS'}
+
+!define SAC049_eflows {timeseries ‘EFLOWS_SAC049’ kind ‘FLOW-MIN-EFLOW’ units ‘TAF’ convert ‘CFS’}
+define SAC049_eflows {value 0.0}
+define SAC049_flow_select {
+	case no_SAC049_flow_reqt {
+	condition SAC049flow_opt < 0.5  ! SAC049flow_opt set in main file
+	value 0.
+	}
+	case SAC049_eflows_v1 {
+	condition SAC049flow_opt < 1.5  ! SAC049flow_opt = 1 in main file 
+	value SAC049_eflows
+	}
+	case otherwise {
+	condition always
+	value 0.0}
+}
+goal setC_SAC049_MIF {C_SAC049_MIF < SAC049_flow_select}
+define SAC049_dv {alias SAC049_eflows kind 'flow-min-eflow' units 'CFS'}
+define SAC049_flow_selectdv {alias SAC049_flow_select kind 'FLOW-MIN-EFLOW' units 'CFS'}
+
+!define SAC148_eflows {timeseries ‘EFLOWS_SAC148’ kind ‘FLOW-MIN-EFLOW’ units ‘TAF’ convert ‘CFS’}
+define SAC148_eflows {value 0.0}
+define SAC148_flow_select {
+	case no_SAC148_flow_reqt {
+	condition SAC148flow_opt < 0.5  ! SAC148flow_opt set in main file
+	value 0.
+	}
+	case SAC148_eflows_v1 {
+	condition SAC148flow_opt < 1.5  ! SAC148flow_opt = 1 in main file 
+	value SAC148_eflows
+	}
+	case otherwise {
+	condition always
+	value 0.0}
+}
+goal setC_SAC148_MIF {C_SAC148_MIF < SAC148_flow_select}
+define SAC148_dv {alias SAC148_eflows kind 'flow-min-eflow' units 'CFS'}
+define SAC148_flow_selectdv {alias SAC148_flow_select kind 'FLOW-MIN-EFLOW' units 'CFS'}
+
 goal meet_min_C_WKYTN { C_WKYTN_mif < clear_min}            ! Minimum required flows in Clear Creek below Whiskeytown Dam
 goal meet_min_C_NTOMA { C_NTOMA_mif + C_NTOMA_mif_SHRTG < minflowFMPAmer}       ! Minimum required flows in American River below Nimbus Dam
 goal meet_min_C_KSWCK { C_KSWCK_MIF1 < effective_c_KSWCKmin1} ! Minimum required flows in Sacramento River below Keswick Dam

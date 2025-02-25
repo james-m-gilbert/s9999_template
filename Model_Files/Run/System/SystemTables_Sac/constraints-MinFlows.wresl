@@ -8,9 +8,17 @@ Purpose:
 
 
 ! Instream flow requirements
+
+! added DB022025
+goal   C_SAC289total  {C_SAC289 = C_SAC289_MIF + C_SAC289_ADD}
+
 goal   C_LWSTNtotal  {C_LWSTN = C_LWSTN_MIF + C_LWSTN_ADD}
 
 goal   C_KSWCKtotal  {C_KSWCK = C_KSWCK_MIF + C_KSWCK_ADD}
+
+! added DB022425
+goal   C_SAC148total  {C_SAC148 = C_SAC148_MIF + C_SAC148_ADD}
+goal   C_SAC049total  {C_SAC049 = C_SAC049_MIF + C_SAC049_ADD}
 
 ! @coeqwal - eflows
 goal C_SAC257total {C_SAC257 = C_SAC257_MIF + C_SAC257_ADD}  ! Bend Bridge - eflows
@@ -122,3 +130,4 @@ goal C_CCH030minflow {C_CCH030_MIF < MF_CCH030}
 ! Cache Creek at Yolo USGS gage 11452500
 goal C_CCH012total  {C_CCH012=C_CCH012_MIF+C_CCH012_ADD}
 goal C_CCH012minflow    {C_CCH012_MIF < MF_CCH012}
+

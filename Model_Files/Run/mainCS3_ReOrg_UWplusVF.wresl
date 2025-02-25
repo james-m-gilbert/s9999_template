@@ -55,6 +55,14 @@ svar simulateANNSLR                {value 0.} !2 - 30 cm SLR,,1 - 15 cm SLR, 0 -
 svar stanflow_opt            {value 0}  ! 0 = existing Stan flow req; 1 = eflow opt1
 svar sacbendflow_opt         {value 0}  ! 0 = no flow req; 1 - eflow opt1
 
+! Added DB022025
+svar SAC289flow_opt         {value 0}  ! 0 = no flow req; 1 - eflow opt1
+svar SAC148flow_opt         {value 0}  ! 0 = no flow req; 1 - eflow opt1
+svar SAC049flow_opt         {value 0}  ! 0 = no flow req; 1 - eflow opt1
+svar YUB002flow_opt         {value 0}  ! 0 = no flow req; 1 - eflow opt1
+svar TUO003flow_opt         {value 0}  ! 0 = no flow req; 1 - eflow opt1
+svar MCD005flow_opt         {value 0}  ! 0 = no flow req; 1 - eflow opt1
+
 ! SGMA
 !*********************************************************************************
 
@@ -334,7 +342,7 @@ group Common_All {
     !include 'NorthOfDelta\Sacramento\NODOS\SOD\NODOS_L4Refuge_SOD.wresl'
     include 'SanJoaquin\WastewayOps.wresl'
     include 'SanJoaquin\IntegratedOperations\IntegratedOperationsCommon2.wresl'
-    include 'SanJoaquin\IntegratedOperations\IntegratedOperationsCyc1.wresl'    
+    include 'SanJoaquin\IntegratedOperations\IntegratedOperationsCyc1.wresl'   	
     include 'System\SystemTables_SJRWest\Weight-table.wresl'
     include 'System\SystemTables_SJREast\Weight-table.wresl'
     include 'DeliveryLogic\Output\deliv_short_cvp_s_sjrcyc.wresl'
@@ -1253,7 +1261,6 @@ define cyclenum {value cn_GW_SECOND}
     include 'CCWD\LVE\WHEELING_OFF.WRESL'
     include 'System\SystemTables_SOD\connectivity-table.wresl'
     include 'System\SystemTables_SOD\weight-table.wresl'
-
     include 'NorthOfDelta\Freeport\SCWA\scwa_excess_zero.wresl'    !ejc
     include 'CCWD\CalSimConnection_PreSetup.wresl'
     INCLUDE 'CAMPlus\Network\Oroville_forecast_save.wresl'

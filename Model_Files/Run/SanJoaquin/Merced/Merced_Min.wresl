@@ -470,4 +470,23 @@ define CowellFercFlow_AprSep{
 
 goal setCowellFercFlow_AprSep_dv   {CowellFercFlow_AprSep_dv = CowellFercFlow_AprSep}
 
+!! Added DB022425 new minflows
+!define MCD005_eflows {timeseries ‘EFLOWS_MCD005’ kind ‘FLOW-MIN-EFLOW’ units ‘TAF’ convert ‘CFS’}
+define MCD005_eflows {value 0.0}
+define MCD005_flow_select {
+	case no_MCD005_flow_reqt {
+	condition MCD005flow_opt < 0.5  ! MCD005flow_opt set in main file
+	value 0.
+	}
+	case MCD005_eflows_v1 {
+	condition MCD005flow_opt < 1.5  ! MCD005flow_opt = 1 in main file 
+	value MCD005_eflows
+	}
+	case otherwise {
+	condition always
+	value 0.0}
+}
+goal setC_MCD005_MIF {C_MCD005_MIF < MCD005_flow_select}
+define MCD005_dv {alias MCD005_eflows kind 'flow-min-eflow' units 'CFS'}
+define MCD005_flow_selectdv {alias MCD005_flow_select kind 'FLOW-MIN-EFLOW' units 'CFS'}
 
