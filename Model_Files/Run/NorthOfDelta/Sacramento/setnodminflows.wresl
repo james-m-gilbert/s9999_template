@@ -23,6 +23,26 @@ define YUB002_dv {alias YUB002_eflows kind 'flow-min-eflow' units 'CFS'}
 define YUB002_flow_selectdv {alias YUB002_flow_select kind 'FLOW-MIN-EFLOW' units 'CFS'}
 */
 
+! Added DB022725
+!define SAC122_eflows {timeseries ‘EFLOWS_SAC122’ kind ‘FLOW-MIN-EFLOW’ units ‘TAF’ convert ‘CFS’}
+define SAC122_eflows {value 0.0}
+define SAC122_flow_select {
+	case no_SAC122_flow_reqt {
+	condition SAC122flow_opt < 0.5  ! SAC122flow_opt set in main file
+	value 0.
+	}
+	case SAC122_eflows_v1 {
+	condition SAC122flow_opt < 1.5  ! SAC122flow_opt = 1 in main file 
+	value SAC122_eflows
+	}
+	case otherwise {
+	condition always
+	value 0.0}
+}
+goal setC_SAC122_MIF {C_SAC122_MIF < SAC122_flow_select}
+define SAC122_dv {alias SAC122_eflows kind 'flow-min-eflow' units 'CFS'}
+define SAC122_flow_selectdv {alias SAC122_flow_select kind 'FLOW-MIN-EFLOW' units 'CFS'}
+
 ! Added DB022025
 !define SAC289_eflows {timeseries ‘EFLOWS_SAC289’ kind ‘FLOW-MIN-EFLOW’ units ‘TAF’ convert ‘CFS’}
 define SAC289_eflows {value 0.0}

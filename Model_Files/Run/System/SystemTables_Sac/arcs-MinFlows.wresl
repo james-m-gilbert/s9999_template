@@ -12,6 +12,10 @@ Naming takes the following form:
 
 ! Instream flow requirements
 
+! added DB022725
+define C_SAC122_MIF  {std kind 'FLOW-MIN-INSTREAM' units 'CFS'}
+define C_SAC122_ADD  {std kind 'FLOW-ADDITIONAL-INSTREAM' units 'CFS'}
+
 ! added DB022025
 define C_SAC289_MIF  {std kind 'FLOW-MIN-INSTREAM' units 'CFS'}
 define C_SAC289_ADD  {std kind 'FLOW-ADDITIONAL-INSTREAM' units 'CFS'}
