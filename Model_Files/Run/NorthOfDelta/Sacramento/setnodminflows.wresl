@@ -136,3 +136,27 @@ define sacbend_flow_select {
 goal setC_SAC257_MIF {C_SAC257_MIF < sacbend_flow_select} !sacatbend_eflows} 
 
 define sacbend_flow_selectdv {alias sacbend_flow_select kind 'FLOW-MIN-EFLOW' units 'CFS'}
+
+
+! @coeqwal - eflows - setting flow requirement for TRN111 location 
+define trn111_eflows {timeseries 'EFLOWS_TRN111' kind 'FLOW-MIN-EFLOW' units 'CFS'}
+define trn111_dv {alias trn111_eflows kind 'flow-min-eflow' units 'CFS'} 
+
+! @coeqwal - eflows - allow option from main file
+define trn111_flow_select {
+	case no_trn111_flow_reqt {
+	condition trn111_flow_opt < 0.5  ! trn111_flow_opt set in main file
+	value 0.
+	}
+	case trn111_eflows_v1 {
+	condition trn111_flow_opt < 1.5  ! trn111_flow_opt = 1 in main file 
+	value trn111_eflows
+	}
+	case otherwise {
+	condition always
+	value 0.0}
+}
+
+goal setC_TRN111_MIF {C_TRN111_MIF < trn111_flow_select} ! Enforce minimum flow
+
+define trn111_flow_selectdv {alias trn111_flow_select kind 'FLOW-MIN-EFLOW' units 'CFS'}
