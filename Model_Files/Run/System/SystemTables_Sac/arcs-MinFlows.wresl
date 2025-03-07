@@ -58,6 +58,10 @@ define C_SAC017_ADD     {std kind 'FLOW-ADDITIONAL-INSTREAM' units 'CFS'}
 define C_FTR003_MIF     {std kind 'FLOW-MIN-INSTREAM' units 'CFS'}
 define C_FTR003_ADD     {std kind 'FLOW-ADDITIONAL-INSTREAM' units 'CFS'}
 
+! @coeqwal - new eflows location 
+define C_FTR029_MIF     {std kind 'FLOW-MIN-INSTREAM' units 'CFS'}
+define C_FTR029_ADD     {std kind 'FLOW-ADDITIONAL-INSTREAM' units 'CFS'}
+
 define C_FTR039_MIF     {std kind 'FLOW-MIN-INSTREAM' units 'CFS'}
 define C_FTR039_ADD     {std kind 'FLOW-ADDITIONAL-INSTREAM' units 'CFS'}
 

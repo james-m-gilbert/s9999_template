@@ -180,11 +180,104 @@ define minflowFeaMouth {
 
 define minflowFeather {timeseries kind 'FLOW-MIN-REQUIRED' units 'CFS'}
 
+! @coeqwal - defining new eflows requirements
+!define FTR003_eflows {timeseries ‘EFLOWS_FTR003’ kind ‘FLOW-MIN-EFLOW’ units ‘TAF’ convert ‘CFS’}
+define FTR003_eflows {value 0.0}
+
+!define FTR029_eflows {timeseries ‘EFLOWS_FTR029’ kind ‘FLOW-MIN-EFLOW’ units ‘TAF’ convert ‘CFS’}
+define FTR029_eflows {value 0.0}
+
+define minflowFeaMouth {
+	case NoFlowReqt {  ! set min flow reqt to 0
+		condition FTR003flow_opt == 0
+		value 0.0 }
+	case ExistingFlowReqt { ! set min flow according to existing flow reqts
+		condition FTR003flow_opt == -1.0
+		value minflowFeather }
+	case eflow_opt1 {  ! set min flow to max of  eflow scenario and existing flow reqts
+		condition FTR003flow_opt == 1.0
+		value max(minflowFeather, FTR003_eflows) }
+	case eflow_opt1b { ! set min flwo to just eflow scenario - disregard existing flow reqt
+		condition FTR003flow_opt == 1.5
+		value FTR003_eflows }
+	! case .... add other options as needed
+	case otherwise { ! default to existing flow reqts
+		condition always 
+		value minflowFeather	}
+}
+
+		
+! save the feather min flow at mouth data for reference
+define minflowFeaMouth_dv {alias minflowFeaMouth kind 'FLOW-MIN-EFLOW' units 'cfs'}
+
 define minflow_C_FTR068 {select minflow from minflow where C_arc=200,month=month}
 goal mnflw_C_FTR068 {C_FTR068_MIF < minflow_C_FTR068}
-goal minflow_C_FTR059 {C_FTR059_MIF < max(MF_FTR059,minflowFeather)} ! below Thermalito return
-goal minflow_C_FTR039 {C_FTR039_MIF < minflowFeather} ! below Sunset Pumps
-goal minflow_C_FTR003 {C_FTR003_MIF < minflowFeather} ! at the mouth
+! @coeqwal - replaced following 3 goals with the conditional/swich goals below
+!goal minflow_C_FTR059 {C_FTR059_MIF < max(MF_FTR059,minflowFeather)} ! below Thermalito return
+!goal minflow_C_FTR039 {C_FTR039_MIF < minflowFeather} ! below Sunset Pumps
+!goal minflow_C_FTR003 {C_FTR003_MIF < minflowFeather} ! at the mouth
+
+! @coeqwal-jmg: need to account for different flow reqts up an down feather under
+! the eflows scenarios - conditional goals for each flow location
+goal minflow_C_FTR059 {
+    lhs C_FTR059_MIF
+    case NoFlowReqt {
+      condition FTR059flow_opt == 0
+      rhs       0.0}
+	case ExistingFlowReqt {
+	  condition FTR059flow_opt == -1.0
+	  rhs max(MF_FTR059,minflowFeather)} ! below Thermalito return
+	}
+	case otherwise { ! default to existing flow reqts
+	  condition always
+	  rhs max(MF_FTR059,minflowFeather)} 
+}
+
+! c_ftr039 - below Sunset Pumps
+goal minflow_C_FTR039 {
+    lhs C_FTR039_MIF
+    case NoFlowReqt {
+      condition FTR039flow_opt == 0
+      rhs       0.0}
+	case ExistingFlowReqt {
+	  condition FTR039flow_opt == -1.0
+	  rhs minflowFeather} 
+	}
+	case otherwise { ! default to existing flow reqts
+	  condition always
+	  rhs minflowFeather} 
+}
+
+! c_ftr029 - new eflows location, no existing minflow reqt
+goal minflow_C_FTR029 {
+    lhs C_FTR029_MIF
+    case NoFlowReqt {
+      condition FTR029flow_opt == 0
+      rhs       0.0}
+	case ExistingFlowReqt {
+	  condition FTR003flow_opt == -1.0
+	  rhs minflowFeather} 
+	case eflows_opt1 {
+		condition FTR029flow_opt == 1
+		rhs FTR029_eflows }
+	case otherwise { ! default to zero 
+	  condition always
+	  rhs 0.0} 
+}
+
+! c_ftr003 - new eflows location, also an existing minflow reqt
+goal minflow_C_FTR003 {
+    lhs C_FTR003_MIF
+    case NoFlowReqt {
+      condition FTR003flow_opt == 0
+      rhs       0.0}
+	case eflows_opt1 {
+		condition FTR029flow_opt == 1
+		rhs FTR029_eflows }
+	case otherwise { ! default to zero 
+	  condition always
+	  rhs 0.0} 
+}
 
 ! Oroville would be operated only to satify minimum instream and delta conditions if less than 1.0 MAF - Aaron Miller 5/21/08
 define C_OROVL_IBU {std kind 'flow-channel' units 'cfs'}  !Weight with -3000 to replace commented out constraint oro_releases.

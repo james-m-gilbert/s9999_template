@@ -571,6 +571,7 @@ Objective obj_SYS = {
 [C_FTR059_MIF, 5500],   ! Feather River below Thermalito return
 [C_FTR059_ADD2,  -6],   ! Feather River below Thermalito return
 [C_FTR039_MIF, 5500],   ! Feather River below Sunset Pumps
+[C_FTR029_MIF, 5500],   ! Feather River - eflows - @coeqwal
 [C_FTR003_MIF, 5500],   ! Feather River near Verona
 
 [C_NTOMA_MIF,  5500],   ! Lower American River below Natoma

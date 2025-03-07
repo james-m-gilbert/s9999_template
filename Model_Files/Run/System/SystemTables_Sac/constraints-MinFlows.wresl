@@ -42,6 +42,8 @@ goal   C_FTR039total {C_FTR039 = C_FTR039_MIF + C_FTR039_ADD}
 
 goal   C_FTR003total {C_FTR003 = C_FTR003_MIF + C_FTR003_ADD}
 
+goal   C_FTR029total {C_FTR029 = C_FTR029_MIF + C_FTR029_ADD} !@coeqal eflows
+
 goal   C_FTR059total {C_FTR059 = C_FTR059_MIF + C_FTR059_ADD}
 
 goal   C_FTR068total {C_FTR068 = C_FTR068_MIF + C_FTR068_ADD}  ! Low Flow Channel

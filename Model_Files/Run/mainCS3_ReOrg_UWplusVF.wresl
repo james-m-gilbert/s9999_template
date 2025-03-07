@@ -65,6 +65,10 @@ svar SAC049flow_opt         {value 0}  ! 0 = no flow req; 1 - eflow opt1
 svar TUO003flow_opt         {value 0}  ! 0 = no flow req; 1 - eflow opt1
 svar MCD005flow_opt         {value 0}  ! 0 = no flow req; 1 - eflow opt1
 
+svar FTR003flow_opt			{value -1}  !  -1= existing flow reqt, 0 = no flow req (this removes existing flow reqt);; 1 - eflow opt1 on top of existing, 1.5 - just eflow opt1
+svar FTR029flow_opt         {value  0}  ! 0 = no flow req (this removes existing flow reqt);; 1 - eflow opt1 
+svar FTR039flow_opt 		{value -1}  ! a loc with existing flow reqt (like FTR003), but no eflows -> -1 = existing flow reqt; 0 = no flow reqt
+
 ! SGMA
 !*********************************************************************************
 
