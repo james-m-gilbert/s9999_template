@@ -668,6 +668,11 @@ define C_TTC002     {std kind 'CHANNEL' units 'CFS'} !Boundary between Upper Fea
 define C_TRNTY      {std kind 'CHANNEL' units 'CFS'}
 define C_LWSTN  {std kind 'CHANNEL' units 'CFS'}  !C_LWSTN_NCF {lower 0 upper 6000  kind 'CHANNEL' units 'CFS'} !constraints-FloodSpill.wresl !@jmg 2017v13
 define C_TRN111 {std kind 'CHANNEL' units 'CFS'}
+define C_TRN111_MIF {std kind 'FLOW-MIN-INSTREAM' units 'CFS'}
+define C_TRN111_ADD {std kind 'FLOW-ADDITIONAL-INSTREAM' units 'CFS'}
+! arc C_TRN111_MIF { from 'TRN111' to 'TRN111' kind 'CHANNEL' }
+! arc C_TRN111_ADD { from 'TRN111' to 'TRN111' kind 'CHANNEL' }
+
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

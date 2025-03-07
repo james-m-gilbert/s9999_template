@@ -23,6 +23,26 @@ define OrovilleFNF_UpdateMarch {
        case Rest     {condition always value OrovilleFNF_UpdateMarchdv(-1) }}
 goal setOrovilleFNF_UpdateMarchdv {OrovilleFNF_UpdateMarchdv = OrovilleFNF_UpdateMarch}
 
+! Trinity River Minimum Flow Requirement
+define C_TRN111 {std kind 'CHANNEL' units 'CFS'}
+define C_TRN111_MIF {std kind 'FLOW-MIN-INSTREAM' units 'CFS'}
+define C_TRN111_ADD {std kind 'FLOW-ADDITIONAL-INSTREAM' units 'CFS'}
+define C_TRN111_SHTG {std kind 'FLOW-SHORTAGE-INSTREAM' units 'CFS'} 
+
+goal continuityTRN111 {C_TRN111 = C_TRN111_MIF + C_TRN111_ADD}
+
+define minflow_TRN111 {value 0.0} ! Placeholder until table is found
+
+define minflow_TRN111dv {alias minflow_TRN111 kind 'MINFLOW' units 'CFS'}  
+goal setminflow_TRN111dv {minflow_TRN111dv = minflow_TRN111}
+
+define TRN111_flow_select {
+  case NoFlowReq {condition TRN111_flow_opt < 0.5 value 0.}
+  case TRN111FlowV1 {condition TRN111_flow_opt < 1.5 value minflow_TRN111}
+  case Otherwise {condition always value 0.}
+}
+
+goal setC_TRN111_MIF {C_TRN111_MIF < TRN111_flow_select}
 
 !============================================================
 ! North Fork Feather River
