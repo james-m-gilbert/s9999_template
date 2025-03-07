@@ -254,9 +254,6 @@ goal minflow_C_FTR029 {
     case NoFlowReqt {
       condition FTR029flow_opt == 0
       rhs       0.0}
-	case ExistingFlowReqt {
-	  condition FTR003flow_opt == -1.0
-	  rhs minflowFeather} 
 	case eflows_opt1 {
 		condition FTR029flow_opt == 1
 		rhs FTR029_eflows }
@@ -272,11 +269,14 @@ goal minflow_C_FTR003 {
       condition FTR003flow_opt == 0
       rhs       0.0}
 	case eflows_opt1 {
-		condition FTR029flow_opt == 1
-		rhs FTR029_eflows }
-	case otherwise { ! default to zero 
+	  condition FTR003flow_opt == 1
+	  rhs max(minflowFeather, FTR003_eflows) }  ! set reqt to max of existing and eflows option 
+	case eflows_opt1b {
+	  condition FTR003flow_opt ==1.5  ! set reqt to just eflows (disregard existing)
+	  rhs FTR003_eflows   	}
+	case otherwise { ! default to existing minflow reqt
 	  condition always
-	  rhs 0.0} 
+	  rhs minflowFeather} 
 }
 
 ! Oroville would be operated only to satify minimum instream and delta conditions if less than 1.0 MAF - Aaron Miller 5/21/08
