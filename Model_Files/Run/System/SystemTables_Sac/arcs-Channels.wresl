@@ -661,7 +661,6 @@ define C_THM005 {std kind 'CHANNEL' units 'CFS'}
 define C_TTC002     {std kind 'CHANNEL' units 'CFS'} !Boundary between Upper Feather and main module
 
 
-
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!! Trinity River   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -672,6 +671,7 @@ define C_TRN111_MIF {std kind 'FLOW-MIN-INSTREAM' units 'CFS'}
 define C_TRN111_ADD {std kind 'FLOW-ADDITIONAL-INSTREAM' units 'CFS'}
 ! arc C_TRN111_MIF { from 'TRN111' to 'TRN111' kind 'CHANNEL' }
 ! arc C_TRN111_ADD { from 'TRN111' to 'TRN111' kind 'CHANNEL' }
+
 
 
 

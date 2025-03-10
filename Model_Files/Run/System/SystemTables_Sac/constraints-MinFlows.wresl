@@ -23,6 +23,10 @@ goal   C_SAC049total  {C_SAC049 = C_SAC049_MIF + C_SAC049_ADD}
 ! added DB022725
 goal   C_SAC122total  {C_SAC122 = C_SAC122_MIF + C_SAC122_ADD}
 
+goal   C_TRN111total  {C_TRN111 = C_TRN111_MIF + C_TRN111_ADD}
+
+
+
 ! @coeqwal - eflows
 goal C_SAC257total {C_SAC257 = C_SAC257_MIF + C_SAC257_ADD}  ! Bend Bridge - eflows
 
