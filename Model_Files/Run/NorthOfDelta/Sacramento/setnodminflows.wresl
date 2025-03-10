@@ -139,7 +139,7 @@ define sacbend_flow_selectdv {alias sacbend_flow_select kind 'FLOW-MIN-EFLOW' un
 
 
 ! @coeqwal - eflows - setting flow requirement for TRN111 location 
-define trn111_eflows {timeseries 'EFLOWS_TRN111' kind 'FLOW-MIN-EFLOW' units 'CFS'}
+define trn111_eflows {value 0.0} ! TODO - update when DSS data is available
 define trn111_dv {alias trn111_eflows kind 'flow-min-eflow' units 'CFS'} 
 
 ! @coeqwal - eflows - allow option from main file
