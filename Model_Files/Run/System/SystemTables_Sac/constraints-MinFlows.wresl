@@ -25,6 +25,7 @@ goal   C_SAC122total  {C_SAC122 = C_SAC122_MIF + C_SAC122_ADD}
 
 goal   C_TRN111total  {C_TRN111 = C_TRN111_MIF + C_TRN111_ADD}
 
+goal   C_MOK028total  {C_MOK028 = C_MOK028_MIF + C_MOK028_ADD}
 
 
 ! @coeqwal - eflows

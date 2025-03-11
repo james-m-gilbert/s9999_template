@@ -139,7 +139,7 @@ define sacbend_flow_selectdv {alias sacbend_flow_select kind 'FLOW-MIN-EFLOW' un
 
 
 ! @coeqwal - eflows - setting flow requirement for TRN111 location 
-define trn111_eflows {value 0.0} ! TODO - update when DSS data is available
+define trn111_eflows {value 0.0} ! TO DO - update when DSS data is available
 define trn111_dv {alias trn111_eflows kind 'flow-min-eflow' units 'CFS'} 
 
 ! @coeqwal - eflows - allow option from main file
@@ -160,3 +160,28 @@ define trn111_flow_select {
 goal setC_TRN111_MIF {C_TRN111_MIF < trn111_flow_select} ! Enforce minimum flow
 
 define trn111_flow_selectdv {alias trn111_flow_select kind 'FLOW-MIN-EFLOW' units 'CFS'}
+
+
+! @coeqwal - eflows - setting flow requirement for MOK028 location 
+! define mok028_eflows {timeseries 'EFLOWS_MOK028' kind 'FLOW-MIN-EFLOW' units 'TAF'convert 'CFS'}
+define mok028_eflows {value 0.0} 
+define mok028_dv {alias mok028_eflows kind 'flow-min-eflow' units 'CFS'} 
+
+! @coeqwal - eflows - allow option from main file
+define mok028_flow_select {
+	case no_mok028_flow_reqt {
+	condition mok028_flow_opt < 0.5  ! mok028_flow_opt set in main file
+	value 0.
+	}
+	case mok028_eflows_v1 {
+	condition mok028_flow_opt < 1.5  ! mok028_flow_opt = 1 in main file 
+	value mok028_eflows
+	}
+	case otherwise {
+	condition always
+	value 0.0}
+}
+
+goal setC_MOK028_MIF {C_MOK028_MIF < mok028_flow_select} ! Enforce minimum flow
+
+define mok028_flow_selectdv {alias mok028_flow_select kind 'FLOW-MIN-EFLOW' units 'CFS'}
