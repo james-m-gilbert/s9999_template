@@ -44,6 +44,52 @@ define TRN111_flow_select {
 
 goal setC_TRN111_MIF {C_TRN111_MIF < TRN111_flow_select}
 
+
+! Sacramento River(SAC122) Minimum Flow Requirement
+define C_SAC122 {std kind 'CHANNEL' units 'CFS'}
+define C_SAC122_MIF {std kind 'FLOW-MIN-INSTREAM' units 'CFS'}
+define C_SAC122_ADD {std kind 'FLOW-ADDITIONAL-INSTREAM' units 'CFS'}
+define C_SAC122_SHTG {std kind 'FLOW-SHORTAGE-INSTREAM' units 'CFS'}
+
+goal continuitySAC122 {C_SAC122 = C_SAC122_MIF + C_SAC122_ADD}
+
+define minflow_SAC122 {value 0.0} 
+
+define minflow_SAC122dv {alias minflow_SAC122 kind 'MINFLOW' units 'CFS'}  
+goal setminflow_SAC122dv {minflow_SAC122dv = minflow_SAC122}
+
+define SAC122_flow_select {
+  case NoFlowReq {condition SAC122flow_opt < 0.5 value 0.}
+  case SAC122FlowV1 {condition SAC122flow_opt < 1.5 value minflow_SAC122}
+  case Otherwise {condition always value 0.}
+}
+
+goal setC_SAC122_MIF {C_SAC122_MIF < SAC122_flow_select}
+
+
+! Mokelumne River Minimum Flow Requirement
+define C_MOK028 {std kind 'CHANNEL' units 'CFS'}
+define C_MOK028_MIF {std kind 'FLOW-MIN-INSTREAM' units 'CFS'}
+define C_MOK028_ADD {std kind 'FLOW-ADDITIONAL-INSTREAM' units 'CFS'}
+define C_MOK028_SHTG {std kind 'FLOW-SHORTAGE-INSTREAM' units 'CFS'}
+
+goal continuityMOK028 {C_MOK028 = C_MOK028_MIF + C_MOK028_ADD}
+
+define minflow_MOK028 {value 0.0} 
+
+define minflow_MOK028dv {alias minflow_MOK028 kind 'MINFLOW' units 'CFS'}  
+goal setminflow_MOK028dv {minflow_MOK028dv = minflow_MOK028}
+
+define MOK028_flow_select {
+  case NoFlowReq {condition MOK028_flow_opt < 0.5 value 0.}
+  case MOK028FlowV1 {condition MOK028_flow_opt < 1.5 value minflow_MOK028}
+  case Otherwise {condition always value 0.}
+}
+
+goal setC_MOK028_MIF {C_MOK028_MIF < MOK028_flow_select}
+
+
+
 !============================================================
 ! North Fork Feather River
 !============================================================
