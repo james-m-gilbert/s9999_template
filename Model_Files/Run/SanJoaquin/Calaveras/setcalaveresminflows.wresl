@@ -1,0 +1,26 @@
+! This file sets the minimum required flows for Calaveres River: SJR East
+! Added by Sharma 3/13/2025
+
+! @coeqwal - eflows - setting flow reqt for Calaveres River
+
+define Calaveres_River_SJR_eflows {value 0.0}!{timeseries 'EFLOWS_CLV004' kind 'FLOW-MIN-EFLOW' units 'TAF' convert 'CFS'}
+
+define Calaveres_River_SJR_flow_select {
+	case no_Calaveres_River_SJR_flow_reqt {
+	condition Calaveres_River_SJRflow_opt < 0.5  ! Calaveres_River_SJRflow_opt set in main file
+	value 0.
+	}
+	case Calaveres_River_SJR_eflows_v1 {
+	condition Calaveres_River_SJRflow_opt < 1.5  ! Calaveres_River_SJRflow_opt = 1 in main file 
+	value Calaveres_River_SJR_eflows
+	}
+	case otherwise {
+	condition always
+	value 0.0}
+}
+
+goal setC_CLV004_MIF {C_CLV004_MIF < Calaveres_River_SJR_flow_select} !Calaveres_River_SJR_eflows}
+
+define Calaveres_River_SJR_dv {alias Calaveres_River_SJR_eflows kind 'flow-min-eflow' units 'CFS'}
+
+define Calaveres_River_SJR_flow_selectdv {alias Calaveres_River_SJR_flow_select kind 'FLOW-MIN-EFLOW' units 'CFS'}

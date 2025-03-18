@@ -21,6 +21,8 @@ goal   C_MCD005total  {C_MCD005 = C_MCD005_MIF + C_MCD005_ADD}
 goal   C_STS059total {C_STS059 = C_STS059_MIF + C_STS059_EXC}
 
 ! @coeqwal - eflows
+goal C_CLV004total {C_CLV004 = C_CLV004_MIF + C_CLV004_ADD}  ! Calaveres River - eflows
+
 goal C_STS011total {C_STS011 = C_STS011_EXC + C_STS011_MIF }
 
 !==============================

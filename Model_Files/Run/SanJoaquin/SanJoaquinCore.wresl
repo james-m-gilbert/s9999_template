@@ -13,3 +13,5 @@ Core San Joaquin River Model Code for use for dynamic operations (Global Resolut
     include 'Calaveras\Calaveras_Ops.wresl'
     include 'Delta\DWSP_COSMA_Ops.wresl' 
     include 'WaterQuality\wq_defs.wresl'
+
+    include 'Calaveras\setCalaveresminflows.wresl'

@@ -34,6 +34,13 @@ define C_KSWCK_MIF  {std kind 'FLOW-MIN-INSTREAM' units 'CFS'}
 define C_KSWCK_ADD  {std kind 'FLOW-ADDITIONAL-INSTREAM' units 'CFS'}
 
 !@coeqwal - eflows
+define C_CLR011_MIF   	{std kind 'FLOW-MIN-INSTREAM' units 'CFS'} ! Clear Creek - eflows 
+define C_CLR011_ADD     {std kind 'FLOW-ADDITIONAL-INSTREAM' units 'CFS'}
+
+define C_FTR029_MIF   	{std kind 'FLOW-MIN-INSTREAM' units 'CFS'} ! Feather River SAC - eflows 
+define C_FTR029_ADD     {std kind 'FLOW-ADDITIONAL-INSTREAM' units 'CFS'}
+
+
 define C_SAC257_MIF   	{std kind 'FLOW-MIN-INSTREAM' units 'CFS'} ! Bend Bridge - eflows 
 define C_SAC257_ADD     {std kind 'FLOW-ADDITIONAL-INSTREAM' units 'CFS'} 
 

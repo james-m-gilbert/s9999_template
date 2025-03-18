@@ -32,6 +32,10 @@ define C_STS017_MIF  {std kind 'FLOW-MIN-INSTREAM' units 'CFS'}
 define C_STS017_EXC  {std kind 'FLOW-EXCESS-INSTREAM' units 'CFS'}
 
 ! @coeqwal - eflows
+define C_CLV004_MIF   	{std kind 'FLOW-MIN-INSTREAM' units 'CFS'} ! Calaveres River - eflows 
+define C_CLV004_ADD     {std kind 'FLOW-ADDITIONAL-INSTREAM' units 'CFS'}
+
+
 define C_STS011_MIF  {std kind 'FLOW-MIN-INSTREAM' units 'CFS'}
 define C_STS011_EXC  {std kind 'FLOW-EXCESS-INSTREAM' units 'CFS'}
 

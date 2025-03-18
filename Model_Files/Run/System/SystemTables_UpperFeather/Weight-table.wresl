@@ -13,9 +13,7 @@ Objective obj_SYS_FEAT = {
 !====================================================
 !Instream Flow Requirement Weights
 !====================================================
-[C_TRN111_MIF, 55000], ! Weight for Trinity River min flow
-[C_SAC122_MIF, 55000], ! Weight for Sacramento River min flow  
-[C_MOK028_MIF, 55000], ! Weight for Mokelumne River min flow  
+
 [C_NFF029_MIF, 		11000],
 [C_NFF035_MIF, 		11000], 
 [C_GZL008_MIF, 		22000], !needs to be higher than C_NFF035_MIF + D_NFF035_CST004

@@ -23,12 +23,11 @@ goal   C_SAC049total  {C_SAC049 = C_SAC049_MIF + C_SAC049_ADD}
 ! added DB022725
 goal   C_SAC122total  {C_SAC122 = C_SAC122_MIF + C_SAC122_ADD}
 
-goal   C_TRN111total  {C_TRN111 = C_TRN111_MIF + C_TRN111_ADD}
-
-goal   C_MOK028total  {C_MOK028 = C_MOK028_MIF + C_MOK028_ADD}
-
-
 ! @coeqwal - eflows
+goal C_CLR011total {C_CLR011 = C_CLR011_MIF + C_CLR011_ADD}  ! Clear Creek - eflows
+
+goal C_FTR029total {C_FTR029 = C_FTR029_MIF + C_FTR029_ADD}  ! Feather River SAC - eflows
+
 goal C_SAC257total {C_SAC257 = C_SAC257_MIF + C_SAC257_ADD}  ! Bend Bridge - eflows
 
 goal   C_SAC240total {C_SAC240 = C_SAC240_MIF + C_SAC240_ADD}  ! Red Bluff Diversion Dam
