@@ -43,3 +43,7 @@ define C_MOK050_ADD {std kind 'FLOW-ADD-INSTREAM' units 'CFS'}
 ! Mokelumne River below RiverMile 35
 define C_MOK034_MIF {std kind 'FLOW-MIN-INSTREAM' units 'CFS'}
 define C_MOK034_ADD {std kind 'FLOW-ADD-INSTREAM' units 'CFS'}
+
+! @coeqwal - eflows Mokelumne River Minimum Flow Requirement
+define C_MOK028_MIF {std kind 'FLOW-MIN-INSTREAM' units 'CFS'}
+define C_MOK028_ADD {std kind 'FLOW-ADDITIONAL-INSTREAM' units 'CFS'}

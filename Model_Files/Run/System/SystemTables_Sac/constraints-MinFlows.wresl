@@ -9,27 +9,27 @@ Purpose:
 
 ! Instream flow requirements
 
-! added DB022025
+! added DB022025 @coeqwal - eflows
 goal   C_SAC289total  {C_SAC289 = C_SAC289_MIF + C_SAC289_ADD}
 
 goal   C_LWSTNtotal  {C_LWSTN = C_LWSTN_MIF + C_LWSTN_ADD}
 
 goal   C_KSWCKtotal  {C_KSWCK = C_KSWCK_MIF + C_KSWCK_ADD}
 
-! added DB022425
+! @coeqwal - eflows added DB022425
 goal   C_SAC148total  {C_SAC148 = C_SAC148_MIF + C_SAC148_ADD}
 goal   C_SAC049total  {C_SAC049 = C_SAC049_MIF + C_SAC049_ADD}
 
-! added DB022725
+! @coeqwal - eflows - added DB022725
 goal   C_SAC122total  {C_SAC122 = C_SAC122_MIF + C_SAC122_ADD}
-
+! @coeqwal - eflows
 goal   C_TRN111total  {C_TRN111 = C_TRN111_MIF + C_TRN111_ADD}
-
-goal   C_MOK028total  {C_MOK028 = C_MOK028_MIF + C_MOK028_ADD}
-
 
 ! @coeqwal - eflows
 goal C_SAC257total {C_SAC257 = C_SAC257_MIF + C_SAC257_ADD}  ! Bend Bridge - eflows
+! @coeqwal - eflows
+goal SP_SAC159_BTC003total {SP_SAC159_BTC003 = SP_SAC159_BTC003_MIF + SP_SAC159_BTC003_ADD} ! Moulton Weir overflows
+
 
 goal   C_SAC240total {C_SAC240 = C_SAC240_MIF + C_SAC240_ADD}  ! Red Bluff Diversion Dam
 

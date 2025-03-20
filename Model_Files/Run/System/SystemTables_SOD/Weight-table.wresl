@@ -563,7 +563,7 @@ Objective obj_SYS = {
 [C_SAC097_MIF, 4950],   ! Sacramento River NCP
 [C_SAC041_MIF, 2000.10],   ! Sacramento River at Hood
 [C_SAC017_MIF, 5500],   ! Sacramento River at Rio Vista
-
+[SP_SAC159_BTC003_MIF, 5500], ! Sac spill over Moulton Weir 
 [C_CSL005_mif, 2000],   ! Cache Slough at mile 5
 
 [C_FTR068_MIF, 5500],   ! Feather River low flow channel

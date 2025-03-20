@@ -12,6 +12,7 @@ Naming takes the following form:
 
 ! Instream flow requirements
 
+! @coeqwal - eflows locations  - sac122, sac148, sac257, sac289, 
 ! added DB022725
 define C_SAC122_MIF  {std kind 'FLOW-MIN-INSTREAM' units 'CFS'}
 define C_SAC122_ADD  {std kind 'FLOW-ADDITIONAL-INSTREAM' units 'CFS'}
@@ -21,11 +22,18 @@ define C_SAC289_MIF  {std kind 'FLOW-MIN-INSTREAM' units 'CFS'}
 define C_SAC289_ADD  {std kind 'FLOW-ADDITIONAL-INSTREAM' units 'CFS'}
 
 ! added DB022425
-!USGS 11272500 Merced R nr Stevinson
 define C_SAC148_MIF  {std kind 'FLOW-MIN-INSTREAM' units 'CFS'}
 define C_SAC148_ADD  {std kind 'FLOW-ADDITIONAL-INSTREAM' units 'CFS'}
 define C_SAC049_MIF  {std kind 'FLOW-MIN-INSTREAM' units 'CFS'}
 define C_SAC049_ADD  {std kind 'FLOW-ADDITIONAL-INSTREAM' units 'CFS'}
+
+!@coeqwal - eflows - added jmg
+define C_SAC257_MIF   	{std kind 'FLOW-MIN-INSTREAM' units 'CFS'} ! Bend Bridge - eflows 
+define C_SAC257_ADD     {std kind 'FLOW-ADDITIONAL-INSTREAM' units 'CFS'} 
+
+!@coeqwal - eflows - specifying spills over Moulton Weir into Butte Basin
+define SP_SAC159_BTC003_MIF  {std kind 'FLOW-MIN-INSTREAM' units 'CFS'} ! moulton weir spill eflows
+define SP_SAC159_BTC003_ADD  {std kind 'FLOW-ADDITIONAL-INSTREAM' units 'CFS'}
 
 define C_LWSTN_MIF  {std kind 'FLOW-MIN-INSTREAM' units 'CFS'}
 define C_LWSTN_ADD  {std kind 'FLOW-ADDITIONAL-INSTREAM' units 'CFS'}
@@ -33,9 +41,7 @@ define C_LWSTN_ADD  {std kind 'FLOW-ADDITIONAL-INSTREAM' units 'CFS'}
 define C_KSWCK_MIF  {std kind 'FLOW-MIN-INSTREAM' units 'CFS'}
 define C_KSWCK_ADD  {std kind 'FLOW-ADDITIONAL-INSTREAM' units 'CFS'}
 
-!@coeqwal - eflows
-define C_SAC257_MIF   	{std kind 'FLOW-MIN-INSTREAM' units 'CFS'} ! Bend Bridge - eflows 
-define C_SAC257_ADD     {std kind 'FLOW-ADDITIONAL-INSTREAM' units 'CFS'} 
+
 
 define C_SAC240_MIF     {std kind 'FLOW-MIN-INSTREAM' units 'CFS'} ! Red Bluff Diversion Dam
 define C_SAC240_ADD     {std kind 'FLOW-ADDITIONAL-INSTREAM' units 'CFS'}

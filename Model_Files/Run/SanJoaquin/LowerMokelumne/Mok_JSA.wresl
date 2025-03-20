@@ -53,3 +53,29 @@ goal setCamancheMin   {C_CMCHE_MIF < minflow_C_CMCHE + AddFlowReq}
 goal setNSJWCDMin     {C_MOK050_MIF < minflow_Woodbridge}
 goal setWoodbridgeMin {C_MOK034_MIF < minflow_Woodbridge}
 
+
+! @coeqwal - eflows - setting flow requirement for MOK028 location 
+define minflow_MOK028 {value 0.0} 
+! define minflow_MOK028 {timeseries 'EFLOWS_MOK028' kind 'FLOW-MIN-EFLOW' units 'TAF'convert 'CFS'}
+
+define minflow_MOK028dv {alias minflow_MOK028 kind 'MINFLOW' units 'CFS'}  
+goal setminflow_MOK028dv {minflow_MOK028dv = minflow_MOK028}
+
+! @coeqwal - eflows - allow option from main file
+define mok028_flow_select {
+	case no_mok028_flow_reqt {
+	condition mok028_flow_opt < 0.5  ! mok028_flow_opt set in main file
+	value 0.
+	}
+	case mok028_eflows_v1 {
+	condition mok028_flow_opt < 1.5  ! mok028_flow_opt = 1 in main file 
+	value minflow_MOK028
+	}
+	case otherwise {
+	condition always
+	value 0.0}
+}
+
+goal setC_MOK028_MIF {C_MOK028_MIF < MOK028_flow_select}
+! save the flow selection option
+define mok028_flow_selectdv {alias mok028_flow_select kind 'FLOW-MIN-EFLOW' units 'CFS'}

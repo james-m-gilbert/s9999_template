@@ -98,7 +98,7 @@ define SAC148_flow_select {
 	value 0.0}
 }
 goal setC_SAC148_MIF {C_SAC148_MIF < SAC148_flow_select}
-define SAC148_dv {alias SAC148_eflows kind 'flow-min-eflow' units 'CFS'}
+define SAC148_eflows_dv {alias SAC148_eflows kind 'flow-min-eflow' units 'CFS'}
 define SAC148_flow_selectdv {alias SAC148_flow_select kind 'FLOW-MIN-EFLOW' units 'CFS'}
 
 goal meet_min_C_WKYTN { C_WKYTN_mif < clear_min}            ! Minimum required flows in Clear Creek below Whiskeytown Dam
@@ -116,7 +116,7 @@ goal set_C_SAC201_NCP {C_SAC201_MIF = 0.0}
 
 ! @coeqwal - eflows - setting flow reqt for Sac at Bend Bridge location 
 define sacatbend_eflows {value 0.0} ! TODO - update when data available; timeseries 'EFLOWS_SAC257' kind 'FLOW-MIN-EFLOW' units 'TAF' convert 'CFS'} ! eflows for Sac at Bend Bridge
-define sacatbend_dv {alias sacatbend_eflows kind 'flow-min-eflow' units 'CFS'} 
+define sacatbend_eflows_dv {alias sacatbend_eflows kind 'flow-min-eflow' units 'CFS'} 
 
 ! @coeqwal - eflows - allow option from main file
 define sacbend_flow_select {
@@ -161,27 +161,23 @@ goal setC_TRN111_MIF {C_TRN111_MIF < trn111_flow_select} ! Enforce minimum flow
 
 define trn111_flow_selectdv {alias trn111_flow_select kind 'FLOW-MIN-EFLOW' units 'CFS'}
 
-
-! @coeqwal - eflows - setting flow requirement for MOK028 location 
-! define mok028_eflows {timeseries 'EFLOWS_MOK028' kind 'FLOW-MIN-EFLOW' units 'TAF'convert 'CFS'}
-define mok028_eflows {value 0.0} 
-define mok028_dv {alias mok028_eflows kind 'flow-min-eflow' units 'CFS'} 
-
-! @coeqwal - eflows - allow option from main file
-define mok028_flow_select {
-	case no_mok028_flow_reqt {
-	condition mok028_flow_opt < 0.5  ! mok028_flow_opt set in main file
+!@coeqwal - eflows
+!define SP_SAC159_BTC003_EFLOWS {timeseries ‘EFLOWS_SP_SAC159’ kind ‘FLOW-MIN-EFLOW’ units ‘TAF’ convert ‘CFS’}
+define SP_SAC159_BTC003_EFLOWS {value 0.0}
+define SP_SAC159_flow_select {
+	case no_SP_SAC159_flow_reqt {
+	condition SP_SAC159flow_opt < 0.5  ! SP_SAC159flow_opt set in main file
 	value 0.
 	}
-	case mok028_eflows_v1 {
-	condition mok028_flow_opt < 1.5  ! mok028_flow_opt = 1 in main file 
-	value mok028_eflows
+	case SP_SAC159_eflows_v1 {
+	condition SP_SAC159flow_opt < 1.5  ! SP_SAC159flow_opt = 1 in main file 
+	value SP_SAC159_BTC003_EFLOWS
 	}
 	case otherwise {
 	condition always
 	value 0.0}
 }
+goal setSP_SAC159_BTC003_MIF {SP_SAC159_BTC003_MIF < SP_SAC159_flow_select}
 
-goal setC_MOK028_MIF {C_MOK028_MIF < mok028_flow_select} ! Enforce minimum flow
-
-define mok028_flow_selectdv {alias mok028_flow_select kind 'FLOW-MIN-EFLOW' units 'CFS'}
+define SP_SAC159_eflows_dv {alias SAC148_eflows kind 'flow-min-eflow' units 'CFS'}
+define SP_SAC159_flow_selectdv {alias SAC148_flow_select kind 'FLOW-MIN-EFLOW' units 'CFS'}
