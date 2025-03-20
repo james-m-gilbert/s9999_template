@@ -53,12 +53,10 @@ svar simulateANNSLR                {value 0.} !2 - 30 cm SLR,,1 - 15 cm SLR, 0 -
 !*********************************************************************************
 ! stanislaus
 svar stanflow_opt            {value 0}  ! 0 = existing Stan flow req; 1 = eflow opt1
+
+! sacramento & trinity
 svar sacbendflow_opt         {value 0}  ! 0 = no flow req; 1 - eflow opt1
 svar TRN111_flow_opt         {value 0}  ! 0 = no flow req; 1 = eflow opt1
-svar MOK028_flow_opt         {value 0}  ! 0 = no flow req; 1 = eflow opt1
-
-
-
 ! Added DB022725
 svar SAC122flow_opt         {value 0}  ! 0 = no flow req; 1 - eflow opt1
 ! Added DB022025
@@ -66,21 +64,39 @@ svar SAC289flow_opt         {value 0}  ! 0 = no flow req; 1 - eflow opt1
 svar SAC148flow_opt         {value 0}  ! 0 = no flow req; 1 - eflow opt1
 svar SAC049flow_opt         {value 0}  ! 0 = no flow req; 1 - eflow opt1
 svar SP_SAC159flow_opt      {value 0}  ! 0 = no flow req; 1 - eflow opt1 
-!svar YUB002flow_opt         {value 0}  ! 0 = no flow req; 1 - eflow opt1
-svar TUO003flow_opt         {value 0}  ! 0 = no flow req; 1 - eflow opt1
-svar MCD005flow_opt         {value 0}  ! 0 = no flow req; 1 - eflow opt1
 
+! feather river options
 svar FTR003flow_opt			{value -1}  !  -1= existing flow reqt, 0 = no flow req (this removes existing flow reqt);; 1 - eflow opt1 on top of existing, 1.5 - just eflow opt1
 svar FTR029flow_opt         {value  0}  ! 0 = no flow req (this removes existing flow reqt);; 1 - eflow opt1 
 svar FTR039flow_opt 		{value -1}  ! a loc with existing flow reqt (like FTR003), but no eflows -> -1 = existing flow reqt; 0 = no flow reqt
 svar FTR059flow_opt 		{ value -1} ! a loc with existing flow reqt, but no eflows -> -1 = existing flow reqt; 0 = no flow reqt
 
+! yuba river options
+svar NFY002flow_opt			{value -1} 
+svar YUB024flow_opt 		{value -1}
+svar YUB006flow_opt  		{value -1} ! -1 = existing flow reqts (which can be modified by LYRA, D1644, and VA options - see Yuba files; 0 = no flow reqt (supercedes exsisting flow reqts)
+svar YUB002flow_opt			{value 0}  ! 0 = no flow reqt, 1 = eflow option 1 - see Yuba_Operations_Common.wresl
 
+! american river options
+svar AMR004flow_opt         {value -1}  ! -1 = existing flow reqt; 0 = no flow reqt (removes existing reqt); 1 - eflow option 1 on top of existing; 1.5 - only eflow opt 1
+
+! Mokelumne minimum and eflows options
+svar MOK028_flow_opt         {value 0}  ! 0 = no flow req; 1 = eflow opt1
+
+
+!svar YUB002flow_opt         {value 0}  ! 0 = no flow req; 1 - eflow opt1
+svar TUO003flow_opt         {value 0}  ! 0 = no flow req; 1 - eflow opt1
+svar MCD005flow_opt         {value 0}  ! 0 = no flow req; 1 - eflow opt1
+
+! other minimum flow switches - not eflow locations
+svar WKYTNflow_opt          { value -1}  ! -1 = existing flow reqt; 0 = no flow reqt
+svar NTOMAflow_opt          { value -1}  ! -1 = existing flow reqt; 0 = no flow reqt
+svar KSWCKflow_opt          { value -1}  ! -1 = existing flow reqt; 0 = no flow reqt
 
 ! SGMA
 !*********************************************************************************
-
-
+! SGMA operations/options are controlled by MinMax GW pumpign table versions and land use SV datasets
+! There are currently no SVAR switches set up to change SGMA scenarios
 !*******************************************************************
 
 

@@ -101,9 +101,56 @@ goal setC_SAC148_MIF {C_SAC148_MIF < SAC148_flow_select}
 define SAC148_eflows_dv {alias SAC148_eflows kind 'flow-min-eflow' units 'CFS'}
 define SAC148_flow_selectdv {alias SAC148_flow_select kind 'FLOW-MIN-EFLOW' units 'CFS'}
 
-goal meet_min_C_WKYTN { C_WKYTN_mif < clear_min}            ! Minimum required flows in Clear Creek below Whiskeytown Dam
-goal meet_min_C_NTOMA { C_NTOMA_mif + C_NTOMA_mif_SHRTG < minflowFMPAmer}       ! Minimum required flows in American River below Nimbus Dam
+! @coeqwal - setting options for WKYTN minflows
+define wkytn_flow_select {
+	case no_wkytn_flow_reqt {
+	  condition WKYTNflow_opt == 0
+	  value 0.0}
+	case WKYTN_std_minflow_reqt {
+	  condition WKYTNflow_opt == -1
+	  value clear_min	}
+	case otherwise
+	  condition always 
+	  value clear_min}
+}
+! @coeqwal - replacing goal to accomodate options from above
+!goal meet_min_C_WKYTN { C_WKYTN_mif < clear_min}            ! Minimum required flows in Clear Creek below Whiskeytown Dam
+goal meet_min_C_WKYTN  { C_WKYTN_MIF < wkytn_flow_select}
+define WKYTN_flow_selectdv {alias wkytn_flow_select kind 'FLOW-MIN-INSTREAM' units 'CFS'}
+
+!@coeqwal - setting options for NTOMA minflows
+define ntoma_flow_select {
+	case no_ntoma_flow_reqt {
+	  condition NTOMAflow_opt == 0
+	  value 0.0}
+	case NTOMA_std_minflow_reqt {
+	  condition NTOMAflow_opt == -1
+	  value minflowFMPAmer	}
+	case otherwise
+	  condition always 
+	  value minflowFMPAmer}
+}
+
+! @coeqwal - modifying goal to incorporate options
+!goal meet_min_C_NTOMA { C_NTOMA_mif + C_NTOMA_mif_SHRTG < minflowFMPAmer}       ! Minimum required flows in American River below Nimbus Dam
+goal meet_min_C_NTOMA { C_NTOMA_MIF + C_NTOMA_mif_SHRTG < ntoma_flow_select} 
+define NTOMA_flow_selectdv {alias ntoma_flow_select kind 'FLOW-MIN-INSTREAM' units 'CFS'}
+
+!@coeqwal - setting options for NTOMA minflows
+define KSWCK_flow_select {
+	case no_KSWCK_flow_reqt {
+	  condition KSWCKflow_opt == 0
+	  value 0.0}
+	case KSWCK_std_minflow_reqt {
+	  condition KSWCKflow_opt == -1
+	  value effective_c_KSWCKmin1	}
+	case otherwise
+	  condition always 
+	  value effective_c_KSWCKmin1}
+}
+
 goal meet_min_C_KSWCK { C_KSWCK_MIF1 < effective_c_KSWCKmin1} ! Minimum required flows in Sacramento River below Keswick Dam
+define KSWCK_flow_selectdv {alias KSWCK_flow_select kind 'FLOW-MIN-INSTREAM' units 'CFS'}
 
 !
 ! minimum flow below GCID and at Freeport

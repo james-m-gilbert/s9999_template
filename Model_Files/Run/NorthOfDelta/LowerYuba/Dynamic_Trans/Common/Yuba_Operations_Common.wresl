@@ -346,6 +346,10 @@ goal SetC_YUB003{
 ! New Bullards Bar gage min flow release
 goal SetC_NFY002_MIF{
 	lhs C_NFY002_MIF
+		case NoMinFlow {  ! @coeqwal - option to turn off minflow reqt
+			condition NFY002flow_opt == 0
+			rhs 0.0
+			lhs<rhs constrain }
 		case D1644{
 			condition Yuba_OpsCrit == 1
 			rhs C_NFY002_MIF_D1644
@@ -397,6 +401,10 @@ goal SetMF_YUB024{
 ! Yuba River's Smartsville gage flow release
 goal SetC_YUB024_MIF{
 	lhs C_YUB024_MIF
+		case NoMinFlow {  ! @coeqwal - option to turn off minflow reqt
+			condition YUB024flow_opt == 0
+			rhs 0.0
+			lhs<rhs constrain }
 		case D1644{
 			condition Yuba_OpsCrit == 1
 			rhs C_YUB024_MIF_D1644
@@ -448,6 +456,10 @@ goal SetMF_YUB006{
 ! Yuba River's Marysville gage minimum flow release
 goal SetC_YUB006_MIF{
 	lhs C_YUB006_MIF
+		case NoMinFlow {  ! @coeqwal - option to turn off minflow reqt
+			condition YUB006flow_opt == 0
+			rhs 0.0
+			lhs<rhs constrain }
 		case D1644{
 			condition Yuba_OpsCrit == 1
 			rhs C_YUB006_MIF_D1644
@@ -478,6 +490,22 @@ goal SetC_YUB006_ADD{
 			rhs C_YUB006_ADD_VA
 			lhs<rhs constrain}
 }	
+
+! @coeqwal - set Yub002 eflows flow requirement 
+define YUB002_eflows  {value 0.0}
+!define YUB002_eflows {timeseries ‘EFLOWS_YUB002’ kind ‘FLOW-MIN-EFLOW’ units ‘TAF’ convert ‘CFS’}
+! @coeqwal - downstream Yuba eflow - minflow
+goal setC_YUB002_MIF {
+	lhs C_YUB002_MIF
+		case NoMinFlow {
+			condition YUB002flow_opt == 0
+			rhs 0.0
+			lhs<rhs constrain }
+		case EflowOpt1 {
+			condition YUB002flow_opt == 1
+			rhs YUB002_eflows
+			lhs<rhs constrain}
+}
 
 ! New Bullards Bar Storage
 goal SetS_NBLDB_1{

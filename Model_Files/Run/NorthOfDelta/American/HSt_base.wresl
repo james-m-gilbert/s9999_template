@@ -11,8 +11,35 @@ define HMin {select HStMin
              where  month=month, AmerD893=wyt_AMERd893_cvp
 }
 
-goal meet_HStQ {C_AMR004_MIF + C_AMR004_MIF_SHRTG < HMin + WFMITRELDV} 
+! @coeqwal - eflows
+!define AMR004_eflows {timeseries 'EFLOWS_AMR004' kind 'FLOW-MIN-EFLOW' units 'TAF' convert 'CFS'}
+define AMR004_eflows {value 0.0}
+
+! @coeqwal - eflows - replace existing meet_HStQ goal with options
+!amr004flow_opt set in main file
+define AMR004_flow_select {
+	case Existing_Hst_Reqt {
+	  condition AMR004flow_opt == -1  ! use existing Hst min flow 
+	  value HMin + WFMITRELDV}
+	case NoFlowReqt {					! no flow requirement
+      condition AMR004flow_opt == 0
+      rhs       0.0}
+	case eflows_opt1 {
+	  condition AMR004flow_opt == 1    ! max of eflows and existing flow requirement
+	  rhs max(AMR004_eflows, HMin+WFMITRELDV)}
+	case eflows_opt1b {
+	  condition AMR004flow_opt == 1.5 ! only eflows requirement (no existing)
+	  rhs AMR004_eflows }
+}
+
+! @coeqwal - replacing existing goal to include options set above
+goal meet_HStQ  {C_AMR004_MIF + C_AMR004_MIF_SHRTG < AMR004_flow_select}
+!goal meet_HStQ {C_AMR004_MIF + C_AMR004_MIF_SHRTG < HMin + WFMITRELDV} 
 !WFMITRELDV ensures that WF mitigation water released by PCWA is maintained in the American River
+
+! save for review/debug
+define AMR004_eflows_dv {alias AMR004_eflows kind 'FLOW-MIN-EFLOW' units 'CFS'}
+define AMR004_flow_selectdv {alias AMR004_flow_select kind 'FLOW-MIN-EFLOW' units 'CFS'}
 
 goal setHSttoMin {
     lhs C_AMR004_ADD

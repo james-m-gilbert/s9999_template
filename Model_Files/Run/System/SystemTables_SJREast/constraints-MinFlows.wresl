@@ -8,11 +8,10 @@
 Original formulation: C. Olson (MWH) April 2007
 */
 
-! added DB022025
+! @coeqwal - eflows: added DB022025
 goal   C_TUO003total  {C_TUO003 = C_TUO003_MIF + C_TUO003_ADD}
-!goal   C_YUB002total  {C_YUB002 = C_YUB002_MIF + C_YUB002_ADD}
 
-! added DB022425
+! @coeqwal - eflows: added DB022425
 goal   C_MCD005total  {C_MCD005 = C_MCD005_MIF + C_MCD005_ADD}
 
 !==============================

@@ -9,10 +9,7 @@ Naming takes the following form:
 
 */
 
-! Added DB022425
-! Yuba River at Marysville
-!define C_YUB002_MIF  {std kind 'FLOW-MIN-INSTREAM' units 'CFS'}
-!define C_YUB002_ADD  {std kind 'FLOW-ADDITIONAL-INSTREAM' units 'CFS'}
+
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!! Water Year Types !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -104,6 +101,10 @@ define C_YUB024_ADD 	{std kind 'FLOW-ADD-INSTREAM' units 'CFS'}
 define C_YUB006_MIF		{std kind 'FLOW-MIN-INSTREAM' units 'CFS'} 
 define C_YUB006_ADD 	{std kind 'FLOW-ADD-INSTREAM' units 'CFS'}
 
+! @coeqwal - eflows downstream on Yuba; Added DB022425
+! Yuba River at Marysville
+define C_YUB002_MIF  {std kind 'FLOW-MIN-INSTREAM' units 'CFS'}
+define C_YUB002_ADD  {std kind 'FLOW-ADDITIONAL-INSTREAM' units 'CFS'}
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!! French Dry Creek below Virginia Dam !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
