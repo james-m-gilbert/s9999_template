@@ -492,8 +492,8 @@ goal SetC_YUB006_ADD{
 }	
 
 ! @coeqwal - set Yub002 eflows flow requirement 
-define YUB002_eflows  {value 0.0}
-!define YUB002_eflows {timeseries ‘EFLOWS_YUB002’ kind ‘FLOW-MIN-EFLOW’ units ‘TAF’ convert ‘CFS’}
+!define YUB002_eflows  {value 0.0}
+define YUB002_eflows {timeseries 'EFLOWS_YUB002' kind 'FLOW-MIN-EFLOW' units 'TAF' convert 'CFS'}
 ! @coeqwal - downstream Yuba eflow - minflow
 goal setC_YUB002_MIF {
 	lhs C_YUB002_MIF
