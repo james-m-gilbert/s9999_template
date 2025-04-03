@@ -39,3 +39,61 @@ define DO_req_flow {
 define begday_flw {value 1}
 define endday_flw {value daysin}
 
+! @coeqwal - use USBR LTO Alt3 calculations for unimpaired delta outflow
+! to calculate an additional outflow requirement that may be applied 
+! see switches in main file to determine which flwo requirements are in place
+
+! the following code is from delta-outflow-ngo.wresl from USBR's 2024 LTO alternative 3
+!Delta Unimpaired Total Outflow calculated using 8-RI Regression curve based on historic unimpaired flow estimates
+!Spreadsheet used to develop regression equations: "Unimpaired_Delta_Outflow_CALC_HISTORIC_042323.xlsx"
+!DOUT_UIF is currently only needed in December through May 
+define DOUT_UIF {
+	case DEC {
+		condition month == DEC
+		value -216. + (EightRiver_Index * 1.41) }
+	case JAN {
+		condition month == JAN
+		value -206. + (EightRiver_Index * 1.45) }
+	case FEB {
+		condition month == FEB
+		value -359. + (EightRiver_Index * 1.51) }
+	case MAR {
+		condition month == MAR
+		value -514. + (EightRiver_Index * 1.47) }
+	case APR {
+		condition month == APR
+		value -627. + (EightRiver_Index * 1.41) }
+	case MAY {
+		condition month == MAY
+		value -326. + (EightRiver_Index * 1.22) }
+	case JUN {
+		condition month == JUN
+		value -217. + (EightRiver_Index * 1.18) }
+	case JUL {
+		condition month == JUL
+		value -176. + (EightRiver_Index * 1.16) }
+	case AUG {
+		condition month == AUG
+		value -146. + (EightRiver_Index * 1.15) }
+	case SEP {
+		condition month == SEP
+		value -132. + (EightRiver_Index * 1.15) }
+	case OCT {
+		condition month == OCT
+		value -173. + (EightRiver_Index * 1.27) }
+	case NOV {
+		condition month == NOV
+		value -186. + (EightRiver_Index * 1.32) }
+	case otherwise {
+		condition always
+		value 99999.}
+}
+
+define DOUT_UIF_DV {alias DOUT_UIF kind 'FLOW-UNIMPAIRED' units 'TAF'}
+
+define DOUT_UIF_cfs {value DOUT_UIF * taf_cfs}
+define DOUT_UIF_cfs_DV {alias DOUT_UIF_cfs kind 'FLOW-UNIMPAIRED' units 'CFS'}
+
+! @coeqwal - read in the eflows data as well
+define SAC000_eflows {timeseries 'EFLOWS_SAC000' kind 'FLOW-MIN-EFLOW' units 'TAF' convert 'CFS'}
+

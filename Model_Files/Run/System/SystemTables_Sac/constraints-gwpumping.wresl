@@ -332,6 +332,7 @@ define GPmin_11_SA1_dv  {alias GPmin_11_SA1 * AWo_11_SA1 * (1+ RPF_11_SA1 - RUFo
 goal setGPmin_11_SA1   {lhs GP_11_SA1     
                 case OctGP {condition month==Oct  rhs GPmin_11_SA1_dv lhs>rhs Penalty 88888 } !zrc@20201016 to avoid pumping jump and infeasibility in October 
                 case Other {condition always      rhs GPmin_11_SA1_dv lhs>rhs Penalty 0 } }
+!goal setGPmin_11_SA1_test {GP_11_SA1 > GPmin_11_SA1_dv}
 
 ! 11_SA2
 goal setGPmin_11_SA2   {GP_11_SA2 > GPmin_11_SA2 * AWo_11_SA2 * (1+ RPF_11_SA2 - RUFo_11_SA2) + GPmin_11_SA2 * decomp_alloc*AWR_11_SA2 * (1+ RPF_11_SA2 - RUFr_11_SA2) + GPmin_11_SA2 * AWw_11_SA2 * (1+ RPF_11_SA2 - RUFw_11_SA2)} !@jmg 2017v13

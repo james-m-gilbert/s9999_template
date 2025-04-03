@@ -6,9 +6,9 @@ Purpose: Variables for LYRA and VA Transfer Volumes
 
 */
 
-!Define BALANCED_D1641_ {Timeseries kind 'TEMP' units 'NONE'}
-!Define EI_BALANCED_ {Timeseries kind 'TEMP' units 'NONE'}
-!Define WYT_SAC_ {Timeseries kind 'WATERYEARTYPE' units 'NONE'} !VA years are Above Normal, Below Normal, and Dry years 
+!Define BALANCED_D1641_ {timeseries kind 'TEMP' units 'NONE'}
+!Define EI_BALANCED_ {timeseries kind 'TEMP' units 'NONE'}
+!Define WYT_SAC_ {timeseries kind 'WATERYEARTYPE' units 'NONE'} !VA years are Above Normal, Below Normal, and Dry years 
 
 /*
 define C_YUB006_VA {alias C_YUB006_VA[LOWERYUBA] kind 'CHANNEL' UNITS 'CFS'}

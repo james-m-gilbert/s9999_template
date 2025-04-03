@@ -81,8 +81,7 @@ svar YUB002flow_opt			{value 0}  ! 0 = no flow reqt, 1 = eflow option 1 - see Yu
 svar AMR004flow_opt         {value -1}  ! -1 = existing flow reqt; 0 = no flow reqt (removes existing reqt); 1 - eflow option 1 on top of existing; 1.5 - only eflow opt 1
 
 ! Mokelumne minimum and eflows options
-svar MOK028_flow_opt         {value 0}  ! 0 = no flow req; 1 = eflow opt1
-
+svar MOK028_flow_opt         {value 1}  ! 0 = no flow req; 1 = eflow opt1
 
 !svar YUB002flow_opt         {value 0}  ! 0 = no flow req; 1 - eflow opt1
 svar TUO003flow_opt         {value 0}  ! 0 = no flow req; 1 - eflow opt1
@@ -92,6 +91,10 @@ svar MCD005flow_opt         {value 0}  ! 0 = no flow req; 1 - eflow opt1
 svar WKYTNflow_opt          { value -1}  ! -1 = existing flow reqt; 0 = no flow reqt
 svar NTOMAflow_opt          { value -1}  ! -1 = existing flow reqt; 0 = no flow reqt
 svar KSWCKflow_opt          { value -1}  ! -1 = existing flow reqt; 0 = no flow reqt
+
+! Delta outflow options
+svar DELTAOut_opt			{value -1}   ! -1 = existing flow reqt; 1 = eflows version 1; -99 = specified unimpaired flow fraction
+svar DELTAOut_UIFfrac		{value 0.65} ! if DETLAout_opt == -99, delta outflow will be required to be at least this fraction of unimpaired flow
 
 ! SGMA
 !*********************************************************************************

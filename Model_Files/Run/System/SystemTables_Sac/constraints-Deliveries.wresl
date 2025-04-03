@@ -559,7 +559,8 @@ goal setDG_11_SA1   {DG_11_SA1 = D_WEC005_11_SA1}
 goal setDN_11_SA1   {DN_11_SA1 = DG_11_SA1 - DL_11_SA1}
 ! Total Applied Water = net surface delivery + groundwater pumping + reuse
 !goal meetAW_11_SA1  {AW_11_SA1 + RP_11_SA1 = DN_11_SA1 + GP_11_SA1 + RU_11_SA1 } ! + SHRTG_11_SA1 }
-goal meetAW_11_SA1  {decomp_alloc*AWR_11_SA1 + AWO_11_SA1 + AWW_11_SA1 + RP_11_SA1 = DN_11_SA1 + GP_11_SA1 + RU_11_SA1 } ! + SHRTG_11_SA1 }
+!@jmg goal meetAW_11_SA1  {decomp_alloc*AWR_11_SA1 + AWO_11_SA1 + AWW_11_SA1 + RP_11_SA1 = DN_11_SA1 + GP_11_SA1 + RU_11_SA1 } ! + SHRTG_11_SA1 }
+goal meetAW_11_SA1v2 {lhs decomp_alloc*AWR_11_SA1 + AWO_11_SA1 + AWW_11_SA1 + RP_11_SA1 rhs DN_11_SA1 + GP_11_SA1 + RU_11_SA1 lhs>rhs penalty 999999 lhs<rhs penalty 999999}
 !goal meetAW_11_SA1  {lhs AW_11_SA1 + RP_11_SA1 - (1-decomp_alloc)*AWR_11_SA1 rhs DN_11_SA1 + GP_11_SA1 + RU_11_SA1 lhs>rhs penalty 999999 lhs<rhs penalty 999999} ! + SHRTG_11_SA1 }
 
 !======================================================================

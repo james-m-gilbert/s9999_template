@@ -96,6 +96,36 @@ define DO_req_flow_out {alias DO_req_flow KIND 'FLOW-REQ-NDOI' UNITS 'CFS' }
 define DO_req_X2BDCPout {alias flowmin_DecA4 KIND 'FLOW-REQ-BDCP' UNITS 'CFS' }
 
 
+
 ! Set the final Delta outflow requirement as the demand at NDOI_MIN
+define D407_aggregate {value max(MRDO_final/*,ERP_NDOI_MIN*/,flowmin_DecA4)} !@coeqwal <-- 
 goal meetMRDO {NDOI_MIN < max(MRDO_final,0,flowmin_DecA4) + C_SAC041_WQ} ! ERP_NDOI_MIN = 0
 
+! @coeqwal
+define extra_delta_outflow_select {
+	case noExtraFlow { ! defaults to existing delta outflow reqt
+		condition DELTAOut_opt == -1
+		value 0.0}
+	case FracUnimp { ! calculate a fraction of unimpaired
+		condition DELTAOut_opt == -99
+		value DELTAOut_UIFfrac*DOUT_UIF_cfs }
+	case eflows_v1 { ! select v1 of eflows time series
+		condition DELTAOut_opt == 1
+		value SAC000_eflows }
+}
+
+! @coeqwal - the following code adapted from USBR LTO 2024 Alt3
+! determine how much above existing requirements (if any) the `extra_delta_outflow` is
+define DeltaOUT_extra_check {value max(min(D407_aggregate,extra_delta_outflow_select), 0.)}
+
+define DeltaOut_ExtraFlowDV {alias extra_delta_outflow_select - DeltaOUT_extra_check kind 'FLOW-MIN-EFLOW' units 'CFS'}
+
+/*
+goal setDeltaOUTInfByp {
+    lhs NDOI_ADD
+	case control {
+		condition always ! Flag_UIFByp_NDO > 0.0
+        rhs extra_delta_outflow_select - DeltaOUT_extra_check
+        lhs<rhs penalty 15000 !TODO - revise this to something more reasonable
+        lhs>rhs penalty 0}
+}*/

@@ -99,6 +99,9 @@ goal C_FDC006inflow      {C_FDC006_MIF < MF_FDC006}
 goal C_YUB006total  {C_YUB006 = C_YUB006_MIF + C_YUB006_ADD}
 goal meetYUB006min  {C_YUB006_MIF < MF_YUB006} !constraint set in YubaMinFlows.wresl
 
+! @coeqwal - lower Yuba eflows
+goal C_YUB002total {C_YUB002 = C_YUB002_MIF + C_YUB002_ADD}
+
 ! Bear River above Rollins Reservoir
 !goal C_BRR073total {C_BRR073=C_BRR073_MIF+C_BRR073_ADD}
 !goal C_BRR073minflow {C_BRR073_MIF < MF_BRR073}

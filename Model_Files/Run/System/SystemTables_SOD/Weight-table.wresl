@@ -559,12 +559,16 @@ Objective obj_SYS = {
 [C_SAC257_MIF, 5500],   ! Sac at Bend Bridge - eflows 
 [C_SAC240_MIF, 5500],   ! Sacramento River at Red Bluff
 [C_SAC201_MIF, 5500],   ! Sacramento River at Hamilton City
+[C_SAC122_MIF, 55000], ! Weight for Sacramento River min flow  
 [C_SAC120_MIF, 4950],   ! Sacramento River at Wilkins Slough 
 [C_SAC097_MIF, 4950],   ! Sacramento River NCP
 [C_SAC041_MIF, 2000.10],   ! Sacramento River at Hood
 [C_SAC017_MIF, 5500],   ! Sacramento River at Rio Vista
 [SP_SAC159_BTC003_MIF, 5500], ! Sac spill over Moulton Weir 
 [C_CSL005_mif, 2000],   ! Cache Slough at mile 5
+! @coeqwal - trinity
+[C_TRN111_MIF, 55000], ! @coeqwal - eflows - Weight for Trinity River min flow
+
 
 [C_FTR068_MIF, 5500],   ! Feather River low flow channel
 [C_FTR068_ADD,   -1],   ! Feather River low flow channel
@@ -582,6 +586,7 @@ Objective obj_SYS = {
 
 ![C_YUB024_MIF,15000],  ! Yuba River at Smartsville
 [C_YUB006_MIF,15500],  ! Yuba River at Marysville  
+[C_YUB002_MIF, 15500], ! @coeqwal - lower yuba eflows
 ![C_NBLDB_MIF,70000]
 ![C_NBLDB_POW,10],
 ![C_NBLDB_ADD,-3100],

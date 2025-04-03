@@ -152,6 +152,12 @@ define C_PTH024_ADD     {std kind 'FLOW-ADDITIONAL-INSTREAM' units 'CFS'}
 define C_YUB006_MIF     {std kind 'FLOW-MIN-INSTREAM' units 'CFS'} 
 define C_YUB006_ADD     {std kind 'FLOW-ADDITIONAL-INSTREAM' units 'CFS'}
 
+
+! @coeqwal - eflows downstream on Yuba; - also defined in LowerYuba arcs-MinFlows_Common.wresl
+! Yuba River at Marysville
+define C_YUB002_MIF  {std kind 'FLOW-MIN-INSTREAM' units 'CFS'}
+define C_YUB002_ADD  {std kind 'FLOW-ADDITIONAL-INSTREAM' units 'CFS'}
+
 ! Bear River at USGS gage 11421710
 !define MF_BRR073       {value 5.0} !cfs - year round
 !define C_BRR073_MIF    {std kind 'FLOW-MIN-INSTREAM' units 'CFS'}

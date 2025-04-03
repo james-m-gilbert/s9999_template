@@ -88,7 +88,7 @@ Define YWA_VA_Transfer_VA {
 		Condition SimulateVA_Yub >0.5 .and. month >= APR .and. month <=JUN .and. wyt_SAC_LYRA >=2 .and. wyt_SAC_LYRA <= 4 !Between April and July of VA years
 		value max(0, C_YUB006_VA[LOWERYUBA] - C_YUB006_LYRA[LOWERYUBA])}
 	Case Other {
-		Condition Always
+		Condition always
 		value 0.0}
 }
 

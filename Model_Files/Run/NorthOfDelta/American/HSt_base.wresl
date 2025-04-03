@@ -23,13 +23,13 @@ define AMR004_flow_select {
 	  value HMin + WFMITRELDV}
 	case NoFlowReqt {					! no flow requirement
       condition AMR004flow_opt == 0
-      rhs       0.0}
+      value       0.0}
 	case eflows_opt1 {
 	  condition AMR004flow_opt == 1    ! max of eflows and existing flow requirement
-	  rhs max(AMR004_eflows, HMin+WFMITRELDV)}
+	  value max(AMR004_eflows, HMin+WFMITRELDV)}
 	case eflows_opt1b {
 	  condition AMR004flow_opt == 1.5 ! only eflows requirement (no existing)
-	  rhs AMR004_eflows }
+	  value AMR004_eflows }
 }
 
 ! @coeqwal - replacing existing goal to include options set above

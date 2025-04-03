@@ -26,6 +26,7 @@ Objective obj_SYS_MOK = {
 !====================================================
 [C_MOK050_MIF,50000],
 [C_MOK034_MIF,50000],
+[C_MOK028_MIF,50000], !@coeqwal - eflows
 [C_CMCHE_MIF, 50000],
 ![C_MOK050_ADD, -500], ! Commented out as upset groundwater simulation calculations
 ![C_MOK034_ADD, -500],
