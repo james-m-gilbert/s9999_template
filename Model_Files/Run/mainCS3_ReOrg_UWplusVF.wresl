@@ -78,7 +78,7 @@ svar YUB006flow_opt  		{value -1} ! -1 = existing flow reqts (which can be modif
 svar YUB002flow_opt			{value 1}  ! 0 = no flow reqt, 1 = eflow option 1 - see Yuba_Operations_Common.wresl
 
 ! american river options
-svar AMR004flow_opt         {value -1}  ! -1 = existing flow reqt; 0 = no flow reqt (removes existing reqt); 1 - eflow option 1 on top of existing; 1.5 - only eflow opt 1
+svar AMR004flow_opt         {value 1}  ! -1 = existing flow reqt; 0 = no flow reqt (removes existing reqt); 1 - eflow option 1 on top of existing; 1.5 - only eflow opt 1
 
 ! Mokelumne minimum and eflows options
 svar MOK028_flow_opt         {value 1}  ! 0 = no flow req; 1 = eflow opt1

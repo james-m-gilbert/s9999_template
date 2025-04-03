@@ -12,8 +12,8 @@ define HMin {select HStMin
 }
 
 ! @coeqwal - eflows
-!define AMR004_eflows {timeseries 'EFLOWS_AMR004' kind 'FLOW-MIN-EFLOW' units 'TAF' convert 'CFS'}
-define AMR004_eflows {value 0.0}
+define AMR004_eflows {timeseries 'EFLOWS_AMR004' kind 'FLOW-MIN-EFLOW' units 'TAF' convert 'CFS'}
+!define AMR004_eflows {value 0.0}
 
 ! @coeqwal - eflows - replace existing meet_HStQ goal with options
 !amr004flow_opt set in main file
