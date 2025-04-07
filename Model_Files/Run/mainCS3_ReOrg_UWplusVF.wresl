@@ -52,7 +52,7 @@ svar simulateANNSLR                {value 0.} !2 - 30 cm SLR,,1 - 15 cm SLR, 0 -
 ! minimum flows/eflows options
 !*********************************************************************************
 ! stanislaus
-svar stanflow_opt            {value 0}  ! 0 = existing Stan flow req; 1 = eflow opt1
+svar stanflow_opt            {value 1}  ! 0 = existing Stan flow req; 1 = eflow opt1
 
 ! sacramento & trinity
 svar sacbendflow_opt         {value 0}  ! 0 = no flow req; 1 - eflow opt1
@@ -66,10 +66,10 @@ svar SAC049flow_opt         {value 0}  ! 0 = no flow req; 1 - eflow opt1
 svar SP_SAC159flow_opt      {value 0}  ! 0 = no flow req; 1 - eflow opt1 
 
 ! feather river options
-svar FTR003flow_opt			{value -1}  !  -1= existing flow reqt, 0 = no flow req (this removes existing flow reqt);; 1 - eflow opt1 on top of existing, 1.5 - just eflow opt1
-svar FTR029flow_opt         {value  0}  ! 0 = no flow req (this removes existing flow reqt);; 1 - eflow opt1 
+svar FTR003flow_opt			{value 1}  !  -1= existing flow reqt, 0 = no flow req (this removes existing flow reqt);; 1 - eflow opt1 on top of existing, 1.5 - just eflow opt1
+svar FTR029flow_opt         {value  1}  ! 0 = no flow req (this removes existing flow reqt);; 1 - eflow opt1 
 svar FTR039flow_opt 		{value -1}  ! a loc with existing flow reqt (like FTR003), but no eflows -> -1 = existing flow reqt; 0 = no flow reqt
-svar FTR059flow_opt 		{ value -1} ! a loc with existing flow reqt, but no eflows -> -1 = existing flow reqt; 0 = no flow reqt
+svar FTR059flow_opt 		{ value 1} ! a loc with existing flow reqt, but no eflows -> -1 = existing flow reqt; 0 = no flow reqt
 
 ! yuba river options
 svar NFY002flow_opt			{value -1} 

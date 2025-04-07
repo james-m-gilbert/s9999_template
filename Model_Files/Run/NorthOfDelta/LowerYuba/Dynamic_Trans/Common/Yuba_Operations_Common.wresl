@@ -500,7 +500,8 @@ goal setC_YUB002_MIF {
 		case NoMinFlow {
 			condition YUB002flow_opt == 0
 			rhs 0.0
-			lhs<rhs constrain }
+			lhs<rhs constrain
+			lhs>rhs penalty 999 }
 		case EflowOpt1 {
 			condition YUB002flow_opt == 1
 			rhs YUB002_eflows

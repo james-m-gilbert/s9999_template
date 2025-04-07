@@ -3,7 +3,7 @@
 
 ! Added DB022025 (SKIP FOR NOW)
 /*
-!define YUB002_eflows {timeseries ‘EFLOWS_YUB002’ kind ‘FLOW-MIN-EFLOW’ units ‘TAF’ convert ‘CFS’}
+!define YUB002_eflows {timeseries 'EFLOWS_YUB002’ kind 'FLOW-MIN-EFLOW’ units 'TAF’ convert 'CFS’}
 define YUB002_eflows {value 0.0}
 define YUB002_flow_select {
 	case no_YUB002_flow_reqt {
@@ -23,9 +23,9 @@ define YUB002_dv {alias YUB002_eflows kind 'flow-min-eflow' units 'CFS'}
 define YUB002_flow_selectdv {alias YUB002_flow_select kind 'FLOW-MIN-EFLOW' units 'CFS'}
 */
 
-/*
+
 ! Added DB022725
-!define SAC122_eflows {timeseries ‘EFLOWS_SAC122’ kind ‘FLOW-MIN-EFLOW’ units ‘TAF’ convert ‘CFS’}
+!define SAC122_eflows {timeseries 'EFLOWS_SAC122’ kind 'FLOW-MIN-EFLOW’ units 'TAF’ convert 'CFS’}
 define SAC122_eflows {value 0.0}
 define SAC122_flow_select {
 	case no_SAC122_flow_reqt {
@@ -45,7 +45,7 @@ define SAC122_dv {alias SAC122_eflows kind 'flow-min-eflow' units 'CFS'}
 define SAC122_flow_selectdv {alias SAC122_flow_select kind 'FLOW-MIN-EFLOW' units 'CFS'}
 
 ! Added DB022025
-!define SAC289_eflows {timeseries ‘EFLOWS_SAC289’ kind ‘FLOW-MIN-EFLOW’ units ‘TAF’ convert ‘CFS’}
+!define SAC289_eflows {timeseries 'EFLOWS_SAC289’ kind 'FLOW-MIN-EFLOW’ units 'TAF’ convert 'CFS’}
 define SAC289_eflows {value 0.0}
 define SAC289_flow_select {
 	case no_SAC289_flow_reqt {
@@ -64,7 +64,7 @@ goal setC_SAC289_MIF {C_SAC289_MIF < SAC289_flow_select}
 define SAC289_dv {alias SAC289_eflows kind 'flow-min-eflow' units 'CFS'}
 define SAC289_flow_selectdv {alias SAC289_flow_select kind 'FLOW-MIN-EFLOW' units 'CFS'}
 
-!define SAC049_eflows {timeseries ‘EFLOWS_SAC049’ kind ‘FLOW-MIN-EFLOW’ units ‘TAF’ convert ‘CFS’}
+!define SAC049_eflows {timeseries 'EFLOWS_SAC049' kind 'FLOW-MIN-EFLOW' units 'TAF' convert 'CFS'}
 define SAC049_eflows {value 0.0}
 define SAC049_flow_select {
 	case no_SAC049_flow_reqt {
@@ -83,7 +83,7 @@ goal setC_SAC049_MIF {C_SAC049_MIF < SAC049_flow_select}
 define SAC049_dv {alias SAC049_eflows kind 'flow-min-eflow' units 'CFS'}
 define SAC049_flow_selectdv {alias SAC049_flow_select kind 'FLOW-MIN-EFLOW' units 'CFS'}
 
-!define SAC148_eflows {timeseries ‘EFLOWS_SAC148’ kind ‘FLOW-MIN-EFLOW’ units ‘TAF’ convert ‘CFS’}
+!define SAC148_eflows {timeseries 'EFLOWS_SAC148' kind 'FLOW-MIN-EFLOW' units 'TAF' convert 'CFS'}
 define SAC148_eflows {value 0.0}
 define SAC148_flow_select {
 	case no_SAC148_flow_reqt {
@@ -101,7 +101,7 @@ define SAC148_flow_select {
 goal setC_SAC148_MIF {C_SAC148_MIF < SAC148_flow_select}
 define SAC148_eflows_dv {alias SAC148_eflows kind 'flow-min-eflow' units 'CFS'}
 define SAC148_flow_selectdv {alias SAC148_flow_select kind 'FLOW-MIN-EFLOW' units 'CFS'}
-*/
+
 
 ! @coeqwal - setting options for WKYTN minflows
 define wkytn_flow_select {
@@ -162,7 +162,7 @@ define KSWCK_flow_selectdv {alias KSWCK_flow_select kind 'FLOW-MIN-INSTREAM' uni
 goal set_C_SAC097_MIF {C_SAC097_MIF = 0.0}
 goal set_C_SAC201_NCP {C_SAC201_MIF = 0.0}
  
-/*
+
 ! @coeqwal - eflows - setting flow reqt for Sac at Bend Bridge location 
 define sacatbend_eflows {value 0.0} ! TODO - update when data available; timeseries 'EFLOWS_SAC257' kind 'FLOW-MIN-EFLOW' units 'TAF' convert 'CFS'} ! eflows for Sac at Bend Bridge
 define sacatbend_eflows_dv {alias sacatbend_eflows kind 'flow-min-eflow' units 'CFS'} 
@@ -185,7 +185,7 @@ define sacbend_flow_select {
 goal setC_SAC257_MIF {C_SAC257_MIF < sacbend_flow_select} !sacatbend_eflows} 
 
 define sacbend_flow_selectdv {alias sacbend_flow_select kind 'FLOW-MIN-EFLOW' units 'CFS'}
-*/
+
 /*
 ! @coeqwal - eflows - setting flow requirement for TRN111 location 
 define trn111_eflows {value 0.0} ! TO DO - update when DSS data is available
@@ -212,7 +212,7 @@ define trn111_flow_selectdv {alias trn111_flow_select kind 'FLOW-MIN-EFLOW' unit
 */
 /*
 !@coeqwal - eflows
-!define SP_SAC159_BTC003_EFLOWS {timeseries 'EFLOWS_SP_SAC159' kind 'FLOW-MIN-EFLOW' units ‘TAF’ convert ‘CFS’}
+!define SP_SAC159_BTC003_EFLOWS {timeseries 'EFLOWS_SP_SAC159' kind 'FLOW-MIN-EFLOW' units 'TAF’ convert 'CFS’}
 define SP_SAC159_BTC003_EFLOWS {value 0.0}
 define SP_SAC159_flow_select {
 	case no_SP_SAC159_flow_reqt {

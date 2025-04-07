@@ -67,7 +67,7 @@ goal setD_WEC005_BTC032 {
      case October {
            condition month == OCT .and. I_BTC048 <= 15. * taf_cfs
            rhs 140.
-          lhs>rhs     penalty 9999 !constrain
+          lhs>rhs     constrain
     	  lhs<rhs     penalty 9999
      }
      case November {
