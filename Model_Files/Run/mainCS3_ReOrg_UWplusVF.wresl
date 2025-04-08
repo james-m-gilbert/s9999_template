@@ -51,19 +51,16 @@ svar simulateANNSLR                {value 0.} !2 - 30 cm SLR,,1 - 15 cm SLR, 0 -
 
 ! minimum flows/eflows options
 !*********************************************************************************
-! stanislaus
-svar stanflow_opt            {value 1}  ! 0 = existing Stan flow req; 1 = eflow opt1
+
 
 ! sacramento & trinity
-svar sacbendflow_opt         {value 0}  ! 0 = no flow req; 1 - eflow opt1
-svar TRN111_flow_opt         {value 0}  ! 0 = no flow req; 1 = eflow opt1
-! Added DB022725
-svar SAC122flow_opt         {value 0}  ! 0 = no flow req; 1 - eflow opt1
-! Added DB022025
-svar SAC289flow_opt         {value 0}  ! 0 = no flow req; 1 - eflow opt1
-svar SAC148flow_opt         {value 0}  ! 0 = no flow req; 1 - eflow opt1
-svar SAC049flow_opt         {value 0}  ! 0 = no flow req; 1 - eflow opt1
-svar SP_SAC159flow_opt      {value 0}  ! 0 = no flow req; 1 - eflow opt1 
+svar TRN111_flow_opt         {value 1}  ! 0 = no flow req; 1 = eflow opt1
+svar sacbendflow_opt         {value 1}  ! SAC257 minflows; 0 = no flow req; 1 - eflow opt1
+svar SAC122flow_opt         {value 1}  ! 0 = no flow req; 1 - eflow opt1
+svar SAC289flow_opt         {value 1}  ! 0 = no flow req; 1 - eflow opt1
+svar SAC148flow_opt         {value 1}  ! 0 = no flow req; 1 - eflow opt1
+svar SAC049flow_opt         {value 1}  ! 0 = no flow req; 1 - eflow opt1
+svar SP_SAC159flow_opt      {value 1}  ! 0 = no flow req; 1 - eflow opt1 
 
 ! feather river options
 svar FTR003flow_opt			{value 1}  !  -1= existing flow reqt, 0 = no flow req (this removes existing flow reqt);; 1 - eflow opt1 on top of existing, 1.5 - just eflow opt1
@@ -80,20 +77,26 @@ svar YUB002flow_opt			{value 1}  ! 0 = no flow reqt, 1 = eflow option 1 - see Yu
 ! american river options
 svar AMR004flow_opt         {value 1}  ! -1 = existing flow reqt; 0 = no flow reqt (removes existing reqt); 1 - eflow option 1 on top of existing; 1.5 - only eflow opt 1
 
-! Mokelumne minimum and eflows options
-svar MOK028_flow_opt         {value 1}  ! 0 = no flow req; 1 = eflow opt1
 
-!svar YUB002flow_opt         {value 0}  ! 0 = no flow req; 1 - eflow opt1
-svar TUO003flow_opt         {value 0}  ! 0 = no flow req; 1 - eflow opt1
-svar MCD005flow_opt         {value 0}  ! 0 = no flow req; 1 - eflow opt1
 
 ! other minimum flow switches - not eflow locations
-svar WKYTNflow_opt          { value -1}  ! -1 = existing flow reqt; 0 = no flow reqt
+!svar WKYTNflow_opt          { value -1}  ! -1 = existing flow reqt; 0 = no flow reqt
 svar NTOMAflow_opt          { value -1}  ! -1 = existing flow reqt; 0 = no flow reqt
 svar KSWCKflow_opt          { value -1}  ! -1 = existing flow reqt; 0 = no flow reqt
 
+! Mokelumne minimum and eflows options
+svar MOK028_flow_opt         {value 1}  ! 0 = no flow req; 1 = eflow opt1
+! stanislaus
+svar stanflow_opt            {value 1}  ! 0 = existing Stan flow req; 1 = eflow opt1
+svar TUO003flow_opt         {value 1}  ! 0 = no flow req; 1 - eflow opt1
+svar MCD005flow_opt         {value 1}  ! 0 = no flow req; 1 - eflow opt1
+
+! San Joaquin minimum flows
+svar SJR127flow_opt 		{value 1} ! 0 = no flow req; 1 = eflow opt1
+svar SJR070flow_opt 		{value 1} ! 0 = no flow req; 1 = eflow opt
+
 ! Delta outflow options
-svar DELTAOut_opt			{value -1}   ! -1 = existing flow reqt; 1 = eflows version 1; -99 = specified unimpaired flow fraction
+svar DELTAOut_opt			{value 1}   ! -1 = existing flow reqt; 1 = eflows version 1; -99 = specified unimpaired flow fraction
 svar DELTAOut_UIFfrac		{value 0.65} ! if DETLAout_opt == -99, delta outflow will be required to be at least this fraction of unimpaired flow
 
 ! SGMA

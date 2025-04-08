@@ -72,6 +72,17 @@ define minflow_C_SJR225 {value 5.}
 define C_SJR225_MIF  {std kind 'FLOW-MIN-INSTREAM' units 'CFS'}
 define C_SJR225_EXC  {std kind 'FLOW-EXCESS-INSTREAM' units 'CFS'}
 
+
+! @coeqwal - eflows on San Joaquin
+define eflows_C_SJR127 {timeseries 'EFLOWS_SJR127' kind 'FLOW-MIN-EFLOW' units 'TAF' convert 'CFS'}
+define eflows_C_SJR070 {timeseries 'EFLOWS_SJR070' kind 'FLOW-MIN-EFLOW' units 'TAF' convert 'CFS'}
+
+define C_SJR127_MIF {std kind 'FLOW-MIN-INSTREAM' units 'CFS'}
+define C_SJR127_EXC {std kind 'FLOW-EXCESS-INSTREAM' units 'CFS'}
+
+define C_SJR070_MIF {std kind 'FLOW-MIN-INSTREAM' units 'CFS'}
+define C_SJR070_EXC {std kind 'FLOW-EXCESS-INSTREAM' units 'CFS'}
+
 !==============================
 ! Calaveras River
 !==============================

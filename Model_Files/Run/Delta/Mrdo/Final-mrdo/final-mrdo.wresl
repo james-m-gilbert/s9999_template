@@ -119,8 +119,8 @@ define extra_delta_outflow_select {
 define DeltaOUT_extra_check {value max(min(D407_aggregate,extra_delta_outflow_select), 0.)}
 
 define DeltaOut_ExtraFlowDV {alias extra_delta_outflow_select - DeltaOUT_extra_check kind 'FLOW-MIN-EFLOW' units 'CFS'}
+define extra_delta_outflow_selectDV {alias extra_delta_outflow_select kind 'FLOW-MIN-EFLOW' units 'CFS'}
 
-/*
 goal setDeltaOUTInfByp {
     lhs NDOI_ADD
 	case control {
@@ -128,4 +128,4 @@ goal setDeltaOUTInfByp {
         rhs extra_delta_outflow_select - DeltaOUT_extra_check
         lhs<rhs penalty 15000 !TODO - revise this to something more reasonable
         lhs>rhs penalty 0}
-}*/
+}

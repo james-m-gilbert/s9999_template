@@ -53,6 +53,8 @@ Objective obj_SYS_SJREAST = {
 [C_SJR225_MIF,    50000],   !Gravelly Ford
 [C_SJR205, -50000],  
 [D_SJR205_SJR201, 500000], ! restoration flow
+[C_SJR127_MIF,   50000], !@coeqwal - eflows
+[C_SJR070_MIF,   50000], !@coeqwal - eflows
 
 !====================================================
 !Diversion Weights

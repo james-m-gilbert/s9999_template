@@ -50,6 +50,36 @@ goal   C_FRS036total {C_FRS036 = C_FRS036_MIF + C_FRS036_EXC}
 goal   C_SJR225minflow  {C_SJR225_MIF < minflow_C_SJR225}
 goal   C_SJR225total {C_SJR225 = C_SJR225_MIF + C_SJR225_EXC}
 
+! @coeqwal - eflows on San Joaquin
+goal   C_SJR127total {C_SJR127 = C_SJR127_MIF + C_SJR127_EXC}
+define SJR127eflow_select {
+	case no_flow_reqt {
+		condition SJR127flow_opt == 0  ! no flow reqt
+		value 0.0}
+	case eflows1 {
+		condition SJR127flow_opt == 1
+		value eflows_C_SJR127}
+}
+
+define SJR172eflow_selectDV {alias SJR127eflow_select kind 'FLOW-MIN-EFLOW' units 'CFS'}
+
+goal C_SJR127eflow {C_SJR127_MIF < SJR127eflow_select }
+
+goal   C_SJR070total {C_SJR070 = C_SJR070_MIF + C_SJR070_EXC}
+define SJR070eflow_select {
+	case no_flow_reqt {
+		condition SJR070flow_opt == 0  ! no flow reqt
+		value 0.0}
+	case eflows1 {
+		condition SJR070flow_opt == 1
+		value eflows_C_SJR070}
+}
+
+define SJR070eflow_selectDV {alias SJR070eflow_select kind 'FLOW-MIN-EFLOW' units 'CFS'}
+
+goal C_SJR070eflow {C_SJR070_MIF < SJR070eflow_select }
+
+
 !==============================
 ! Calaveras River
 !==============================

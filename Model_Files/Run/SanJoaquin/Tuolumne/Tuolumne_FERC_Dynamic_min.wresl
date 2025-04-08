@@ -124,15 +124,15 @@ goal setLaGrangeRqmntDV {LaGrangeRqmntDV = LaGrangeRqmnt}
 goal setC_TUO054_mif    { C_TUO054_mif < LaGrangeRqmnt}
 
 !! Added DB022425 new minflows
-!define TUO003_eflows {timeseries ‘EFLOWS_TUO003’ kind ‘FLOW-MIN-EFLOW’ units ‘TAF’ convert ‘CFS’}
-define TUO003_eflows {value 0.0}
+define TUO003_eflows {timeseries 'EFLOWS_TUO003' kind 'FLOW-MIN-EFLOW' units 'TAF' convert 'CFS'}
+!define TUO003_eflows {value 0.0}
 define TUO003_flow_select {
 	case no_TUO003_flow_reqt {
-	condition TUO003flow_opt < 0.5  ! TUO003flow_opt set in main file
+	condition TUO003flow_opt == 0  ! TUO003flow_opt set in main file
 	value 0.
 	}
 	case TUO003_eflows_v1 {
-	condition TUO003flow_opt < 1.5  ! TUO003flow_opt = 1 in main file 
+	condition TUO003flow_opt == 1  ! TUO003flow_opt = 1 in main file 
 	value TUO003_eflows
 	}
 	case otherwise {
