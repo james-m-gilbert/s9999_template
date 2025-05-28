@@ -99,7 +99,7 @@ define DO_req_X2BDCPout {alias flowmin_DecA4 KIND 'FLOW-REQ-BDCP' UNITS 'CFS' }
 
 ! Set the final Delta outflow requirement as the demand at NDOI_MIN
 define D407_aggregate {value max(MRDO_final/*,ERP_NDOI_MIN*/,flowmin_DecA4)} !@coeqwal <-- 
-goal meetMRDO {NDOI_MIN < max(MRDO_final,0,flowmin_DecA4) + C_SAC041_WQ} ! ERP_NDOI_MIN = 0
+
 
 ! @coeqwal
 define extra_delta_outflow_select {
@@ -121,6 +121,9 @@ define DeltaOUT_extra_check {value max(min(D407_aggregate,extra_delta_outflow_se
 define DeltaOut_ExtraFlowDV {alias extra_delta_outflow_select - DeltaOUT_extra_check kind 'FLOW-MIN-EFLOW' units 'CFS'}
 define extra_delta_outflow_selectDV {alias extra_delta_outflow_select kind 'FLOW-MIN-EFLOW' units 'CFS'}
 
+goal meetMRDO {NDOI_MIN < max(MRDO_final,0,flowmin_DecA4) + C_SAC041_WQ + (extra_delta_outflow_select - DeltaOUT_extra_check)} ! ERP_NDOI_MIN = 0
+
+/*
 goal setDeltaOUTInfByp {
     lhs NDOI_ADD
 	case control {
@@ -128,4 +131,4 @@ goal setDeltaOUTInfByp {
         rhs extra_delta_outflow_select - DeltaOUT_extra_check
         lhs<rhs penalty 15000 !TODO - revise this to something more reasonable
         lhs>rhs penalty 0}
-}
+}*/
