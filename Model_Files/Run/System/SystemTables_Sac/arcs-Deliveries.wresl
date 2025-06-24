@@ -28,7 +28,7 @@ define SHRTG_17N_PR {std kind 'SHORTAGE' units 'CFS'}
 define SHRTG_17S_PR {std kind 'SHORTAGE' units 'CFS'}
 define SHRTG_26N_PU2   {std kind 'SHORTAGE' units 'CFS'}
 
-/*
+
 !define SHRTG_09_PR    {std kind 'SHORTAGE' units 'CFS'}
 !define SHRTG_09_PR2    {std kind 'SHORTAGE' units 'CFS'}
 define SHRTG_02_NA     {std kind 'SHORTAGE' units 'CFS'}
@@ -183,7 +183,7 @@ define SHRTG_60N_NU1   {std kind 'SHORTAGE' units 'CFS'}   !@jmg 2017v13 - not s
 define SHRTG_60N_PU   {std kind 'SHORTAGE' units 'CFS'}    !@jmg 2017v13 - not sure if used in merged model
 define SHRTG_60S_NU    {std kind 'SHORTAGE' units 'CFS'}   !@jmg 2017v13 - not sure if used in merged model
 define SHRTG_EBMUD   {std kind 'SHORTAGE' units 'CFS'}     !@jmg 2017v13 - not sure if used in merged model
-*/
+
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!! WBA 1      !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

@@ -105,14 +105,14 @@ goal setGPmax_61_NA6       {GP_61_NA6 < GPmax_61_NA6 * AWo_61_NA6 * (1+ RPF_61_N
 !==============================
 
 goal setGPmin_61_NU1       {GP_61_NU1 > GPmin_61_NU1 * UD_61_NU1}
-!goal setGPmax_61_NU1       {GP_61_NU1 < GPmax_61_NU1 * UD_61_NU1}
+goal setGPmax_61_NU1       {GP_61_NU1 < GPmax_61_NU1 * UD_61_NU1}
 
 !==============================
 ! 61_NU2 - Cities of Lathrop, Manteca & Escalon - M&I
 !==============================
 
 goal setGPmin_61_NU2       {GP_61_NU2 > GPmin_61_NU2 * UD_61_NU2}
-!goal setGPmax_61_NU2       {GP_61_NU2 < GPmax_61_NU2 * UD_61_NU2}
+goal setGPmax_61_NU2       {GP_61_NU2 < GPmax_61_NU2 * UD_61_NU2}
 
 !==============================
 ! 61_NU3 - Oakdale, Ripon, Riverbank & Small Communities - M&I gw only
@@ -204,7 +204,7 @@ goal set_GP_WBATotal_62  {GP_WBATotal_62
 !==============================
 
 goal setGPmin_63_PR1        {GP_63_PR1 > GPmin_63_PR1 * AWo_63_PR1 * (1+ RPF_63_PR1 - RUFo_63_PR1) + GPmin_63_PR1 * AWr_63_PR1 * (1+ RPF_63_PR1 - RUFr_63_PR1)}!AWw_63_PR1=0
-!goal setGPmax_63_PR1        {GP_63_PR1 < GPmax_63_PR1 * AWo_63_PR1 * (1+ RPF_63_PR1 - RUFo_63_PR1) + GPmax_63_PR1 * AWr_63_PR1 * (1+ RPF_63_PR1 - RUFr_63_PR1)}
+goal setGPmax_63_PR1        {GP_63_PR1 < GPmax_63_PR1 * AWo_63_PR1 * (1+ RPF_63_PR1 - RUFo_63_PR1) + GPmax_63_PR1 * AWr_63_PR1 * (1+ RPF_63_PR1 - RUFr_63_PR1)}
 
 !==============================
 ! 63_PR2 - Merced and Lone Tree Units of Merced NWR - Refuge
@@ -212,15 +212,15 @@ goal setGPmin_63_PR1        {GP_63_PR1 > GPmin_63_PR1 * AWo_63_PR1 * (1+ RPF_63_
 
 goal setGPmin_63_PR2        {GP_63_PR2 > GPmin_63_PR2 * AWo_63_PR2 * (1+ RPF_63_PR2 - RUFo_63_PR2) + GPmin_63_PR2 * AWr_63_PR2 * (1+ RPF_63_PR2 - RUFr_63_PR2) 
                                        + GPmin_63_PR2 * AWw_63_PR2 * (1+ RPF_63_PR2 - RUFw_63_PR2)}
-!goal setGPmax_63_PR2        {GP_63_PR2 < GPmax_63_PR2 * AWo_63_PR2 * (1+ RPF_63_PR2 - RUFo_63_PR2) + GPmax_63_PR2 * AWr_63_PR2 * (1+ RPF_63_PR2 - RUFr_63_PR2)
-!                                       + GPmax_63_PR2 * AWw_63_PR2 * (1+ RPF_63_PR2 - RUFw_63_PR2)}
+goal setGPmax_63_PR2        {GP_63_PR2 < GPmax_63_PR2 * AWo_63_PR2 * (1+ RPF_63_PR2 - RUFo_63_PR2) + GPmax_63_PR2 * AWr_63_PR2 * (1+ RPF_63_PR2 - RUFr_63_PR2)
+                                       + GPmax_63_PR2 * AWw_63_PR2 * (1+ RPF_63_PR2 - RUFw_63_PR2)}
 
 !==============================
 ! 63_PR3 - East Bear Unit of San Luis NWR - Refuge
 !==============================
 
 goal setGPmin_63_PR3        {GP_63_PR3 > GPmin_63_PR3 * AWo_63_PR3 * (1+ RPF_63_PR3 - RUFo_63_PR3) + GPmin_63_PR3 * AWr_63_PR3 * (1+ RPF_63_PR3 - RUFr_63_PR3)} !AWw_63_PR3=0
-!goal setGPmax_63_PR3        {GP_63_PR3 < GPmax_63_PR3 * AWo_63_PR3 * (1+ RPF_63_PR3 - RUFo_63_PR3) + GPmax_63_PR3 * AWr_63_PR3 * (1+ RPF_63_PR3 - RUFr_63_PR3)}
+goal setGPmax_63_PR3        {GP_63_PR3 < GPmax_63_PR3 * AWo_63_PR3 * (1+ RPF_63_PR3 - RUFo_63_PR3) + GPmax_63_PR3 * AWr_63_PR3 * (1+ RPF_63_PR3 - RUFr_63_PR3)}
 
 !==============================
 ! 63_NA1 - East of Merced ID, DAU 211 - Ag

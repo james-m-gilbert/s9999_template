@@ -18,14 +18,14 @@ Original formulation: C. Olson (MWH) April 2007
 ! 50_PA1 - Banta Carbona ID/Westside ID - Ag
 !==============================
 goal setGPmin_50_PA1        {GP_50_PA1 > GPmin_50_PA1 * AWo_50_PA1 * (1+ RPF_50_PA1 - RUFo_50_PA1) + GPmin_50_PA1 * AWr_50_PA1 * (1+ RPF_50_PA1 - RUFr_50_PA1)}
-!goal setGPmax_50_PA1        {GP_50_PA1 < 0.001 + GPmax_50_PA1 * AWo_50_PA1 * (1+ RPF_50_PA1 - RUFo_50_PA1) + GPmax_50_PA1 * AWr_50_PA1 * (1+ RPF_50_PA1 - RUFr_50_PA1)}
+goal setGPmax_50_PA1        {GP_50_PA1 < 0.001 + GPmax_50_PA1 * AWo_50_PA1 * (1+ RPF_50_PA1 - RUFo_50_PA1) + GPmax_50_PA1 * AWr_50_PA1 * (1+ RPF_50_PA1 - RUFr_50_PA1)}
 
 
 !==============================
 ! 50_PU - City of Tracy - M&I
 !==============================
 goal setGPmin_50_PU        {GP_50_PU > GPmin_50_PU * UD_50_PU }
-!goal setGPmax_50_PU        {GP_50_PU < GPmax_50_PU * UD_50_PU }
+goal setGPmax_50_PU        {GP_50_PU < GPmax_50_PU * UD_50_PU }
 
 !==============================
 ! 50_PA2 - Byron Bethany ID - part that is considered a Delta Consumptive Use (DCD model)
@@ -89,13 +89,13 @@ goal setGPmax_71_PA8        {GP_71_PA8 < 0.001 + GPmax_71_PA8 * AWo_71_PA8 * (1+
 ! 71_PU1 - Musco Olive Products - M&I
 !==============================
 goal setGPmin_71_PU1        {GP_71_PU1 > GPmin_71_PU1 * UD_71_PU1}
-!goal setGPmax_71_PU1        {GP_71_PU1 < GPmax_71_PU1 * UD_71_PU1}
+goal setGPmax_71_PU1        {GP_71_PU1 < GPmax_71_PU1 * UD_71_PU1}
 
 !==============================
 ! 71_PU2 - VA Cemetary - M&I
 !==============================
 goal setGPmin_71_PU2        {GP_71_PU2 > GPmin_71_PU2 * UD_71_PU2}
-!goal setGPmax_71_PU2        {GP_71_PU2 < GPmax_71_PU2 * UD_71_PU2}
+goal setGPmax_71_PU2        {GP_71_PU2 < GPmax_71_PU2 * UD_71_PU2}
 
 !==============================
 ! 71_NA1 - Non-District - Riparian Ag
@@ -141,6 +141,7 @@ goal setGPmax_72_NA1        {GP_72_NA1 < GPmax_72_NA1 * AWo_72_NA1 * (1+ RPF_72_
 ! 72_NA2 - non-district ag - all gw
 !==============================
 !20250107@COEQWAL: enforce a maximum
+goal setGPmin_72_NA2        {GP_72_NA2 > GPmin_72_NA2 * AWo_72_NA2}
 goal setGPmax_72_NA2        {GP_72_NA2 < GPmax_72_NA2 * AWo_72_NA2}
 
 !==============================
@@ -174,47 +175,52 @@ goal setGPmax_72_XA3        {GP_72_XA3 < 0.001 + GPmax_72_XA3 * AWo_72_XA3 * (1+
 ! 72_PR1 - Volta WA - Refuge
 !==============================
 goal setGPmin_72_PR1        {GP_72_PR1 > GPmin_72_PR1 * AWo_72_PR1 * (1+ RPF_72_PR1 - RUFo_72_PR1) + GPmin_72_PR1 * AWr_72_PR1 * (1+ RPF_72_PR1 - RUFr_72_PR1)}
-!goal setGPmax_72_PR1        {GP_72_PR1 < GPmax_72_PR1 * AWo_72_PR1 * (1+ RPF_72_PR1 - RUFo_72_PR1) + GPmax_72_PR1 * AWr_72_PR1 * (1+ RPF_72_PR1 - RUFr_72_PR1)}
+goal setGPmax_72_PR1        {GP_72_PR1 < GPmax_72_PR1 * AWo_72_PR1 * (1+ RPF_72_PR1 - RUFo_72_PR1) + GPmax_72_PR1 * AWr_72_PR1 * (1+ RPF_72_PR1 - RUFr_72_PR1)}
 
 
 !==============================
 ! 72_PR2 - Kesterson, Freitas, & Blue Goose units of San Luis NWR, China Island unit of North Grassland - Refuge
 !==============================
 goal setGPmin_72_PR2        {GP_72_PR2 > GPmin_72_PR2 * AWo_72_PR2 * (1+ RPF_72_PR2 - RUFo_72_PR2) + GPmin_72_PR2 * AWr_72_PR2 * (1+ RPF_72_PR2 - RUFr_72_PR2)}
-!goal setGPmax_72_PR2        {GP_72_PR2 < GPmax_72_PR2 * AWo_72_PR2 * (1+ RPF_72_PR2 - RUFo_72_PR2) + GPmax_72_PR2 * AWr_72_PR2 * (1+ RPF_72_PR2 - RUFr_72_PR2)}
+goal setGPmax_72_PR2        {GP_72_PR2 < GPmax_72_PR2 * AWo_72_PR2 * (1+ RPF_72_PR2 - RUFo_72_PR2) + GPmax_72_PR2 * AWr_72_PR2 * (1+ RPF_72_PR2 - RUFr_72_PR2)}
 
 !==============================
 ! 72_PR3 - West Bear Ck and San Luis units of San Luis NWR - Refuge
 !==============================
 goal setGPmin_72_PR3        {GP_72_PR3 > GPmin_72_PR3 * AWo_72_PR3 * (1+ RPF_72_PR3 - RUFo_72_PR3) + GPmin_72_PR3 * AWr_72_PR3 * (1+ RPF_72_PR3 - RUFr_72_PR3)}
-!goal setGPmax_72_PR3        {GP_72_PR3 < GPmax_72_PR3 * AWo_72_PR3 * (1+ RPF_72_PR3 - RUFo_72_PR3) + GPmax_72_PR3 * AWr_72_PR3 * (1+ RPF_72_PR3 - RUFr_72_PR3)}                                           
+goal setGPmax_72_PR3        {GP_72_PR3 < GPmax_72_PR3 * AWo_72_PR3 * (1+ RPF_72_PR3 - RUFo_72_PR3) + GPmax_72_PR3 * AWr_72_PR3 * (1+ RPF_72_PR3 - RUFr_72_PR3)}                                           
 
 !==============================
 ! 72_PR4 - Los Banos WA, Salt Slouth and Gadwall units of North Grassland - Refuge
 !==============================
 goal setGPmin_72_PR4        {GP_72_PR4 > GPmin_72_PR4 * AWo_72_PR4 * (1+ RPF_72_PR4 - RUFo_72_PR4) + GPmin_72_PR4 * AWr_72_PR4 * (1+ RPF_72_PR4 - RUFr_72_PR4)}
-!goal setGPmax_72_PR4        {GP_72_PR4 < GPmax_72_PR4 * AWo_72_PR4 * (1+ RPF_72_PR4 - RUFo_72_PR4) + GPmax_72_PR4 * AWr_72_PR4 * (1+ RPF_72_PR4 - RUFr_72_PR4)}                                         
+goal setGPmax_72_PR4        {GP_72_PR4 < GPmax_72_PR4 * AWo_72_PR4 * (1+ RPF_72_PR4 - RUFo_72_PR4) + GPmax_72_PR4 * AWr_72_PR4 * (1+ RPF_72_PR4 - RUFr_72_PR4)}                                         
 
 
 !==============================
 ! 72_PR5 - Grassland WD North - Refuge
 !==============================
 goal setGPmin_72_PR5        {GP_72_PR5 > GPmin_72_PR5 * AWo_72_PR5 * (1+ RPF_72_PR5 - RUFo_72_PR5) + GPmin_72_PR5 * AWr_72_PR5 * (1+ RPF_72_PR5 - RUFr_72_PR5)}
-!goal setGPmax_72_PR5        {GP_72_PR5 < GPmax_72_PR5 * AWo_72_PR5 * (1+ RPF_72_PR5 - RUFo_72_PR5) + GPmax_72_PR5 * AWr_72_PR5 * (1+ RPF_72_PR5 - RUFr_72_PR5)}
+goal setGPmax_72_PR5        {GP_72_PR5 < GPmax_72_PR5 * AWo_72_PR5 * (1+ RPF_72_PR5 - RUFo_72_PR5) + GPmax_72_PR5 * AWr_72_PR5 * (1+ RPF_72_PR5 - RUFr_72_PR5)}
 
 !==============================
 ! 72_PR6 - Grassland WD South - Refuge
 !==============================
 goal setGPmin_72_PR6        {GP_72_PR6 > GPmin_72_PR6 * AWo_72_PR6 * (1+ RPF_72_PR6 - RUFo_72_PR6) + GPmin_72_PR6 * AWr_72_PR6 * (1+ RPF_72_PR6 - RUFr_72_PR6)}
-!goal setGPmax_72_PR6        {GP_72_PR6 < GPmax_72_PR6 * AWo_72_PR6 * (1+ RPF_72_PR6 - RUFo_72_PR6) + GPmax_72_PR6 * AWr_72_PR6 * (1+ RPF_72_PR6 - RUFr_72_PR6)}
+goal setGPmax_72_PR6        {GP_72_PR6 < GPmax_72_PR6 * AWo_72_PR6 * (1+ RPF_72_PR6 - RUFo_72_PR6) + GPmax_72_PR6 * AWr_72_PR6 * (1+ RPF_72_PR6 - RUFr_72_PR6)}
 
 !==============================
 ! 72_NU - Gustine, Firebaugh, Los Banos, Newman, & small communities - M&I gw only
 !==============================
+goal setGPmin_72_NU        	{GP_72_NU > GPmin_72_NU}  !@coeqwal
+goal setGPmax_72_NU   		{GP_72_NU < GPmax_72_NU}   !@coeqwal
 
 !==============================
 ! 72_PU - Dos Palos - M&I gw only
 !==============================
+goal setGPmin_72_PU        	{GP_72_PU > GPmin_72_PU}  !@coeqwal
+goal setGPmax_72_PU   		{GP_72_PU < GPmax_72_PU}   !@coeqwal
+
 
 goal set_GP_WBATotal_72  {GP_WBATotal_72
                     - GP_72_NA1
@@ -327,7 +333,7 @@ goal setGPmax_91_PA        {GP_91_PA < 0.001 + GPmax_91_PA * AWo_91_PA * (1+ RPF
 ! 91_PR - Mendota WA - Refuge
 !==============================
 goal setGPmin_91_PR        {GP_91_PR > GPmin_91_PR * AWo_91_PR * (1+ RPF_91_PR - RUFo_91_PR) + GPmin_91_PR * AWr_91_PR * (1+ RPF_91_PR - RUFr_91_PR)}
-!goal setGPmax_91_PR        {GP_91_PR < GPmax_91_PR * AWo_91_PR * (1+ RPF_91_PR - RUFo_91_PR) + GPmax_91_PR * AWr_91_PR * (1+ RPF_91_PR - RUFr_91_PR)}
+goal setGPmax_91_PR        {GP_91_PR < GPmax_91_PR * AWo_91_PR * (1+ RPF_91_PR - RUFo_91_PR) + GPmax_91_PR * AWr_91_PR * (1+ RPF_91_PR - RUFr_91_PR)}
  
 goal set_GP_WBATotal_91  {GP_WBATotal_91
                      - GP_91_PA 
