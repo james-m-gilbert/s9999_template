@@ -947,7 +947,7 @@ Objective obj_SYS = {
 [MAXTrans_SAC078_22_SA1 ,  1],*/
 
 
-/*
+
 [SHRTG_10_NA,-1], 
 [SHRTG_10_NU1,-1],
 [SHRTG_10_NU2,-1], 
@@ -1097,7 +1097,7 @@ Objective obj_SYS = {
 [SHRTG_09_SA1,-1], 
 [SHRTG_09_SA2,-1],
 [SHRTG_09_PR,-1], 
-*/
+
 
 ! Reuse
 !@jmg 2017v13 - uncommenting for consistency

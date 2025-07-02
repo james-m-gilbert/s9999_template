@@ -17,7 +17,7 @@ ASSURE CONTINUITY IN DELIVERY ARCS
 !======================================================================
 ! No surface water delivery
 ! Total Applied Water = groundwater pumping
-goal meetAW_26S_NA  {AW_26S_NA + RP_26S_NA = GP_26S_NA + RU_26S_NA } ! + SHRTG_26S_NA }
+goal meetAW_26S_NA  {AW_26S_NA + RP_26S_NA = GP_26S_NA + RU_26S_NA + SHRTG_26S_NA }
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!! WBA 60N     !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -58,7 +58,7 @@ goal setDN_60N_PU       {DN_60N_PU = DG_60N_PU - DL_60N_PU}
 ! meet minimum groundwater pumping
 !goal meetGPmin_60N_PU   {GP_60N_PU > min(UD_60N_PU,GPmin_60N_PU)}
 ! Total Applied Water = net surface delivery + groundwater pumping
-goal meetUD_60N_PU      {UD_60N_PU = DN_60N_PU + GP_60N_PU}
+goal meetUD_60N_PU      {UD_60N_PU = DN_60N_PU + GP_60N_PU + GW_SHORT_60N_PU}
 
 
 !==============================
@@ -115,7 +115,7 @@ goal meetAW_60N_NA5     {AW_60N_NA5 + RP_60N_NA5 = DN_60N_NA5 + GP_60N_NA5 + RU_
 goal setDG_60N_NU1      {DG_60N_NU1 = D_MOK035_60N_NU1}
 goal setDN_60N_NU1      {DN_60N_NU1 = DG_60N_NU2 - DL_60N_NU1}
 !goal meetGPmin_60N_NU1  {GP_60N_NU1 > min((UD_60N_NU1),GPmin_60N_NU1)}
-goal meetUD_60N_NU1     {UD_60N_NU1 = DN_60N_NU1 + GP_60N_NU1}
+goal meetUD_60N_NU1     {UD_60N_NU1 = DN_60N_NU1 + GP_60N_NU1 + GW_SHORT_60N_NU1}
 
 
 !==============================
@@ -124,7 +124,7 @@ goal meetUD_60N_NU1     {UD_60N_NU1 = DN_60N_NU1 + GP_60N_NU1}
 goal setDG_60N_NU2      {DG_60N_NU2 = D_RNCHO_60N_NU2}
 goal setDN_60N_NU2      {DN_60N_NU2 = DG_60N_NU2 - DL_60N_NU2}
 !goal meetGPmin_60N_NU2  {GP_60N_NU2 > min((UD_60N_NU2),GPmin_60N_NU2)}
-goal meetUD_60N_NU2     {UD_60N_NU2 = DN_60N_NU2 + GP_60N_NU2}
+goal meetUD_60N_NU2     {UD_60N_NU2 = DN_60N_NU2 + GP_60N_NU2 + GW_SHORT_60N_NU2}
 
 !======================================================================
 ! EBMUD
@@ -136,7 +136,7 @@ goal setDN_EBMUD    {DN_EBMUD = DG_EBMUD - DL_EBMUD}
 ! meet minimum groundwater pumping
 goal setGP_EBMUD    {GP_EBMUD > min(UD_EBMUD,GPmin_EBMUD)}
 ! Total Applied Water = net surface delivery + groundwater pumping
-goal meetUD_EBMUD   {UD_EBMUD = DN_EBMUD + GP_EBMUD}
+goal meetUD_EBMUD   {UD_EBMUD = DN_EBMUD + GP_EBMUD + GW_SHORT_EBMUD}
 
 
 

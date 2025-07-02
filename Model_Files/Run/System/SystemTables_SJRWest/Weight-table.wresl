@@ -209,7 +209,7 @@ Objective obj_SYS_SJRWEST = {
 [GW_SHORT_71_PA6,  -10000], 
 [GW_SHORT_71_PA8,  -10000], 
 [GW_SHORT_72_NA1,     -101], 
-[GW_SHORT_72_NA2,     -101], 
+[GW_SHORT_72_NA2,     -1001], !@coeqal - adjusting from -101 to prevent shortages when there are no gw pumping limits
 [GW_SHORT_72_PA,   -10000], 
 [GW_SHORT_72_XA1,  -10000], 
 [GW_SHORT_72_XA2,  -10000], 
@@ -217,6 +217,7 @@ Objective obj_SYS_SJRWEST = {
 [GW_SHORT_73_PA1,  -10000], 
 [GW_SHORT_73_PA2,  -10000], 
 [GW_SHORT_73_PA3,  -10000], 
+[GW_SHORT_73_NA,   -10000], 
 [GW_SHORT_73_XA,   -10000], 
 [GW_SHORT_90_PA1,  -10000], 
 [GW_SHORT_90_PA2,  -10000],  

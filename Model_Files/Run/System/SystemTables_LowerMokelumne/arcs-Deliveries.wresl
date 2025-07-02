@@ -92,16 +92,22 @@ define GW_SHORT_60N_NA5      {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units
 define  DN_60N_NU1      {std kind 'SW_DELIVERY-NET' units 'CFS'}            
 define  DG_60N_NU1      {std kind 'SW_DELIVERY-GROSS' units 'CFS'}
 define  UD_60N_NU1      {timeseries kind 'URBAN-DEMAND' units 'TAF' convert 'CFS'}
+! 20250624@COEQWAL: testing gw shortage
+define GW_SHORT_60N_NU1  {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
 
 ! Rancho Murieta
 define  DN_60N_NU2      {std kind 'SW_DELIVERY-NET' units 'CFS'}            
 define  DG_60N_NU2      {std kind 'SW_DELIVERY-GROSS' units 'CFS'}
 define  UD_60N_NU2      {timeseries kind 'URBAN-DEMAND' units 'TAF' convert 'CFS'}
+! 20250624@COEQWAL: testing gw shortage
+define GW_SHORT_60N_NU2  {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
 
 ! SMUD - Rancho Seco Power Plant
 define  DN_60N_PU       {std kind 'SW_DELIVERY-NET' units 'CFS'}            
 define  DG_60N_PU       {std kind 'SW_DELIVERY-GROSS' units 'CFS'}
 define  UD_60N_PU       {timeseries kind 'URBAN-DEMAND' units 'TAF' convert 'CFS'}
+! 20250624@COEQWAL: testing gw shortage
+define GW_SHORT_60N_PU  {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
 
 ! East Bay MUD
 define  DN_EBMUD        {std kind 'SW_DELIVERY-NET' units 'CFS'}            
@@ -128,8 +134,6 @@ define distEBMUD        {! FRom Ben Bray, EBMUD
     case mSep  {condition always       value 1.30}}
     
 define UD_EBMUD         {value AnnualEBMUD * 3.068888 * distEBMUD * daysin/1000. * taf_cfs}
-
-
-
-
+! 20250624@COEQWAL: testing gw shortage
+define GW_SHORT_EBMUD  {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
 

@@ -48,14 +48,14 @@ goal setDG_60S_NU1b       {DG_60S_NU1 = D_WTPWDH_60S_NU1 + D_SJR028_WTPDWS + D_M
 goal setDG_60S_NU1       {DG_60S_NU1 = D_WTPWDH_60S_NU1 + D_WTPDWS_60S_NU1}
 goal setDN_60S_NU1       {DN_60S_NU1 = DG_60S_NU1 - DL_60S_NU1}
 goal meetGPmin_60S_NU1   {GP_60S_NU1 > min(UD_60S_NU1,GPmin_60S_NU1)}
-goal meetUD_60S_NU1      {UD_60S_NU1 = DN_60S_NU1 + GP_60S_NU1}
+goal meetUD_60S_NU1      {UD_60S_NU1 = DN_60S_NU1 + GP_60S_NU1 + GW_SHORT_60S_NU1}
 
 
 !==============================
 ! 60S_NU2 - Small communities
 !==============================
 ! No surface water delivery
-! goal meetUD_60S_NU2      {UD_60S_NU2 = GP_60S_NU2}
+goal meetUD_60S_NU2      {UD_60S_NU2 = GP_60S_NU2 + GW_SHORT_60S_NU2}
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -181,7 +181,7 @@ goal setDG_61_NU1         {DG_61_NU1        = D_WTPMOD_61_NU1}
 goal setDN_WTPMOD_61_NU1  {DN_WTPMOD_61_NU1 =  D_WTPMOD_61_NU1 - DL_WTPMOD_61_NU1}
 goal setDN_61_NU1         {DN_61_NU1        = DG_61_NU1        - DL_61_NU1}
 ! Total Applied Water = net surface delivery + groundwater pumping
-goal meetUD_61_NU1        {UD_61_NU1 = DN_61_NU1 + GP_61_NU1}
+goal meetUD_61_NU1        {UD_61_NU1 = DN_61_NU1 + GP_61_NU1 + GW_SHORT_61_NU1}
 
 
 !==============================
@@ -193,7 +193,7 @@ goal setDG_61_NU2         {DG_61_NU2        = D_WTPDGT_61_NU2}
 goal setDN_WTPDGT_61_NU2  {DN_WTPDGT_61_NU2 =  D_WTPDGT_61_NU2 - DL_WTPDGT_61_NU2}
 goal setDN_61_NU2         {DN_61_NU2        = DG_61_NU2        - DL_61_NU2}
 ! Total Applied Water = net surface delivery + groundwater pumping
-goal meetUD_61_NU2        {UD_61_NU2 = DN_61_NU2 + GP_61_NU2}
+goal meetUD_61_NU2        {UD_61_NU2 = DN_61_NU2 + GP_61_NU2 + GW_SHORT_61_NU2}
 
 
 !==============================
@@ -201,7 +201,7 @@ goal meetUD_61_NU2        {UD_61_NU2 = DN_61_NU2 + GP_61_NU2}
 !==============================
 ! No surface water delivery
 ! Total Applied Water = groundwater pumping
-goal setUD_61_NU3         {UD_61_NU3 = GP_61_NU3}
+goal setUD_61_NU3         {UD_61_NU3 = GP_61_NU3 + GW_SHORT_61_NU3}
 
 
 
@@ -283,7 +283,7 @@ goal meetAW_62_NA6        {AW_62_NA6 + RP_62_NA6 = DN_62_NA6 + GP_62_NA6 + RU_62
 !==============================
 ! No surface water delivery
 ! Total Applied Water = groundwater pumping
-goal setUD_62_NU          {UD_62_NU = GP_62_NU}
+goal setUD_62_NU          {UD_62_NU = GP_62_NU + GW_SHORT_62_NU}
 
 
 
@@ -300,7 +300,7 @@ goal setDG_63_PR1         {DG_63_PR1        = D_ESC005_63_PR1}
 goal setDN_ESC000_63_PR1  {DN_ESC000_63_PR1 =  D_ESC005_63_PR1 - DL_ESC000_63_PR1}
 goal setDN_63_PR1         {DN_63_PR1        = DG_63_PR1        - DL_63_PR1}
 ! Total Applied Water = net surface delivery + groundwater pumping
-goal meetAW_63_PR1        {AW_63_PR1 + RP_63_PR1 = DN_63_PR1 + GP_63_PR1 + RU_63_PR1}
+goal meetAW_63_PR1        {AW_63_PR1 + RP_63_PR1 = DN_63_PR1 + GP_63_PR1 + RU_63_PR1 + GW_SHORT_63_PR1}
 ! RF pond storage
 /*goal setTWS_63_PR1_PERMA {TWS_63_PR1_PERMA = max(0.,TWS_63_PR1_PERMA(-1)
                                            + (AWW_63_PR1_PERMA + PR_63_PR1_PERMA)*cfs_taf
@@ -323,7 +323,7 @@ goal setDG_63_PR2         {DG_63_PR2        = D_DED010_63_PR2}
 goal setDN_DED010_63_PR2  {DN_DED010_63_PR2 =  D_DED010_63_PR2 - DL_DED010_63_PR2}
 goal setDN_63_PR2         {DN_63_PR2        = DG_63_PR2        - DL_63_PR2}
 ! Total Applied Water = net surface delivery + groundwater pumping
-goal meetAW_63_PR2        {AW_63_PR2 + RP_63_PR2 = DN_63_PR2 + GP_63_PR2 + RU_63_PR2}
+goal meetAW_63_PR2        {AW_63_PR2 + RP_63_PR2 = DN_63_PR2 + GP_63_PR2 + RU_63_PR2 + GW_SHORT_63_PR2}
 ! RF pond storage
 /*goal setTWS_63_PR2_PERMA {TWS_63_PR2_PERMA = max(0.,TWS_63_PR2_PERMA(-1)
                                            + (AWW_63_PR2_PERMA + PR_63_PR2_PERMA)*cfs_taf
@@ -346,7 +346,7 @@ goal setDG_63_PR3         {DG_63_PR3        = D_EBP048_63_PR3}
 goal setDN_EBP048_63_PR3  {DN_EBP048_63_PR3 =  D_EBP048_63_PR3 - DL_EBP048_63_PR3}
 goal setDN_63_PR3         {DN_63_PR3        = DG_63_PR3        - DL_63_PR3}
 ! Total Applied Water = net surface delivery + groundwater pumping
-goal meetAW_63_PR3        {AW_63_PR3 + RP_63_PR3 = DN_63_PR3 + GP_63_PR3 + RU_63_PR3}
+goal meetAW_63_PR3        {AW_63_PR3 + RP_63_PR3 = DN_63_PR3 + GP_63_PR3 + RU_63_PR3 + GW_SHORT_63_PR3}
 ! RF pond storage
 /*goal setTWS_63_PR3_PERMA {TWS_63_PR3_PERMA = max(0.,TWS_63_PR3_PERMA(-1)
                                            + (AWW_63_PR3_PERMA + PR_63_PR3_PERMA)*cfs_taf
@@ -422,7 +422,7 @@ goal meetAW_63_NA5        {AW_63_NA5 + RP_63_NA5 = DN_63_NA5 + GP_63_NA5 + RU_63
 !==============================
 ! No surface water delivery
 ! Total Applied Water = groundwater pumping
-goal setUD_63_NU          {UD_63_NU = GP_63_NU}
+goal setUD_63_NU          {UD_63_NU = GP_63_NU + GW_SHORT_63_NU}
 
 
 
@@ -528,6 +528,6 @@ goal meetAW_64_NA2   {AW_64_NA2 + RP_64_NA2 = DN_64_NA2 + GP_64_NA2 + RU_64_NA2 
 ! No surface water delivery
 !goal setDG_64_NU          {DG_64_NU = 0.0}
 !goal setDN_64_NU          {DN_64_NU = 0.0}
-goal meetUD_64_NU         {UD_64_NU = GP_64_NU } 
+goal meetUD_64_NU         {UD_64_NU = GP_64_NU + GW_SHORT_64_NU} 
 
 !goal setDD_SJR026_SJRE   {DD_SJR026_SJRE < DD_SJR_East}

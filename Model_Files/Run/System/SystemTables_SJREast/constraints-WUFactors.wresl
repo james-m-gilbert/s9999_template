@@ -1188,7 +1188,9 @@ define IR_64_XA_GP  {lower rGPmin_64_XA upper GPmax_64_XA kind 'IR-Fraction' uni
 define  R_64_XA_GP  {std kind 'RETURN' units 'CFS'}
 goal   set1R_64_XA_GP   {R_64_XA_GP <   NTW_64_XA }
 goal   setR_64_XA_GP   {R_64_XA_GP = IR_64_XA_GP *    NTW_64_XA }                    
-goal meetAW_64_XA_GP  {GP_64_XA    = IR_64_XA_GP * AWRPRU_64_XA }                               
+!goal meetAW_64_XA_GP  {GP_64_XA    = IR_64_XA_GP * AWRPRU_64_XA }   
+!@coeqwal - trying to fix infeasibility under gw limit scenario  
+goal meetAW_64_XA_GP  { lhs GP_64_XA    rhs IR_64_XA_GP * AWRPRU_64_XA lhs<rhs penalty 0 lhs>rhs penalty 9999}                          
     
 !===Surface flow and the associated return flow==========
 define  RFC_MDOTA_64_XA {value LFF_MDOTA_64_XA + OSF_MDOTA_64_XA} !Return Flow Coefficient

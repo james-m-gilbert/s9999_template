@@ -83,8 +83,9 @@ goal setGPmin_03_PU2       {GP_03_PU2 > GPmin_03_PU2 * UD_03_PU2}
 goal setGPmax_03_PU2       {GP_03_PU2 < GPmax_03_PU2 * UD_03_PU2}
 
 ! 3_PU3
-goal setGPmin_03_PU3       {GP_03_PU3 > GPmin_03_PU3 * UD_03_PU3}
-goal setGPmax_03_PU3       {GP_03_PU3 < GPmax_03_PU3 * UD_03_PU3}
+!@coeqwal - does not appear to be represented currently (demands are all 0)
+!goal setGPmin_03_PU3       {GP_03_PU3 > GPmin_03_PU3 * UD_03_PU3}
+!goal setGPmax_03_PU3       {GP_03_PU3 < GPmax_03_PU3 * UD_03_PU3}
 
 goal set_GP_WBATotal_3  {GP_WBATotal_3  - GP_03_NA - GP_03_SA - GP_03_SU - GP_03_PA - GP_03_PU1 - GP_03_PU2 - /*GP_03_PU3*/ - GP_03_NU  = 0.}
 
@@ -276,7 +277,7 @@ goal set_GP_WBATotal_8S  {GP_WBATotal_8S - GP_08S_NA1 - GP_08S_NA2 - GP_08S_SA1 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! 9_NA
 goal setGPmin_09_NA    {GP_09_NA > GPmin_09_NA * AWo_09_NA * (1+ RPF_09_NA - RUFo_09_NA) + GPmin_09_NA * AWr_09_NA * (1+ RPF_09_NA - RUFr_09_NA)+ GPmin_09_NA * AWw_09_NA * (1+ RPF_09_NA - RUFw_09_NA)}
-goal setGPmax_09_NA    {GP_09_NA < GPmax_09_NA * AWo_09_NA * (1+ RPF_09_NA - RUFo_09_NA) + GPmax_09_NA * AWr_09_NA * (1+ RPF_09_NA - RUFr_09_NA)}
+goal setGPmax_09_NA    {GP_09_NA < GPmax_09_NA * AWo_09_NA * (1+ RPF_09_NA - RUFo_09_NA) + GPmax_09_NA * AWr_09_NA * (1+ RPF_09_NA - RUFr_09_NA)+ GPmax_09_NA * AWw_09_NA * (1+ RPF_09_NA - RUFw_09_NA)}
 define GPmin_09_NA_dv   {alias GPmin_09_NA * AWo_09_NA * (1+ RPF_09_NA - RUFo_09_NA) + GPmin_09_NA * AWr_09_NA * (1+ RPF_09_NA - RUFr_09_NA) kind 'GW-PUMPING-LIMIT' units 'CFS'}
 
 ! 9_SA1
@@ -572,8 +573,8 @@ goal set_GP_WBATotal_18  {GP_WBATotal_18 - GP_18_NU - GP_18_NA - GP_18_SA = 0.}
 !!! WBA 19      !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! 19_NA (placeholder - not used)
-goal setGPmin_19_NA    {GP_19_NA  > GPmin_19_NA * AWo_19_NA * (1+ RPF_19_NA - RUFo_19_NA) + GPmin_19_NA * AWr_19_NA * (1+ RPF_19_NA - RUFr_19_NA)}
-goal setGPmax_19_NA    {GP_19_NA  < GPmax_19_NA * AWo_19_NA * (1+ RPF_19_NA - RUFo_19_NA) + GPmin_19_NA * AWr_19_NA * (1+ RPF_19_NA - RUFr_19_NA)}
+!goal setGPmin_19_NA    {GP_19_NA  > GPmin_19_NA * AWo_19_NA * (1+ RPF_19_NA - RUFo_19_NA) + GPmin_19_NA * AWr_19_NA * (1+ RPF_19_NA - RUFr_19_NA)}
+!goal setGPmax_19_NA    {GP_19_NA  < GPmax_19_NA * AWo_19_NA * (1+ RPF_19_NA - RUFo_19_NA) + GPmin_19_NA * AWr_19_NA * (1+ RPF_19_NA - RUFr_19_NA)}
 !define GPmin_19_NA_dv  {alias GPmin_19_NA * AWo_19_NA * (1+ RPF_19_NA - RUFo_19_NA) + GPmin_19_NA * AWr_19_NA * (1+ RPF_19_NA - RUFr_19_NA) kind 'GW-PUMPING-LIMIT' units 'CFS'}
 
 ! 19_SA
@@ -753,7 +754,7 @@ goal set_GP_WBATotal_25  {GP_WBATotal_25 - GP_25_PA2 - GP_25_NA - GP_25_PA1 - GP
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !26N_NA - minimum gw pumping not specified as no surface water delivery.
 ! Specification of (a) minimum gw pumping, (b) volume of reuse, and (c) supply equla to demand can cause infeasibilities due to model being over constrained.
-goal setGPmin_26N_NA      {GP_26N_NA > GPmin_S26N_NA * AWo_26N_NA * (1+ RPF_26N_NA - RUFo_26N_NA) + GPmin_26N_NA * AWr_26N_NA * (1+ RPF_26N_NA - RUFr_26N_NA)}
+goal setGPmin_26N_NA      {GP_26N_NA > GPmin_26N_NA * AWo_26N_NA * (1+ RPF_26N_NA - RUFo_26N_NA) + GPmin_26N_NA * AWr_26N_NA * (1+ RPF_26N_NA - RUFr_26N_NA)}
 goal setGPmax_26N_NA      {GP_26N_NA < GPmax_26N_NA * AWo_26N_NA * (1+ RPF_26N_NA - RUFo_26N_NA) + GPmax_26N_NA * AWr_26N_NA * (1+ RPF_26N_NA - RUFr_26N_NA)}
 
 !26N_NU1

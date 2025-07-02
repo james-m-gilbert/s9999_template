@@ -590,7 +590,10 @@ define rGPmin_10_NA { case zero {condition AWRPRU_10_NA <= 0.0 value 0} case oth
 define IR_10_NA_GP  {lower rGPmin_10_NA upper GPmax_10_NA kind 'IR-Fraction' units 'NONE'} 
 define  R_10_NA_GP  {lower 0 upper NTW_10_NA kind 'RETURN' units 'CFS'}
 goal   setR_10_NA_GP   {R_10_NA_GP = IR_10_NA_GP *    NTW_10_NA }                    
-goal meetAW_10_NA_GP  {GP_10_NA    = IR_10_NA_GP * AWRPRU_10_NA }                               
+!goal meetAW_10_NA_GP  {GP_10_NA    = IR_10_NA_GP * AWRPRU_10_NA } 
+!@coeqwal - trying to fix infeasibility under gw limit scenario  
+goal meetAW_10_NA_GP  { lhs GP_10_NA    rhs IR_10_NA_GP * AWRPRU_10_NA lhs<rhs penalty 0 lhs>rhs penalty 9999}                          
+                              
     
 !===Surface flow and the associated return flow==========
 !define  D_MIO023_10_NA  {std kind 'DIVERSION' units 'CFS'}
@@ -599,7 +602,7 @@ define  NFC_MIO023_10_NA {value 1-(EVF_MIO023_10_NA + DPF_MIO023_10_NA + RFC_MIO
 define   IR_MIO023_10_NA {std kind 'IR-Fraction' units 'NONE'} !{lower 0 upper CL_10_NA*(1 -FLOSS_MIO023_10_NA)/GPmax_10_NA_ann kind 'IR-Fraction' units 'NONE'}
 define    R_MIO023_10_NA {lower 0 upper (NTW_10_NA +AWRPRU_10_NA*RFC_MIO023_10_NA/NFC_MIO023_10_NA) kind 'RETURN' units 'CFS'}
 goal   setR_MIO023_10_NA {lhs R_MIO023_10_NA rhs IR_MIO023_10_NA * NTW_10_NA + D_MIO023_10_NA *RFC_MIO023_10_NA }                                                
-goal meetAW_MIO023_10_NA {lhs IR_MIO023_10_NA *    AWRPRU_10_NA rhs           + D_MIO023_10_NA *NFC_MIO023_10_NA } !DN_10_NA } ! + GP_10_NA+ SHRTG_10_NA }                               
+goal meetAW_MIO023_10_NA {lhs IR_MIO023_10_NA *    AWRPRU_10_NA rhs           + D_MIO023_10_NA *NFC_MIO023_10_NA lhs<rhs penalty 0 lhs>rhs penalty 9999} !DN_10_NA } ! + GP_10_NA+ SHRTG_10_NA }                               
 
 !define  D_BTC036_10_NA  {std kind 'DIVERSION' units 'CFS'}
 define  RFC_BTC036_10_NA {value    LFF_BTC036_10_NA + OSF_BTC036_10_NA} !Return Flow Coefficient
@@ -607,7 +610,7 @@ define  NFC_BTC036_10_NA {value 1-(EVF_BTC036_10_NA + DPF_BTC036_10_NA + RFC_BTC
 define   IR_BTC036_10_NA {std kind 'IR-Fraction' units 'NONE'} !{lower 0 upper CL_10_NA*(1 -FLOSS_BTC036_10_NA)/GPmax_10_NA_ann kind 'IR-Fraction' units 'NONE'}
 define    R_BTC036_10_NA {lower 0 upper (NTW_10_NA +AWRPRU_10_NA*RFC_BTC036_10_NA/NFC_BTC036_10_NA) kind 'RETURN' units 'CFS'}
 goal   setR_BTC036_10_NA { R_BTC036_10_NA = IR_BTC036_10_NA * NTW_10_NA + D_BTC036_10_NA *RFC_BTC036_10_NA }                                                
-goal meetAW_BTC036_10_NA {IR_BTC036_10_NA *    AWRPRU_10_NA =            + D_BTC036_10_NA *NFC_BTC036_10_NA } !DN_10_NA } ! + GP_10_NA+ SHRTG_10_NA }                               
+goal meetAW_BTC036_10_NA {lhs IR_BTC036_10_NA *    AWRPRU_10_NA rhs  + D_BTC036_10_NA *NFC_BTC036_10_NA lhs<rhs penalty 0 lhs>rhs penalty 9999 } !DN_10_NA } ! + GP_10_NA+ SHRTG_10_NA }                               
 
 !define  D_BTC043_10_NA  {std kind 'DIVERSION' units 'CFS'}
 define  RFC_BTC043_10_NA {value LFF_BTC043_10_NA + OSF_BTC043_10_NA} !Return Flow Coefficient
@@ -615,7 +618,7 @@ define  NFC_BTC043_10_NA {value 1-(EVF_BTC043_10_NA + DPF_BTC043_10_NA + RFC_BTC
 define   IR_BTC043_10_NA {std kind 'IR-Fraction' units 'NONE'} !{lower 0 upper CL_10_NA*(1 -FLOSS_BTC043_10_NA)/GPmax_10_NA_ann kind 'IR-Fraction' units 'NONE'}
 define    R_BTC043_10_NA {lower 0 upper (NTW_10_NA +AWRPRU_10_NA*RFC_BTC043_10_NA/NFC_BTC043_10_NA) kind 'RETURN' units 'CFS'}
 goal   setR_BTC043_10_NA { R_BTC043_10_NA = IR_BTC043_10_NA * NTW_10_NA + D_BTC043_10_NA *RFC_BTC043_10_NA }                                                
-goal meetAW_BTC043_10_NA {IR_BTC043_10_NA *    AWRPRU_10_NA =            + D_BTC043_10_NA *NFC_BTC043_10_NA } !DN_10_NA } ! + GP_10_NA+ SHRTG_10_NA }                               
+goal meetAW_BTC043_10_NA {lhs IR_BTC043_10_NA *    AWRPRU_10_NA rhs + D_BTC043_10_NA *NFC_BTC043_10_NA lhs<rhs penalty 0 lhs>rhs penalty 9999} !DN_10_NA } ! + GP_10_NA+ SHRTG_10_NA }                               
 
 !===Combine all irrigation ratio
 goal combineIR_10_NA_DU {1        =IR_10_NA_GP + IR_MIO023_10_NA +IR_BTC036_10_NA + IR_BTC043_10_NA}

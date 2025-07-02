@@ -47,9 +47,9 @@ define  GPmax_60S_NU1   {select maxfraction from AgMinMaxgw where id = 168}
 
 
 ! 60S_NU2 Small communities
-!define  GP_60S_NU2      {std kind 'GW-PUMPING' units 'CFS'}         
-!define  GPmin_60S_NU2   {value 0.0}!select minfraction from AgMinMaxgw where id = 1}       
-!define  GPmax_60S_NU2   {value 1.0}!select maxfraction from AgMinMaxgw where id = 1}
+define  GP_60S_NU2      {std kind 'GW-PUMPING' units 'CFS'}         
+define  GPmin_60S_NU2   {select minfraction from AgMinMaxgw where id = 169}       
+define  GPmax_60S_NU2   {select maxfraction from AgMinMaxgw where id = 169}
 
 
 ! All demand units

@@ -72,7 +72,7 @@ goal setDG_24_NA1   {DG_24_NA1 = D_CBC001_24_NA1 + D_WSE004_24_NA1 + D_ABN024_24
 ! net surface delivery = surface diversion - conveyance losses
 goal setDN_24_NA1   {DN_24_NA1 = DG_24_NA1 - DL_24_NA1}
 ! Total Applied Water = net surface delivery + groundwater pumping + reuse
-goal meetAW_24_NA1  {AW_24_NA1 + RP_24_NA1 = DN_24_NA1 + GP_24_NA1 + RU_24_NA1 } ! + SHRTG_24_NA1}
+goal meetAW_24_NA1  {AW_24_NA1 + RP_24_NA1 = DN_24_NA1 + GP_24_NA1 + RU_24_NA1  + SHRTG_24_NA1}
 !define SHRTG_24_NA1	{alias AW_24_NA1 + RP_24_NA1 - DN_24_NA1 - GP_24_NA1 - RU_24_NA1 kind 'delivery-shortage' units 'cfs'} 
 
 
@@ -88,7 +88,7 @@ goal setDG_24_NA2   {DG_24_NA2 = D_ABN010_24_NA2}
 ! net surface delivery = surface diversion - conveyance losses
 goal setDN_24_NA2   {DN_24_NA2 = DG_24_NA2 - DL_24_NA2}
 ! Total Applied Water = net surface delivery + groundwater pumping + reuse
-goal meetAW_24_NA2  {AW_24_NA2 + AW_24_NA2_add + RP_24_NA2 = DN_24_NA2 + GP_24_NA2 + RU_24_NA2 } ! + SHRTG_24_NA2 }
+goal meetAW_24_NA2  {AW_24_NA2 + AW_24_NA2_add + RP_24_NA2 = DN_24_NA2 + GP_24_NA2 + RU_24_NA2  + SHRTG_24_NA2 }
 !define SHRTG_24_NA2	{alias AW_24_NA2 + RP_24_NA2 - DN_24_NA2 - GP_24_NA2 - RU_24_NA2 kind 'delivery-shortage' units 'cfs'} 
 
 !======================================================================
@@ -99,7 +99,7 @@ goal setDG_24_NA3   {DG_24_NA3 = D_STH003_24_NA3 + D_STH005_24_NA3 + D_WSE006_24
 ! net surface delivery = surface diversion - conveyance losses
 goal setDN_24_NA3   {DN_24_NA3 = DG_24_NA3 - DL_24_NA3}
 ! Total Applied Water = net surface delivery + groundwater pumping + reuse
-goal meetAW_24_NA3  {AW_24_NA3 + AW_24_NA3_add + RP_24_NA3 = DN_24_NA3 + GP_24_NA3 + RU_24_NA3} ! + SHRTG_24_NA3 }
+goal meetAW_24_NA3  {AW_24_NA3 + AW_24_NA3_add + RP_24_NA3 = DN_24_NA3 + GP_24_NA3 + RU_24_NA3 + SHRTG_24_NA3 }
 !define SHRTG_24_NA3	{alias AW_24_NA3 + RP_24_NA3 - DN_24_NA3 - GP_24_NA3 - RU_24_NA3 kind 'delivery-shortage' units 'cfs'} 
 
 !======================================================================
@@ -110,7 +110,7 @@ goal setDG_24_NU2   {DG_24_NU2 = D_WTPFSS_24_NU2}
 ! net surface delivery = surface diversion - conveyance losses
 goal setDN_24_NU2   {DN_24_NU2 = DG_24_NU2 - DL_24_NU2}
 ! Total Applied Water = net surface delivery + groundwater pumping
-goal setUD_24_NU2   {UD_24_NU2 + UD_24_NU2_add = DN_24_NU2 + GP_24_NU2 } ! + SHRTG_24_NU2 }
+goal setUD_24_NU2   {UD_24_NU2 + UD_24_NU2_add = DN_24_NU2 + GP_24_NU2 + SHRTG_24_NU2 }
 !define SHRTG_24_NU2	{alias UD_24_NU2 - DN_24_NU2 - GP_24_NU2 kind 'delivery-shortage' units 'cfs'} 
 
 !======================================================================
@@ -121,7 +121,7 @@ goal setDG_24_NU1   {DG_24_NU1 = D_WTPBWM_24_NU1 + D_WTPAUB_24_NU1}
 ! net surface delivery = surface diversion - conveyance losses
 goal setDN_24_NU1   {DN_24_NU1 = DG_24_NU1 - DL_24_NU1}
 ! Total Applied Water = net surface delivery + groundwater pumping
-goal setUD_24_NU1   {UD_24_NU1 = DN_24_NU1 + GP_24_NU1 } ! + SHRTG_24_NU1 }
+goal setUD_24_NU1   {UD_24_NU1 = DN_24_NU1 + GP_24_NU1 + SHRTG_24_NU1 }
 !define SHRTG_24_NU1	{alias UD_24_NU1 - DN_24_NU1 - GP_24_NU1 kind 'delivery-shortage' units 'cfs'} 
 
 !======================================================================
@@ -132,7 +132,7 @@ goal setDG_24_NU3   {DG_24_NU3 = D_WSE004_24_NU3}
 ! net surface delivery = surface diversion - conveyance losses
 goal setDN_24_NU3   {DN_24_NU3 = DG_24_NU3 - DL_24_NU3}
 ! Total Applied Water = net surface delivery + groundwater pumping
-goal setUD_24_NU3   {UD_24_NU3 = DN_24_NU3 + GP_24_NU3 } ! + SHRTG_24_NU3 }
+goal setUD_24_NU3   {UD_24_NU3 = DN_24_NU3 + GP_24_NU3  + SHRTG_24_NU3 }
 !define SHRTG_24_NU3	{alias UD_24_NU3 - DN_24_NU3 - GP_24_NU3 kind 'delivery-shortage' units 'cfs'} 
 
 !======================================================================
@@ -143,7 +143,7 @@ goal setDG_PCWA3    {DG_PCWA3 = D_LBC010_PCWA3}
 ! net surface delivery = surface diversion - conveyance losses
 goal setDN_PCWA3    {DN_PCWA3 = DG_PCWA3 - DL_PCWA3}
 ! Total Applied Water = net surface delivery + groundwater pumping
-goal setUD_PCWA3    {UD_PCWA3 > DN_PCWA3 + GP_PCWA3 } ! + SHRTG_PCWA3 }
+goal setUD_PCWA3    {UD_PCWA3 > DN_PCWA3 + GP_PCWA3  + SHRTG_PCWA3 }
 define SHRTG_PCWA3	{alias UD_PCWA3 - DN_PCWA3 - GP_PCWA3 kind 'delivery-shortage' units 'cfs'} 
 
 !goal Limit_PCWA3_sources {D_LBR002_LBC001 - D_LBC001_LBCLOS + D_CYN009_LBC001 < D_LBC010_PCWA3}

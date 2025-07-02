@@ -299,38 +299,39 @@ Objective obj_SYS_SJREAST = {
 !20250107@COEQWAL: penalties slightly higher than pumping to ensure max pumping 
 [GW_SHORT_60S_PA1,   -1001],   
 [GW_SHORT_60S_PA2,   -1001],        
-![GW_SHORT_60S_NU1,    -1.2],    
+[GW_SHORT_60S_NU1,    -1.2],    
 [GW_SHORT_61_PA1,    -1001],   
-[GW_SHORT_61_PA2,    -1001],   
+[GW_SHORT_61_PA2,    -2001],   !@coeqal - adjusting from -1001 to prevent shortages when there are no gw pumping limits
 [GW_SHORT_61_PA3,    -1001],
 [GW_SHORT_61_NA1,     -1],   
 [GW_SHORT_61_NA2,     -1],   
 [GW_SHORT_61_NA3,    -1001],   
-[GW_SHORT_61_NA4,    -1001],   
+[GW_SHORT_61_NA4,    -2001],   !@coeqal - adjusting from -1001 to prevent shortages when there are no gw pumping limits
 [GW_SHORT_61_NA5,    -1001],   
 [GW_SHORT_61_NA6,    -1001],   
-! [GW_SHORT_61_NU1,     -1],   
-! [GW_SHORT_61_NU2,     -1],   
-! [GW_SHORT_61_NU3,     -1],   
+[GW_SHORT_61_NU1,     -1],   
+[GW_SHORT_61_NU2,     -1],   
+[GW_SHORT_61_NU3,     -1],   
 [GW_SHORT_62_NA1,     -1],   
-[GW_SHORT_62_NA2,    -1001],   
+[GW_SHORT_62_NA2,    -2001],   !@coeqal - adjusting from -1001 to prevent shortages when there are no gw pumping limits
 [GW_SHORT_62_NA3,     -1], 
-[GW_SHORT_62_NA4,    -1001], 
+[GW_SHORT_62_NA4,    -2001], !@coeqal - adjusting from -1001 to prevent shortages when there are no gw pumping limits
 [GW_SHORT_62_NA5,    -1001], 
 [GW_SHORT_62_NA6,     -1], 
-! [GW_SHORT_62_NU,      -1], 
+[GW_SHORT_62_NU,      -1], 
 [GW_SHORT_63_NA1,     -1], 
-[GW_SHORT_63_NA2,    -1001], 
+[GW_SHORT_63_NA2,    -2001], !@coeqal - adjusting from -1001 to prevent shortages when there are no gw pumping limits
 [GW_SHORT_63_NA3,     -1], 
 [GW_SHORT_63_NA4,     -1], 
-![GW_SHORT_63_PR1,    -1000], 
-![GW_SHORT_63_PR2,    -1000], 
-![GW_SHORT_63_PR3,    -1000], 
-! [GW_SHORT_63_NU,      -1], 
-[GW_SHORT_64_NA1,     -1], 
-[GW_SHORT_64_NA2,     -1], 
-[GW_SHORT_64_PA1,    -1001], 
-[GW_SHORT_64_PA2,    -1001], 
+[GW_SHORT_63_NA5,     -2001], !@coeqal - adjusting from -1001 to prevent shortages when there are no gw pumping limits
+[GW_SHORT_63_PR1,    -1000], 
+[GW_SHORT_63_PR2,    -1000], 
+[GW_SHORT_63_PR3,    -1000], 
+[GW_SHORT_63_NU,      -1], 
+[GW_SHORT_64_NA1,     -1001], !@coeqal - adjusting from -1 to prevent shortages when there are no gw pumping limits
+[GW_SHORT_64_NA2,     -1001],  !@coeqal - adjusting from -1 to prevent shortages when there are no gw pumping limits
+[GW_SHORT_64_PA1,    -2001], !@coeqal - adjusting from -1001 to prevent shortages when there are no gw pumping limits
+[GW_SHORT_64_PA2,    -4001], !@coeqal - adjusting from -2001 to prevent shortages when there are no gw pumping limits
 [GW_SHORT_64_PA3,    -1001], 
 [GW_SHORT_64_XA,     -1001], 
 

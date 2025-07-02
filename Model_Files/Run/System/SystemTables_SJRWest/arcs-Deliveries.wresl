@@ -40,7 +40,8 @@ define GW_SHORT_50_PA1      {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 
 define  DN_50_PU         {std kind 'SW_DELIVERY-NET' units 'CFS'}            
 define  DG_50_PU         {std kind 'SW_DELIVERY-GROSS' units 'CFS'}
 define  UD_50_PU         {timeseries kind 'URBAN-DEMAND' units 'TAF' convert 'CFS'}
-
+! 20250624@COEQWAL: testing gw shortage
+define GW_SHORT_50_PU    {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!! WBA 71      !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -178,17 +179,20 @@ define GW_SHORT_71_NA2      {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 
 define  DN_71_PU1        {std kind 'SW_DELIVERY-NET'       units 'CFS'}            
 define  DG_71_PU1        {std kind 'SW_DELIVERY-GROSS'     units 'CFS'}
 define  UD_71_PU1        {timeseries kind 'URBAN-DEMAND'   units 'TAF' convert 'CFS'} 
-
+! 20250624@COEQWAL: testing gw shortage
+define GW_SHORT_71_PU1      {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
 
 ! 71_PU2
 define  DN_71_PU2        {std kind 'SW_DELIVERY-NET'       units 'CFS'}            
 define  DG_71_PU2        {std kind 'SW_DELIVERY-GROSS'     units 'CFS'}
 define  UD_71_PU2        {timeseries kind 'URBAN-DEMAND'   units 'TAF' convert 'CFS'}
-
+! 20250624@COEQWAL: testing gw shortage
+define GW_SHORT_71_PU2      {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
 
 ! 71_NU -- no surface deliveries
 define  UD_71_NU         {timeseries kind 'URBAN-DEMAND'   units 'TAF' convert 'CFS'}
-
+! 20250624@COEQWAL: testing gw shortage
+define GW_SHORT_71_NU     {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -285,6 +289,8 @@ define  AW_72_PR1        {std kind 'APPLIED-WATER'         units 'CFS'}
 define  AWO_72_PR1       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
 define  AWR_72_PR1       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
 define  AWW_72_PR1       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
+! 20250624@COEQWAL: testing gw shortage
+define GW_SHORT_72_PR1      {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
 /* 
 define  AWW_72_PR1_PERMA{timeseries kind 'APPLIED-WATER'    units 'TAF' convert 'CFS'} 
 define  AWW_72_PR1_SEMIP{timeseries kind 'APPLIED-WATER'    units 'TAF' convert 'CFS'}
@@ -330,7 +336,9 @@ define  TW_72_PR2        {timeseries kind 'TAILWATER'      units 'TAF' convert '
 define  AW_72_PR2        {std kind 'APPLIED-WATER'         units 'CFS'}
 define  AWO_72_PR2       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
 define  AWR_72_PR2       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
-define  AWW_72_PR2       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}        
+define  AWW_72_PR2       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}       
+! 20250624@COEQWAL: testing gw shortage
+define GW_SHORT_72_PR2      {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'} 
 /* 
 define  AWW_72_PR2_PERMA{timeseries kind 'APPLIED-WATER'    units 'TAF' convert 'CFS'} 
 define  AWW_72_PR2_SEMIP{timeseries kind 'APPLIED-WATER'    units 'TAF' convert 'CFS'}
@@ -377,6 +385,8 @@ define  AW_72_PR3        {std kind 'APPLIED-WATER'         units 'CFS'}
 define  AWO_72_PR3       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
 define  AWR_72_PR3       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
 define  AWW_72_PR3       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
+! 20250624@COEQWAL: testing gw shortage
+define GW_SHORT_72_PR3      {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
 /* 
 define  AWW_72_PR3_PERMA{timeseries kind 'APPLIED-WATER'    units 'TAF' convert 'CFS'} 
 define  AWW_72_PR3_SEMIP{timeseries kind 'APPLIED-WATER'    units 'TAF' convert 'CFS'}
@@ -422,7 +432,9 @@ define  TW_72_PR4        {timeseries kind 'TAILWATER'      units 'TAF' convert '
 define  AW_72_PR4        {std kind 'APPLIED-WATER'         units 'CFS'}
 define  AWO_72_PR4       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
 define  AWR_72_PR4       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
-define  AWW_72_PR4       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}      
+define  AWW_72_PR4       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
+! 20250624@COEQWAL: testing gw shortage
+define GW_SHORT_72_PR4      {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}      
 /*
 define  AWW_72_PR4_PERMA{timeseries kind 'APPLIED-WATER'    units 'TAF' convert 'CFS'} 
 define  AWW_72_PR4_SEMIP{timeseries kind 'APPLIED-WATER'    units 'TAF' convert 'CFS'}
@@ -469,6 +481,8 @@ define  AW_72_PR5        {std kind 'APPLIED-WATER'         units 'CFS'}
 define  AWO_72_PR5       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
 define  AWR_72_PR5       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
 define  AWW_72_PR5       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}   
+! 20250624@COEQWAL: testing gw shortage
+define GW_SHORT_72_PR5      {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
  /* 
 define  AWW_72_PR5_PERMA{timeseries kind 'APPLIED-WATER'    units 'TAF' convert 'CFS'} 
 define  AWW_72_PR5_SEMIP{timeseries kind 'APPLIED-WATER'    units 'TAF' convert 'CFS'}
@@ -515,6 +529,8 @@ define  AW_72_PR6        {std kind 'APPLIED-WATER'         units 'CFS'}
 define  AWO_72_PR6       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
 define  AWR_72_PR6       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
 define  AWW_72_PR6       {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
+! 20250624@COEQWAL: testing gw shortage
+define GW_SHORT_72_PR6      {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
 /* 
 define  AWW_72_PR6_PERMA{timeseries kind 'APPLIED-WATER'    units 'TAF' convert 'CFS'} 
 define  AWW_72_PR6_SEMIP{timeseries kind 'APPLIED-WATER'    units 'TAF' convert 'CFS'}
@@ -551,10 +567,13 @@ define  TWS_72_PR6_SEASO{upper unbounded lower unbounded kind        'Refuge-Sto
 */
 ! 72_NU -- no surface deliveries
 define  UD_72_NU        {timeseries kind 'URBAN-DEMAND' units 'TAF' convert 'CFS'}
+! 20250624@COEQWAL: testing gw shortage
+define GW_SHORT_72_NU      {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
 
 ! 72_PU
 define  UD_72_PU        {timeseries kind 'URBAN-DEMAND' units 'TAF' convert 'CFS'}   
-
+! 20250624@COEQWAL: testing gw shortage
+define GW_SHORT_72_PU      {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
 
 
 
@@ -632,7 +651,8 @@ define GW_SHORT_73_XA     {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'C
 
 ! 73_NU -- no surface deliveries
 define  UD_73_NU         {timeseries kind 'URBAN-DEMAND' units 'TAF' convert 'CFS'}
-
+! 20250624@COEQWAL: testing gw shortage
+define GW_SHORT_73_NU      {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
 
 
 
@@ -677,7 +697,8 @@ define  DN_CAA165_90_PU  {std kind 'SW_DELIVERY-NET'       units 'CFS'}
 define  DN_90_PU         {std kind 'SW_DELIVERY-NET' units 'CFS'}            
 define  DG_90_PU         {std kind 'SW_DELIVERY-GROSS' units 'CFS'}
 define  UD_90_PU         {timeseries kind 'URBAN-DEMAND' units 'TAF' convert 'CFS'}
-
+! 20250624@COEQWAL: testing gw shortage
+define GW_SHORT_90_PU      {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -707,6 +728,8 @@ define  AW_91_PR         {std kind 'APPLIED-WATER'         units 'CFS'}
 define  AWO_91_PR        {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
 define  AWR_91_PR        {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
 define  AWW_91_PR        {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
+! 20250624@COEQWAL: testing gw shortage
+define GW_SHORT_91_PR      {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
 /* 
 define  AWW_91_PR_PERMA {timeseries kind 'APPLIED-WATER'    units 'TAF' convert 'CFS'} 
 define  AWW_91_PR_SEMIP {timeseries kind 'APPLIED-WATER'    units 'TAF' convert 'CFS'}

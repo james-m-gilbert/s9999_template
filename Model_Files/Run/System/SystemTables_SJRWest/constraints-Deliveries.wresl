@@ -39,7 +39,7 @@ goal setDG_50_PU      {DG_50_PU = D_WTPJJO_50_PU + D_WTPDGT_50_PU}
 ! net surface delivery = surface diversion - conveyance losses
 goal setDN_50_PU      {DN_50_PU = DG_50_PU - DL_50_PU}
 ! Total Applied Water = net surface delivery + groundwater pumping
-goal setUD_50_PU      {UD_50_PU = DN_50_PU + GP_50_PU } 
+goal setUD_50_PU      {UD_50_PU = DN_50_PU + GP_50_PU + GW_SHORT_50_PU} 
 
 
 
@@ -141,7 +141,7 @@ goal setDG_71_PU1        {DG_71_PU1 = D_CAA012_71_PU1}
 ! net surface delivery = surface diversion - conveyance losses
 goal setDN_71_PU1        {DN_71_PU1 = DG_71_PU1 - DL_71_PU1}
 ! Total Applied Water = net surface delivery + groundwater pumping
-goal meetUD_71_PU1       {UD_71_PU1 = DN_71_PU1 + GP_71_PU1 } 
+goal meetUD_71_PU1       {UD_71_PU1 = DN_71_PU1 + GP_71_PU1 + GW_SHORT_71_PU1} 
 
 
 !==============================
@@ -152,7 +152,7 @@ goal setDG_71_PU2        {DG_71_PU2 = D_CAA066_71_PU2}
 ! net surface delivery = surface diversion - conveyance losses
 goal setDN_71_PU2        {DN_71_PU2 = DG_71_PU2 - DL_71_PU2}
 ! Total Applied Water = net surface delivery + groundwater pumping
-goal meetUD_71_PU2       {UD_71_PU2 = DN_71_PU2 + GP_71_PU2 } 
+goal meetUD_71_PU2       {UD_71_PU2 = DN_71_PU2 + GP_71_PU2  + GW_SHORT_71_PU2} 
 
 !==============================
 ! 71_NA1 - Non-District - Riparian Ag
@@ -182,7 +182,7 @@ goal meetAW_71_NA2       {AW_71_NA2 + RP_71_NA2 = DN_71_NA2 + GP_71_NA2 + RU_71_
 ! 71_NU - city of Patterson and small communities - M&I
 !==============================
 ! no surface deliveries
-goal meetUD_71_NU        {UD_71_NU = GP_71_NU } 
+goal meetUD_71_NU        {UD_71_NU = GP_71_NU + GW_SHORT_71_NU} 
 
 
 
@@ -265,7 +265,7 @@ goal meetAW_72_XA3       {AW_72_XA3 + RP_72_XA3 = DN_72_XA3 + GP_72_XA3 + RU_72_
 goal setDG_72_PR1        {DG_72_PR1 = D_VLW008_72_PR1} ! gross surface water diversions
 goal setDN_VLW008_72_PR1 {DN_VLW008_72_PR1 = D_VLW008_72_PR1 - DL_VLW008_72_PR1}     ! net surface delivery = surface diversion - conveyance losses
 goal setDN_72_PR1        {DN_72_PR1        = DG_72_PR1       - DL_72_PR1}
-goal meetAW_72_PR1       {AW_72_PR1 + RP_72_PR1 = DN_72_PR1 + GP_72_PR1 + RU_72_PR1 } ! Total Applied Water = net surface delivery + groundwater pumping
+goal meetAW_72_PR1       {AW_72_PR1 + RP_72_PR1 = DN_72_PR1 + GP_72_PR1 + RU_72_PR1 + GW_SHORT_72_PR1 } ! Total Applied Water = net surface delivery + groundwater pumping
  
 
 
@@ -275,7 +275,7 @@ goal meetAW_72_PR1       {AW_72_PR1 + RP_72_PR1 = DN_72_PR1 + GP_72_PR1 + RU_72_
 goal setDG_72_PR2        {DG_72_PR2 = D_XCC033_72_PR2}                               ! gross surface water diversions
 goal setDN_XCC033_72_PR2 {DN_XCC033_72_PR2 = D_XCC033_72_PR2 - DL_XCC033_72_PR2}     ! net surface delivery = surface diversion - conveyance losses
 goal setDN_72_PR2        {DN_72_PR2        = DG_72_PR2       - DL_72_PR2}
-goal meetAW_72_PR2       {AW_72_PR2 + RP_72_PR2 = DN_72_PR2 + GP_72_PR2 + RU_72_PR2} ! Total Applied Water = net surface delivery + groundwater pumping
+goal meetAW_72_PR2       {AW_72_PR2 + RP_72_PR2 = DN_72_PR2 + GP_72_PR2 + RU_72_PR2 + GW_SHORT_72_PR2} ! Total Applied Water = net surface delivery + groundwater pumping
 
 
 !===============================================================================
@@ -284,7 +284,7 @@ goal meetAW_72_PR2       {AW_72_PR2 + RP_72_PR2 = DN_72_PR2 + GP_72_PR2 + RU_72_
 goal setDG_72_PR3        {DG_72_PR3 = D_ARY010_72_PR3}                               ! gross surface water diversions
 goal setDN_ARY010_72_PR3 {DN_ARY010_72_PR3 = D_ARY010_72_PR3 - DL_ARY010_72_PR3}     ! net surface delivery = surface diversion - conveyance losses
 goal setDN_72_PR3        {DN_72_PR3        = DG_72_PR3       - DL_72_PR3}
-goal meetAW_72_PR3       {AW_72_PR3 + RP_72_PR3 = DN_72_PR3 + GP_72_PR3 + RU_72_PR3} ! Total Applied Water = net surface delivery + groundwater pumping 
+goal meetAW_72_PR3       {AW_72_PR3 + RP_72_PR3 = DN_72_PR3 + GP_72_PR3 + RU_72_PR3 + GW_SHORT_72_PR3} ! Total Applied Water = net surface delivery + groundwater pumping 
                                            
 
 !===============================================================================
@@ -294,7 +294,7 @@ goal setDG_72_PR4        {DG_72_PR4 = D_XCC033_72_PR4 + D_ARY010_72_PR4}        
 goal setDN_XCC033_72_PR4 {DN_XCC033_72_PR4 = D_XCC033_72_PR4 - DL_XCC033_72_PR4}     ! net surface delivery = surface diversion - conveyance losses
 goal setDN_ARY010_72_PR4 {DN_ARY010_72_PR4 = D_ARY010_72_PR4 - DL_ARY010_72_PR4}
 goal setDN_72_PR4        {DN_72_PR4        = DG_72_PR4       - DL_72_PR4}
-goal meetAW_72_PR4       {AW_72_PR4 + RP_72_PR4 = DN_72_PR4 + GP_72_PR4 + RU_72_PR4} ! Total Applied Water = net surface delivery + groundwater pumping                                        
+goal meetAW_72_PR4       {AW_72_PR4 + RP_72_PR4 = DN_72_PR4 + GP_72_PR4 + RU_72_PR4 + GW_SHORT_72_PR4} ! Total Applied Water = net surface delivery + groundwater pumping                                        
 
 
 !===============================================================================
@@ -304,7 +304,7 @@ goal setDG_72_PR5        {DG_72_PR5 = D_XCC054_72_PR5 + D_VLW008_72_PR5}        
 goal setDN_XCC054_72_PR5 {DN_XCC054_72_PR5 = D_XCC054_72_PR5 - DL_XCC054_72_PR5}     ! net surface delivery = surface diversion - conveyance losses
 goal setDN_VLW008_72_PR5 {DN_VLW008_72_PR5 = D_VLW008_72_PR5 - DL_VLW008_72_PR5}
 goal setDN_72_PR5        {DN_72_PR5        = DG_72_PR5       - DL_72_PR5}
-goal meetAW_72_PR5       {AW_72_PR5 + RP_72_PR5 = DN_72_PR5 + GP_72_PR5 + RU_72_PR5} ! Total Applied Water = net surface delivery + groundwater pumping
+goal meetAW_72_PR5       {AW_72_PR5 + RP_72_PR5 = DN_72_PR5 + GP_72_PR5 + RU_72_PR5 + GW_SHORT_72_PR5} ! Total Applied Water = net surface delivery + groundwater pumping
 
 
 !===============================================================================
@@ -314,21 +314,21 @@ goal setDG_72_PR6        {DG_72_PR6 = D_XCC025_72_PR6 + D_ARY010_72_PR6}        
 goal setDN_XCC025_72_PR6 {DN_XCC025_72_PR6 = D_XCC025_72_PR6 - DL_XCC025_72_PR6}     ! net surface delivery = surface diversion - conveyance losses
 goal setDN_ARY010_72_PR6 {DN_ARY010_72_PR6 = D_ARY010_72_PR6 - DL_ARY010_72_PR6}
 goal setDN_72_PR6        {DN_72_PR6        = DG_72_PR6       - DL_72_PR6}
-goal meetAW_72_PR6       {AW_72_PR6 + RP_72_PR6 = DN_72_PR6 + GP_72_PR6 + RU_72_PR6} ! Total Applied Water = net surface delivery + groundwater pumping
+goal meetAW_72_PR6       {AW_72_PR6 + RP_72_PR6 = DN_72_PR6 + GP_72_PR6 + RU_72_PR6 + GW_SHORT_72_PR6} ! Total Applied Water = net surface delivery + groundwater pumping
    
 
 !===============================================================================
 ! 72_NU - Gustine, Firebaugh, Los Banos, Newman, & small communities - M&I
 !===============================================================================
 ! no surface deliveries
-goal meetUD_72_NU        {UD_72_NU = GP_72_NU } 
+goal meetUD_72_NU        {UD_72_NU = GP_72_NU + GW_SHORT_72_NU} 
 
 
 !===============================================================================
 ! 72_PU - Dos Palos - M&I
 !===============================================================================
 ! no surface deliveries
-goal meetUD_72_PU        {UD_72_PU = GP_72_PU } 
+goal meetUD_72_PU        {UD_72_PU = GP_72_PU + GW_SHORT_72_PU} 
 
 
 
@@ -409,7 +409,7 @@ goal meetAW_73_XA        {AW_73_XA + RP_73_XA = DN_73_XA + GP_73_XA + RU_73_XA +
 ! 73_NU - small communities - M&I
 !===============================================================================
 ! no surface deliveries
-goal meetUD_73_NU        {UD_73_NU = GP_73_NU } 
+goal meetUD_73_NU        {UD_73_NU = GP_73_NU + GW_SHORT_73_NU } 
 
 
 
@@ -468,7 +468,7 @@ goal setDN_CAA156_90_PU  {DN_CAA156_90_PU = D_CAA156_90_PU - DL_CAA156_90_PU}
 goal setDN_CAA165_90_PU  {DN_CAA165_90_PU = D_CAA165_90_PU - DL_CAA165_90_PU}
 goal setDN_90_PU         {DN_90_PU        = DG_90_PU       - DL_90_PU}
 ! Total Applied Water = net surface delivery + groundwater pumping
-goal meetUD_90_PU        {UD_90_PU = DN_90_PU + GP_90_PU }
+goal meetUD_90_PU        {UD_90_PU = DN_90_PU + GP_90_PU + GW_SHORT_90_PU}
 
 
 
@@ -494,7 +494,7 @@ goal meetAW_91_PA        {AW_91_PA + RP_91_PA = DN_91_PA + GP_91_PA + RU_91_PA +
 goal setDG_91_PR         {DG_91_PR = D_MDOTA_91_PR}                             ! gross surface water diversions
 goal setDN_MDOTA_91_PR   {DN_MDOTA_91_PR = D_MDOTA_91_PR - DL_MDOTA_91_PR}      ! net surface delivery = surface diversion - conveyance losses
 goal setDN_91_PR         {DN_91_PR       = DG_91_PR      - DL_91_PR}
-goal meetAW_91_PR        {AW_91_PR + RP_91_PR = DN_91_PR + GP_91_PR + RU_91_PR} ! Total Applied Water = net surface delivery + groundwater pumping
+goal meetAW_91_PR        {AW_91_PR + RP_91_PR = DN_91_PR + GP_91_PR + RU_91_PR + GW_SHORT_91_PR} ! Total Applied Water = net surface delivery + groundwater pumping
 
 !===============================================================================
 ! D_CAA239_CVPRF_PRF - Kern and Pixley NWR

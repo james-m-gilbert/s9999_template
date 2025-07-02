@@ -39,6 +39,8 @@ define    RP_24_NA1  {std kind 'RIPARIAN-MISC-ET' units 'CFS'}
 define    AW_24_NA1  {std kind 'APPLIED-WATER' units 'CFS'} ! Total Applied Water
 define    AWR_24_NA1 {timeseries kind 'APPLIED-WATER' units 'TAF' convert 'CFS'}! Applied Water for rice
 define    AWO_24_NA1 {timeseries kind 'APPLIED-WATER' units 'TAF' convert 'CFS'}! Applied Water for all other crops
+!@coeqwal - gw pumping shortage test
+define 	SHRTG_24_NA1 {std kind 'SHORTAGE' units 'CFS'}
 
 define    DN_24_NA2  {std kind 'SW-DELIVERY-NET' units 'CFS'}               
 define    DG_24_NA2  {std kind 'SW-DELIVERY-GROSS' units 'CFS'}
@@ -47,6 +49,8 @@ define    RP_24_NA2  {std kind 'RIPARIAN-MISC-ET' units 'CFS'}
 define    AW_24_NA2  {std kind 'APPLIED-WATER' units 'CFS'} ! Total Applied Water
 define    AWR_24_NA2 {timeseries kind 'APPLIED-WATER' units 'TAF' convert 'CFS'}! Applied Water for rice
 define    AWO_24_NA2 {timeseries kind 'APPLIED-WATER' units 'TAF' convert 'CFS'}! Applied Water for all other crops
+!@coeqwal - gw pumping shortage test
+define SHRTG_24_NA2 {std kind 'SHORTAGE' units 'CFS'}
 
 define    DN_24_NA3  {std kind 'SW-DELIVERY-NET' units 'CFS'}               
 define    DG_24_NA3  {std kind 'SW-DELIVERY-GROSS' units 'CFS'}
@@ -55,18 +59,27 @@ define    RP_24_NA3  {std kind 'RIPARIAN-MISC-ET' units 'CFS'}
 define    AW_24_NA3  {std kind 'APPLIED-WATER' units 'CFS'} ! Total Applied Water
 define    AWR_24_NA3 {timeseries kind 'APPLIED-WATER' units 'TAF' convert 'CFS'}! Applied Water for rice
 define    AWO_24_NA3 {timeseries kind 'APPLIED-WATER' units 'TAF' convert 'CFS'}! Applied Water for all other crops
+!@coeqwal - gw pumping shortage test
+define SHRTG_24_NA3 {std kind 'SHORTAGE' units 'CFS'}
 
 define    DN_24_NU2  {std kind 'SW-DELIVERY-NET' units 'CFS'}               
 define    DG_24_NU2  {std kind 'SW-DELIVERY-GROSS' units 'CFS'}
 define    UD_24_NU2  {timeseries kind 'URBAN-DEMAND' units 'TAF' convert 'CFS'}
+!@coeqwal - gw pumping shortage test
+define SHRTG_24_NU2 {std kind 'SHORTAGE' units 'CFS'}
 
 define    DN_24_NU1  {std kind 'SW-DELIVERY-NET' units 'CFS'}               
 define    DG_24_NU1  {std kind 'SW-DELIVERY-GROSS' units 'CFS'}
 define    UD_24_NU1  {timeseries kind 'URBAN-DEMAND' units 'TAF' convert 'CFS'}
-                                                       ! CHANGED BY D.JONES 04/21/08. DELETE AFTER VERIFICATION
+!@coeqwal - gw pumping shortage test
+define SHRTG_24_NU1 {std kind 'SHORTAGE' units 'CFS'}
+               
+! CHANGED BY D.JONES 04/21/08. DELETE AFTER VERIFICATION
 define    DN_24_NU3  {std kind 'SW-DELIVERY-NET' units 'CFS'}               ! define  DN_24_PU  {std kind 'SW-DELIVERY-NET' units 'CFS'}               
 define    DG_24_NU3  {std kind 'SW-DELIVERY-GROSS' units 'CFS'}             ! define  DG_24_PU  {std kind 'SW-DELIVERY-GROSS' units 'CFS'}
 define    UD_24_NU3  {timeseries kind 'URBAN-DEMAND' units 'TAF' convert 'CFS'}  ! define  UD_24_PU  {timeseries kind 'URBAN-DEMAND' units 'TAF' convert 'CFS'}
+!@coeqwal - gw pumping shortage test
+define SHRTG_24_NU3 {std kind 'SHORTAGE' units 'CFS'}
 
 ! no surface deliveries to 24_NU4
 define    UD_24_NU4 {timeseries kind 'URBAN-DEMAND' units 'TAF' convert 'CFS'}

@@ -73,7 +73,14 @@ define GW_SHORT_60S_NA2      {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units
 define  DN_60S_NU1      {std kind 'SW_DELIVERY-NET' units 'CFS'}            
 define  DG_60S_NU1      {std kind 'SW_DELIVERY-GROSS' units 'CFS'}
 define  UD_60S_NU1      {timeseries kind 'URBAN-DEMAND' units 'TAF' convert 'CFS'}
+! 20250624@COEQWAL: testing gw shortage
+define GW_SHORT_60S_NU1      {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
 
+! 60S_NU2
+! 20250624@COEQWAL: testing gw shortage
+! NOTE: UD_60S_NU2 demands are zero for all time steps; including here for consistency
+define UD_60S_NU2		{timeseries kind 'URBAN-DEMAND' units 'TAF' convert 'CFS'}
+define GW_SHORT_60S_NU2 {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!! WBA 61      !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -211,18 +218,22 @@ define  DN_WTPMOD_61_NU1  {std kind 'SW_DELIVERY-NET' units 'CFS'}
 define  DN_61_NU1         {std kind 'SW_DELIVERY-NET' units 'CFS'}            
 define  DG_61_NU1         {std kind 'SW_DELIVERY-GROSS' units 'CFS'}
 define  UD_61_NU1         {timeseries kind 'URBAN-DEMAND' units 'TAF' convert 'CFS'}
-
+! 20250624@COEQWAL: testing gw shortage
+define GW_SHORT_61_NU1     {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
   
 ! 61_NU2  
 define  DN_WTPDGT_61_NU2  {std kind 'SW_DELIVERY-NET' units 'CFS'}            
 define  DN_61_NU2         {std kind 'SW_DELIVERY-NET' units 'CFS'}            
 define  DG_61_NU2         {std kind 'SW_DELIVERY-GROSS' units 'CFS'}
 define  UD_61_NU2         {timeseries kind 'URBAN-DEMAND' units 'TAF' convert 'CFS'}
+! 20250624@COEQWAL: testing gw shortage
+define GW_SHORT_61_NU2     {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
 
 ! 61_NU3 -- no surface deliveries
    
 define  UD_61_NU3         {timeseries kind 'URBAN-DEMAND' units 'TAF' convert 'CFS'}
-
+! 20250624@COEQWAL: testing gw shortage
+define GW_SHORT_61_NU3     {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
 
 
 
@@ -309,7 +320,8 @@ define GW_SHORT_62_NA6      {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 
  
 ! 62_NU -- no surface deliveries
 define  UD_62_NU          {timeseries kind 'URBAN-DEMAND' units 'TAF' convert 'CFS'}  
- 
+! 20250624@COEQWAL: testing gw shortage
+define GW_SHORT_62_NU     {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
 
 
 
@@ -329,7 +341,8 @@ define  AW_63_PR1         {std kind 'APPLIED-WATER'         units 'CFS'}
 define  AWO_63_PR1        {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
 define  AWR_63_PR1        {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
 define  AWW_63_PR1        {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
-
+! 20250624@COEQWAL: testing gw shortage
+define GW_SHORT_63_PR1     {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
 /* 
 define  AWW_63_PR1_PERMA {timeseries kind 'APPLIED-WATER'    units 'TAF' convert 'CFS'} 
 define  AWW_63_PR1_SEMIP {timeseries kind 'APPLIED-WATER'    units 'TAF' convert 'CFS'}
@@ -371,6 +384,8 @@ define  AW_63_PR2         {std kind 'APPLIED-WATER'         units 'CFS'}
 define  AWO_63_PR2        {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
 define  AWR_63_PR2        {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
 define  AWW_63_PR2        {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
+! 20250624@COEQWAL: testing gw shortage
+define GW_SHORT_63_PR2     {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
 
 /*define  AWW_63_PR2_PERMA{timeseries kind 'APPLIED-WATER'    units 'TAF' convert 'CFS'} 
 define  AWW_63_PR2_SEMIP{timeseries kind 'APPLIED-WATER'    units 'TAF' convert 'CFS'}
@@ -412,6 +427,8 @@ define  AW_63_PR3         {std kind 'APPLIED-WATER'         units 'CFS'}
 define  AWO_63_PR3        {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
 define  AWR_63_PR3        {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
 define  AWW_63_PR3        {timeseries kind 'APPLIED-WATER'  units 'TAF' convert 'CFS'}
+! 20250624@COEQWAL: testing gw shortage
+define GW_SHORT_63_PR3     {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
 
 /* 
 define  AWW_63_PR3_PERMA{timeseries kind 'APPLIED-WATER'    units 'TAF' convert 'CFS'} 
@@ -511,7 +528,8 @@ define GW_SHORT_63_NA5      {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 
 
 ! 63_NU -- no surface deliveries
 define  UD_63_NU          {timeseries kind 'URBAN-DEMAND' units 'TAF' convert 'CFS'}
-
+! 20250624@COEQWAL: testing gw shortage
+define GW_SHORT_63_NU     {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!! WBA 64      !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -603,7 +621,8 @@ define GW_SHORT_64_XA      {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units '
 
 ! 64_NU -- no surface deliveries
 define  UD_64_NU        {timeseries kind 'URBAN-DEMAND' units 'TAF' convert 'CFS'}      
-
+! 20250624@COEQWAL: testing gw shortage
+define GW_SHORT_64_NU     {lower 0 upper 99999 kind 'GW-RESTRICT-SHORT' units 'CFS'}
 
 
 
