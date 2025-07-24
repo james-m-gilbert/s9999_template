@@ -119,6 +119,10 @@ define C_MELONmeqcycle6 {
 goal maintainC_MELONm2cycle6 { lhs C_MELONm rhs C_MELONmeqcycle6    lhs<rhs penalty 99999 lhs>rhs penalty 99999} !zrc 8/7/2019
 
 
+! @coeqwal - keep minflow on lower stan (c_sts011) at the level set in sjrbase_gw4
+! (it doesn't vary over the pulse period)
+goal set1C_STS011cycle6 {C_STS011_MIF < C_STS011_MIF[SJRBASE_GW4]}
+
 /*
 DON PEDRO AND MCCLURE IN BASIN RELEASES
 */
@@ -155,3 +159,7 @@ goal setC_MELONdocycle6 {
         rhs 0.0 }
 }
 
+
+! @coeqwal - make sure min flow on MOK028 doesn't get shifted between cycles SJRBASE_GW4 and now
+! (it doesn't vary over the pulse period)
+goal set_MOK028cycle6 {C_MOK028_MIF < C_MOK028_MIF[SJRBASE_GW4]}

@@ -267,7 +267,7 @@ goal setDN_VLW008_72_PR1 {DN_VLW008_72_PR1 = D_VLW008_72_PR1 - DL_VLW008_72_PR1}
 goal setDN_72_PR1        {DN_72_PR1        = DG_72_PR1       - DL_72_PR1}
 goal meetAW_72_PR1       {AW_72_PR1 + RP_72_PR1 = DN_72_PR1 + GP_72_PR1 + RU_72_PR1 + GW_SHORT_72_PR1 } ! Total Applied Water = net surface delivery + groundwater pumping
  
-
+!goal limit_72_PR1_shortage { lhs GW_SHORT_72_PR1 rhs 0 lhs>rhs penalty 99999999}
 
 !===============================================================================
 ! 72_PR2 - Kesterson, Freitas, & Blue Goose units of San Luis NWR, China Island unit of North Grassland - Refuge
@@ -277,6 +277,7 @@ goal setDN_XCC033_72_PR2 {DN_XCC033_72_PR2 = D_XCC033_72_PR2 - DL_XCC033_72_PR2}
 goal setDN_72_PR2        {DN_72_PR2        = DG_72_PR2       - DL_72_PR2}
 goal meetAW_72_PR2       {AW_72_PR2 + RP_72_PR2 = DN_72_PR2 + GP_72_PR2 + RU_72_PR2 + GW_SHORT_72_PR2} ! Total Applied Water = net surface delivery + groundwater pumping
 
+!goal limit_72_PR2_shortage { lhs GW_SHORT_72_PR2 rhs 0 lhs>rhs penalty 99999999}
 
 !===============================================================================
 ! 72_PR3 - West Bear Ck and San Luis units of San Luis NWR - Refuge
@@ -286,6 +287,7 @@ goal setDN_ARY010_72_PR3 {DN_ARY010_72_PR3 = D_ARY010_72_PR3 - DL_ARY010_72_PR3}
 goal setDN_72_PR3        {DN_72_PR3        = DG_72_PR3       - DL_72_PR3}
 goal meetAW_72_PR3       {AW_72_PR3 + RP_72_PR3 = DN_72_PR3 + GP_72_PR3 + RU_72_PR3 + GW_SHORT_72_PR3} ! Total Applied Water = net surface delivery + groundwater pumping 
                                            
+!goal limit_72_PR3_shortage { lhs GW_SHORT_72_PR3 rhs 0 lhs>rhs penalty 99999999}
 
 !===============================================================================
 ! 72_PR4 - Los Banos WA, Salt Slouth and Gadwall units of North Grassland - Refuge
@@ -296,6 +298,7 @@ goal setDN_ARY010_72_PR4 {DN_ARY010_72_PR4 = D_ARY010_72_PR4 - DL_ARY010_72_PR4}
 goal setDN_72_PR4        {DN_72_PR4        = DG_72_PR4       - DL_72_PR4}
 goal meetAW_72_PR4       {AW_72_PR4 + RP_72_PR4 = DN_72_PR4 + GP_72_PR4 + RU_72_PR4 + GW_SHORT_72_PR4} ! Total Applied Water = net surface delivery + groundwater pumping                                        
 
+!goal limit_72_PR4_shortage { lhs GW_SHORT_72_PR4 rhs 0 lhs>rhs penalty 99999999}
 
 !===============================================================================
 ! 72_PR5 - Grassland WD North - Refuge
@@ -306,6 +309,7 @@ goal setDN_VLW008_72_PR5 {DN_VLW008_72_PR5 = D_VLW008_72_PR5 - DL_VLW008_72_PR5}
 goal setDN_72_PR5        {DN_72_PR5        = DG_72_PR5       - DL_72_PR5}
 goal meetAW_72_PR5       {AW_72_PR5 + RP_72_PR5 = DN_72_PR5 + GP_72_PR5 + RU_72_PR5 + GW_SHORT_72_PR5} ! Total Applied Water = net surface delivery + groundwater pumping
 
+!goal limit_72_PR5_shortage { lhs GW_SHORT_72_PR5 rhs 0 lhs>rhs penalty 99999999}
 
 !===============================================================================
 ! 72_PR6 - Grassland WD South - Refuge
@@ -316,7 +320,7 @@ goal setDN_ARY010_72_PR6 {DN_ARY010_72_PR6 = D_ARY010_72_PR6 - DL_ARY010_72_PR6}
 goal setDN_72_PR6        {DN_72_PR6        = DG_72_PR6       - DL_72_PR6}
 goal meetAW_72_PR6       {AW_72_PR6 + RP_72_PR6 = DN_72_PR6 + GP_72_PR6 + RU_72_PR6 + GW_SHORT_72_PR6} ! Total Applied Water = net surface delivery + groundwater pumping
    
-
+!goal limit_72_PR6_shortage { lhs GW_SHORT_72_PR6 rhs 0 lhs>rhs penalty 99999999}
 !===============================================================================
 ! 72_NU - Gustine, Firebaugh, Los Banos, Newman, & small communities - M&I
 !===============================================================================

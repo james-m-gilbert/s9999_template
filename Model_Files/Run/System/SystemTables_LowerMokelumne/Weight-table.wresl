@@ -15,11 +15,15 @@ Objective obj_SYS_MOK = {
 [GP_60N_NU1, -1000],
 [GP_60N_NU2, -1000],
 [GP_EBMUD, -1000],
-[GW_SHORT_60N_NA1, -1001],
-[GW_SHORT_60N_NA2, -1001],
-[GW_SHORT_60N_NA3, -1001],
-[GW_SHORT_60N_NA4, -1001],
-[GW_SHORT_60N_NA5, -5001],  !@coeqwal - adjusting from -1001 because shortages are replacing pumping incorrectly
+[GW_SHORT_60N_NA1, -9001],
+[GW_SHORT_60N_NA2, -9001],
+[GW_SHORT_60N_NA3, -9001],
+[GW_SHORT_60N_NA4, -9001],
+[GW_SHORT_60N_NA5, -99999],  !@coeqwal - adjusting from -1001 because shortages are replacing pumping incorrectly
+[GW_SHORT_60N_NU1, -9001],
+[GW_SHORT_60N_NU2, -9001],
+[GW_SHORT_60N_PU,  -9001],
+[GW_SHORT_EBMUD, -9001],
 
 !====================================================
 !Instream Flow Requirement Weights

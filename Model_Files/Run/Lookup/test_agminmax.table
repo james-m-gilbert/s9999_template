@@ -76,7 +76,7 @@ ID        MinFraction    MaxFraction
 72      0.00    0.69    ! !25_PA2 | Maine Prairie WD
 73      0.77    0.77    ! !26N_NA | Non-District
 74      0.95    1.00    ! !26S_NA | Non-District           
-75      0.20    0.87    ! !60S_PA2 |  to do assumed value - value not identified in AWMP but AWMP suggests high useage, citing 'historical reliance'
+75      0.20    0.87    ! !60S_PA2 |  !to do assumed value - value not identified in AWMP but AWMP suggests high useage, citing 'historical reliance'
 76      0.03    1.00    ! !61_PA1_D/61_PA2_D  | OIDN/OIDS  From AWMP tables 5-13 - 5-15 
 77      0.09    1.00    ! !61_PA1_P/61_PA2_P  | OIDN/OIDS  From AWMP tables 5-13 - 5-15
 78      0.03    1.00    ! !61_PA3_D  | SSJID  From AWMP tables 5-13 - 5-16
@@ -103,30 +103,30 @@ ID        MinFraction    MaxFraction
 99      0.00    1.00    ! !63_PR1 | 
 100     0.00    1.00    ! !63_PR2 | 
 101     0.00    1.00    ! !63_PR3 | 
-102     0.10    0.82    ! !63_NA1   @coeqwal - SGMA estimate: 0.57 | 
-103     0.10    0.39    ! !63_NA2   @coeqwal - SGMA estimate: 0.57 | 
-104     0.10    0.32    ! !63_NA3_D   @coeqwal - SGMA estimate:  0.57 | 
+102     0.10    0.82    ! !63_NA1   @coeqwal - SGMA estimate: !0.57 | 
+103     0.10    0.39    ! !63_NA2   @coeqwal - SGMA estimate: !0.57 | 
+104     0.10    0.32    ! !63_NA3_D   @coeqwal - SGMA estimate:  !0.57 | 
 105     0.19    0.32    ! !63_NA3_P   @Ag water management plant 2016 @coeqwal - SGMA @coeqwal - SGMA estimate: !0.57 | 
 106     0.00    0.65    ! !63_NA4   All surface water sources have upper bounds previously 0.935;  @coeqwal - SGMA estimate: !0.74   | 
 107     0.10    0.82    ! !63_NU   @jmg 2017.05.09 | 
-108     0.10    1.00    ! !64_NA1   @coeqwal - SGMA 0.515 | 
-109     0.10    0.70    ! !64_NA2   @coeqwal - SGMA  0.225 | 
-110     0.10    0.63    ! !64_PA1   @coeqwal - SGMA 0.89 | 
-111     0.10    0.62    ! !64_PA2   @coeqwal - SGMA  0.683 | 
-112     0.09    0.09    ! !64_PA3   @coeqwal - SGMA 0.89 | 
+108     0.10    1.00    ! !64_NA1   @coeqwal - SGMA !0.515 | 
+109     0.10    0.70    ! !64_NA2   @coeqwal - SGMA  !0.225 | 
+110     0.10    0.63    ! !64_PA1   @coeqwal - SGMA !0.89 | 
+111     0.10    0.62    ! !64_PA2   @coeqwal - SGMA  !0.683 | 
+112     0.09    0.09    ! !64_PA3   @coeqwal - SGMA !0.89 | 
 113     0.08    0.08    ! !64_XA   @jmg 2017.05.09 | 
 114     0.10    0.80    ! !64_NU   @jmg 2017.05.09 | 
 115     0.10    1.00    ! !50_PA1   @jmg 2017.05.09 | 
 116     0.00    1.00    ! !50_PU   @jmg 2017.05.09 | 
-117     0.00    0.69    ! !71_PA1 @coeqwal - SGMA 0.65 | 
+117     0.00    0.69    ! !71_PA1 @coeqwal - SGMA !0.65 | 
 118     0.00    1.00    ! !71_PA2 @coeqwal - SGMA | 
-119     0.00    0.69    ! !71_PA3 @coeqwal - SGMA  0.65 | 
+119     0.00    0.69    ! !71_PA3 @coeqwal - SGMA ! 0.65 | 
 120     0.00    1.00    ! !71_PA4 @coeqwal - SGMA | 
-121     0.00    0.69    ! !71_PA5 @coeqwal - SGMA  0.65 | 
-122     0.00    0.69    ! !71_PA6 @coeqwal - SGMA 0.65 | 
+121     0.00    0.69    ! !71_PA5 @coeqwal - SGMA  !0.65 | 
+122     0.00    0.69    ! !71_PA6 @coeqwal - SGMA !0.65 | 
 123     0.00    0.69    ! !71_PA8 @coeqwal - SGMA | 
 124     0.00    0.64    ! !71_NA1 @coeqwal - SGMA | 
-125     0.00    0.57    ! !71_NA2 @coeqwal - SGMA 0.26 | 
+125     0.00    0.57    ! !71_NA2 @coeqwal - SGMA !0.26 | 
 126     0.00    0.89    ! !71_PU1 | 
 127     0.00    0.30    ! !71_PU2 | 
 128     0.00    0.89    ! !71_NU | 
@@ -144,22 +144,22 @@ ID        MinFraction    MaxFraction
 140     0.00    1.00    ! !72_PR6 | 
 141     0.00    1.00    ! !72_NU | 
 142     0.00    1.00    ! !72_PU | 
-143     0.00    0.89    ! !73_NA @coeqwal - SGMA 0.61 | 
-144     0.00    0.69    ! !73_PA1 @coeqwal - SGMA 0.61 | 
-145     0.00    0.69    ! !73_PA2 @coeqwal - SGMA 0.61 | 
-146     0.00    0.70    ! !73_PA3 @coeqwal - SGMA  0.61 | 
-147     0.00    1.00    ! !73_XA @coeqwal - SGMA  0.61 | 
+143     0.00    0.89    ! !73_NA @coeqwal - SGMA !0.61 | 
+144     0.00    0.69    ! !73_PA1 @coeqwal - SGMA !0.61 | 
+145     0.00    0.69    ! !73_PA2 @coeqwal - SGMA !0.61 | 
+146     0.00    0.70    ! !73_PA3 @coeqwal - SGMA  !0.61 | 
+147     0.00    1.00    ! !73_XA @coeqwal - SGMA  !0.61 | 
 148     0.00    0.89    ! !73_NU | 
-149     0.00    0.25    ! !90_PA1 @coeqwal - SGMA - 0.94        | 
-150     0.00    0.25    ! !90_PA2 @coeqwal - SGMA estimate:  0.94      | 
+149     0.00    0.25    ! !90_PA1 @coeqwal - SGMA - !0.94        | 
+150     0.00    0.25    ! !90_PA2 @coeqwal - SGMA estimate:  !0.94      | 
 151     0.00    0.11    ! !90_PU | 
-152     0.00    0.00    ! !91_PA @coeqwal - SGMA estimate: 0.94   | 
+152     0.00    0.00    ! !91_PA @coeqwal - SGMA estimate: !0.94   | 
 153     0.00    1.00    ! !91_PR | 
 154     0.00    0.69    ! !63_NA5 @coeqwal - SGMA | 
-155     0.00    1.00    ! !60N_NA1 @coeqwal - SGMA estimate:  0.79 | 
-156     0.00    1.00    ! !60N_NA2 @coeqwal - SGMA estimate: 0.79 | 
-157     0.00    1.00    ! !60N_NA3 @coeqwal - SGMA estimate:  0.79 | 
-158     0.00    1.00    ! !60N_NA4 @coeqwal - SGMA estimate:  0.79  | 
+155     0.00    1.00    ! !60N_NA1 @coeqwal - SGMA estimate:  !0.79 | 
+156     0.00    1.00    ! !60N_NA2 @coeqwal - SGMA estimate: !0.79 | 
+157     0.00    1.00    ! !60N_NA3 @coeqwal - SGMA estimate:  !0.79 | 
+158     0.00    1.00    ! !60N_NA4 @coeqwal - SGMA estimate:  !0.79  | 
 159     0.00    1.00    ! !60N_NA5 -  @coeqwal - SGMA estiamte: 0.79   | 
 160     0.00    1.00    ! !60N_NU1 | 
 161     0.00    1.00    ! !60N_NU2 | 

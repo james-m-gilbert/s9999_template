@@ -11,7 +11,7 @@
 <stringAttribute key="wpp.debugModel.ATTR_WPP_DATE" value=""/>
 <stringAttribute key="wpp.debugModel.ATTR_WPP_DESCRIPTION" value="CalSim 3 2023 DCR Adjusted modified with switches for min flows + test gw limits CV-wide"/>
 <stringAttribute key="wpp.debugModel.ATTR_WPP_DSSENDOUTPUT" value="yes"/>
-<stringAttribute key="wpp.debugModel.ATTR_WPP_DVAR" value="DSS\output\coeqwal_s9999_testgwlimit_DV_v0.0.dss"/>
+<stringAttribute key="wpp.debugModel.ATTR_WPP_DVAR" value="DSS\output\coeqwal_s9999_testgwlimit_DV_v0.2.dss"/>
 <stringAttribute key="wpp.debugModel.ATTR_WPP_DVAR_MS2" value=""/>
 <stringAttribute key="wpp.debugModel.ATTR_WPP_ENDDAY" value="30"/>
 <stringAttribute key="wpp.debugModel.ATTR_WPP_ENDMONTH" value="sep"/>
