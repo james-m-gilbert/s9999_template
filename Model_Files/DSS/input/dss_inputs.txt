@@ -11,3 +11,7 @@ coeqwal_s9999_SV_v0.1.dss:
   - SV
   - DWR DCR2023 Historical Adjusted hydrology with eflows dataset version1 (as provided by eflows team 2025-03-28) added
   - https://drive.google.com/file/d/1bf6bZG6vbbIvbDqGYCMl8U9VjO8K4mV4/view?usp=drive_link
+
+coeqwal_s9999_SV_v0.1.1.dss:
+  - SV
+  - Same as v0.1 but replacing with 2020 LandIQ-based demands

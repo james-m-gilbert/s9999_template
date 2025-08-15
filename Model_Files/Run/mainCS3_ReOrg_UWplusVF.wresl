@@ -32,7 +32,7 @@ svar simulateSacramentoValley   {value 1.}
 svar simulateGroundWaterSeepage {value 1.}
 
 !Operational assumptions
-svar simulateTUCP               {value 0.} !For SWP LTO studies, TUCP should be off
+svar simulateTUCP               {value 1.} !For SWP LTO studies, TUCP should be off
 svar simulateTisdaleWeir        {value 0.} !Turn on Tisdale Weir !20230714
 svar SimulateVA_Amr             {value 0.}
 svar SimulateVA_Mok             {value 0.}

@@ -1,174 +1,253 @@
 ! Minimum and maximum amounts of groundwater pumping for demand unit
 ! Values are expressed as fraction of agricultural applied water demand
 agminmaxgw				
-ID        MinFraction    MaxFraction
-1       0.15    0.15    ! !02_NA | Non-District
-2       0.00    0.23    ! !02_PA | Clear Creek CSD
-3       0.02    0.02    ! !02_SA | Anderson Cottonwood ID, Non-District (short-form)
-4       0.18    0.18    ! !03_NA | Non-District
-5       0.01    0.64    ! !03_PA | Bella Vista Water District
-6       0.01    1.00    ! !03_SA | Anderson Cottonwood ID, Non-District (short-form)
-7       0.84    1.00    ! !04_NA | Non-District
-8       0.30    1.00    ! !04_PA1 | Corning WD, Proberta WD, Thomes Creek WD
-9       0.20    1.00    ! !04_PA2 | Kirkwood WD
-10      0.71    0.80    ! !05_NA | Non-District
-11      0.59    0.73    ! !06_NA | Non-District 
-12      0.05    0.40    ! !06_PA | Orland Unit WUA
-13      0.75    0.91    ! !07N_NA | Non-District 
-14      0.12    0.76    ! !07N_PA | Glide WD, Holthouse WD, Kanawha WD, Orland-Artois WD
-15      0.86    0.98    ! !07S_NA | Non-District 
-16      0.06    1.00    ! !07S_PA | 4-M WD, Colusa County WD, Cortina WD, Davis WD, Dunnigan WD,Glenn ValleyWD, Holthouse WD, Le Grande WD, Myers-Marsh MWC, Westside WD
-17      0.61    0.90    ! !08N_NA | Non-District
-18      0.02    1.00    ! !08N_PA | Colusa Drain MWC
-19      0.30    1.00    ! !08N_SA1 | Maxwell ID, Princeton-Cordora-Glenn ID, Provident ID, Non-District(Short-Form) Was 0.05 02212023
-20      0.07    1.00    ! !08N_SA2 | Glenn-Colusa ID Was
-21      0.32    0.96    ! !08S_NA1 | Non-District
-22      0.40    0.95    ! !08S_NA2 | Non-District
-23      0.10    1.00    ! !08S_PA | Colusa Drain MWC
-24      0.44    1.00    ! !08S_SA1 | Maxwell ID, Roberts Ditch Co., Swinford Tract Irrigation Company,Non-District (Short-Form) Was 0.08 02212023
-25      0.00    1.00    ! !08S_SA2 | Glenn-Colusa ID
-26      0.18    1.00    ! !08S_SA3 | RD 108, River Garden Farms, Non-District (Short-Form) Was 0.04 02212023
-27      0.60    1.00    ! !09_NA | LLano Seco (Parrot Ranch), Dayton MWC, Non-District
-28      0.21    1.00    ! !09_SA1 | M&T Chico Ranch Inc.
-29      0.35    1.00    ! !09_SA2 | RD 1004, Sartain MWC, Colusa Properties, Non-District (Short-Form) Was 0.05 02212023
-30      0.74    0.74    ! !10_NA | Rancho  Esquon, Durham MWC, Non-District
-31      0.54    0.54    ! !11_NA | Sutter Butte MWC, Non-District
-32      0.06    1.00    ! !11_SA1 | Western Canal WD
-33      0.00    1.00    ! !11_SA2 | Richvale ID
-34      0.09    1.00    ! !11_SA3 | Biggs-West Gridley WD, Butte WD
-35      0.04    1.00    ! !11_SA4 | Sutter Extension WD
-36      0.96    1.00    ! !12_NA | Non-District
-37      0.51    0.51    ! !12_SA | Feather River riparian
-38      0.36    1.00    ! !13_NA | South Feather Water and Power Agency
-39      0.04    0.74    ! !14_NA | Browns Valley ID
-40      0.88    0.92    ! !15N_NA1 | Non-District 
-41      0.02    1.00    ! !15N_NA2 | Cordua ID, Hallwood ID, Ramirez WD
-42      0.82    0.85    ! !15N_SA | Feather River riparian
-43      0.77    0.91    ! !15S_NA1 | Non-District 
-44      0.30    0.45    ! !15S_NA2 | Brophy WD, Dry Creek MWC, South Yuba WD, Dantoni Area,Wheatland WD  ! Idy 3/23/2016 based on Water Management Plan Yuba
-45      0.40    0.40    ! !15S_SA | Plumas MWC, Feather River riparian
-46      0.94    0.94    ! !16_NA1 | Non-District
-47      0.13    1.00    ! !16_NA2 | Non-District 
-48      0.21    1.00    ! !16_PA | Feather WD
-49      0.35    0.66    ! !16_SA | Garden Highway MWC, Tudor ID, Oswald MWC, Feather River riparian
-50      0.50    1.00    ! !17N_NA | Non-District 
-51      0.29    1.00    ! !17S_NA | Sutter Bypass-Butte Slough WUA
-52      0.00    1.00    ! !17S_SA | Feather River riparian
-53      0.07    1.00    ! !18_NA | Butte Slough Irrigation Company, Non-District
-54      0.30    1.00    ! !18_SA | Meridian Farms, Newhall Land & Farming, Sutter MWC, TisdaleIDC, Non-District (Short-Form) Was 0.02 02212023
-55      0.07    1.00    ! !19_NA | Non-District: Placeholder - zero acreage 
-56      0.01    1.00    ! !19_SA | Reynen, Oji Bros. Farm, Inc., Oji Family Partnership, PelgerMWC, SutterMWC,Non-District (Short-Form)
-57      0.50    0.77    ! !20_NA1 | Yolo County FCWCD
-58      0.81    1.00    ! !20_NA2 | Non-District 
-59      0.48    0.48    ! !20_PA | UC Davis value changed from 0.94 to 0.50 to match historical deliveries
-60      0.06    0.94    ! !21_NA | Non-District
-61      0.04    0.92    ! !21_PA | Colusa Drain MWC
-62      0.40    1.00    ! !21_SA | RD 2035 (Conway Conservancy), Sacramento River Ranch LLC Was 0.01 02212023
-63      0.74    0.95    ! !22_NA | Non-District
-64      0.24    1.00    ! !22_SA1 | Natomas Central MWD, Pleasant Grove-Verona MWC, Non-District(Short-Form) 
-65      0.56    0.76    ! !22_SA2 | Feather River riparian
-66      0.04    0.58    ! !23_NA | Camp Far West ID, South Sutter WD
-67      0.02    0.21    ! !24_NA1 | Nevada ID
-68      0.51    0.51    ! !24_NA2 | PCWA Zone 5
-69      0.03    0.03    ! !24_NA3 | PCWA Zone 1
-70      0.52    0.52    ! !25_NA | North Delta WA, Non-District
-71      0.04    0.68    ! !25_PA1 | Solano ID
-72      0.00    0.69    ! !25_PA2 | Maine Prairie WD
-73      0.77    0.77    ! !26N_NA | Non-District
-74      0.95    1.00    ! !26S_NA | Non-District           
-75      0.20    0.87    ! !60S_PA2 |  to do assumed value - value not identified in AWMP but AWMP suggests high useage, citing 'historical reliance'
-76      0.03    1.00    ! !61_PA1_D/61_PA2_D  | OIDN/OIDS  From AWMP tables 5-13 - 5-15 
-77      0.09    1.00    ! !61_PA1_P/61_PA2_P  | OIDN/OIDS  From AWMP tables 5-13 - 5-15
-78      0.03    1.00    ! !61_PA3_D  | SSJID  From AWMP tables 5-13 - 5-16
-79      0.18    1.00    ! !61_PA3_P  | SSJID  From AWMP tables 5-13 - 5-16
-80      0.10    1.00    ! !61_NA1   | @coeqwal - SGMA - rough estimate: !0.65
-81      0.08    0.83    ! !61_NA2_D   | @coeqwal - SGMA estimate: 0.65; !MID, value estimated quickly from 2012 AWMP data (gw supplies ~11% AW demand in '09), check. Increased as river divetsions too large, was 0.03
-82      0.17    0.83    ! !61_NA2_P   | @coeqwal - SGMA estimate:  !0.65; !MID, value estimated quickly from 2012 AWMP data, (gw supplies ~11% AW demand in '09), check. Increased as river divetsions too large, was 0.09
-83      0.10    0.87    ! !61_NA3    | @coeqwal - SGMA estimate: !0.65
-84      0.10    1.00    ! !61_NA4   @coeqwal - SGMA estimate: !0.65 | 
-85      0.10    1.00    ! !61_NA5    | @coeqwal - SGMA estimate:  !0.65
-86      0.10    1.00    ! !61_NA6   |  @jmg 2017.05.09
-87      0.10    0.97    ! !61_NU1    | @jmg 2017.05.09
-88      0.10    0.58    ! !61_NU2   |  @jmg 2017.05.09
-89      0.10    1.00    ! !61_NU3   |  @jmg 2017.05.09
-90      0.10    0.96    ! !62_NA1  WD    | @coeqwal - SGMA estimate:  !0.45
-91      0.10    1.00    ! !62_NA2  | @coeqwal - SGMA estimate: !0.55
-92      0.10    0.54    ! !62_NA3_D    | @jmg 2017.05.09
-93      0.10    0.54    ! !62_NA3_P   @jmg 2017.05.09 | 
-94      0.10    0.10    ! !62_NA4   @jmg 2017.05.09 | 
-95      0.10    1.00    ! !62_NA5   @jmg 2017.05.09 | 
-96      0.10    0.81    ! !62_NA6_D   @coeqwal - SGMA estimate: !0.41 | 
-97      0.19    0.81    ! !62_NA6_P  @Ag water management plan 2016 @coeqwal - SGMA estimate: !0.41 | 
-98      0.10    0.96    ! !62_NU   @jmg 2017.05.09 | 
-99      0.00    1.00    ! !63_PR1 | 
-100     0.00    1.00    ! !63_PR2 | 
-101     0.00    1.00    ! !63_PR3 | 
-102     0.10    0.82    ! !63_NA1   @coeqwal - SGMA estimate: 0.57 | 
-103     0.10    0.39    ! !63_NA2   @coeqwal - SGMA estimate: 0.57 | 
-104     0.10    0.32    ! !63_NA3_D   @coeqwal - SGMA estimate:  0.57 | 
-105     0.19    0.32    ! !63_NA3_P   @Ag water management plant 2016 @coeqwal - SGMA @coeqwal - SGMA estimate: !0.57 | 
-106     0.00    0.65    ! !63_NA4   All surface water sources have upper bounds previously 0.935;  @coeqwal - SGMA estimate: !0.74   | 
-107     0.10    0.82    ! !63_NU   @jmg 2017.05.09 | 
-108     0.10    1.00    ! !64_NA1   @coeqwal - SGMA 0.515 | 
-109     0.10    0.70    ! !64_NA2   @coeqwal - SGMA  0.225 | 
-110     0.10    0.63    ! !64_PA1   @coeqwal - SGMA 0.89 | 
-111     0.10    0.62    ! !64_PA2   @coeqwal - SGMA  0.683 | 
-112     0.09    0.09    ! !64_PA3   @coeqwal - SGMA 0.89 | 
-113     0.08    0.08    ! !64_XA   @jmg 2017.05.09 | 
-114     0.10    0.80    ! !64_NU   @jmg 2017.05.09 | 
-115     0.10    1.00    ! !50_PA1   @jmg 2017.05.09 | 
-116     0.00    1.00    ! !50_PU   @jmg 2017.05.09 | 
-117     0.00    0.69    ! !71_PA1 @coeqwal - SGMA 0.65 | 
-118     0.00    1.00    ! !71_PA2 @coeqwal - SGMA | 
-119     0.00    0.69    ! !71_PA3 @coeqwal - SGMA  0.65 | 
-120     0.00    1.00    ! !71_PA4 @coeqwal - SGMA | 
-121     0.00    0.69    ! !71_PA5 @coeqwal - SGMA  0.65 | 
-122     0.00    0.69    ! !71_PA6 @coeqwal - SGMA 0.65 | 
-123     0.00    0.69    ! !71_PA8 @coeqwal - SGMA | 
-124     0.00    0.64    ! !71_NA1 @coeqwal - SGMA | 
-125     0.00    0.57    ! !71_NA2 @coeqwal - SGMA 0.26 | 
-126     0.00    0.89    ! !71_PU1 | 
-127     0.00    0.30    ! !71_PU2 | 
-128     0.00    0.89    ! !71_NU | 
-129     0.00    1.00    ! !72_NA1 @coeqwal - SGMA | 
-130     0.00    1.00    ! !72_NA2 @coeqwal - SGMA | 
-131     0.00    1.00    ! !72_PA @coeqwal - SGMA | 
-132     0.00    1.00    ! !72_XA1  @coeqwal - SGMA | 
-133     0.00    1.00    ! !72_XA2 @coeqwal - SGMA | 
-134     0.00    1.00    ! !72_XA3 @coeqwal - SGMA | 
-135     0.00    1.00    ! !72_PR1 | 
-136     0.00    1.00    ! !72_PR2 | 
-137     0.00    1.00    ! !72_PR3 | 
-138     0.00    1.00    ! !72_PR4 | 
-139     0.00    1.00    ! !72_PR5 | 
-140     0.00    1.00    ! !72_PR6 | 
-141     0.00    1.00    ! !72_NU | 
-142     0.00    1.00    ! !72_PU | 
-143     0.00    0.89    ! !73_NA @coeqwal - SGMA 0.61 | 
-144     0.00    0.69    ! !73_PA1 @coeqwal - SGMA 0.61 | 
-145     0.00    0.69    ! !73_PA2 @coeqwal - SGMA 0.61 | 
-146     0.00    0.70    ! !73_PA3 @coeqwal - SGMA  0.61 | 
-147     0.00    1.00    ! !73_XA @coeqwal - SGMA  0.61 | 
-148     0.00    0.89    ! !73_NU | 
-149     0.00    0.25    ! !90_PA1 @coeqwal - SGMA - 0.94        | 
-150     0.00    0.25    ! !90_PA2 @coeqwal - SGMA estimate:  0.94      | 
-151     0.00    0.11    ! !90_PU | 
-152     0.00    0.00    ! !91_PA @coeqwal - SGMA estimate: 0.94   | 
-153     0.00    1.00    ! !91_PR | 
-154     0.00    0.69    ! !63_NA5 @coeqwal - SGMA | 
-155     0.00    1.00    ! !60N_NA1 @coeqwal - SGMA estimate:  0.79 | 
-156     0.00    1.00    ! !60N_NA2 @coeqwal - SGMA estimate: 0.79 | 
-157     0.00    1.00    ! !60N_NA3 @coeqwal - SGMA estimate:  0.79 | 
-158     0.00    1.00    ! !60N_NA4 @coeqwal - SGMA estimate:  0.79  | 
-159     0.00    1.00    ! !60N_NA5 -  @coeqwal - SGMA estiamte: 0.79   | 
-160     0.00    1.00    ! !60N_NU1 | 
-161     0.00    1.00    ! !60N_NU2 | 
-162     0.00    0.94    ! !60N_PU | 
-163     0.00    1.00    ! !EBMUD | 
-164     0.00    0.78    ! !60S_PA1 - Stockton East WD | 
-165     0.20    0.87    ! !60S_PA2 - Central San Joaquin WCD | 
-166     0.00    1.00    ! !60S_NA1 - no surface water deliveries | 
-167     0.00    1.00    ! !60S_NA2 - no surface water deliveries | 
-168     0.00    0.54    ! !60S_NU1 - City of Stockton | 
-169     0.00    1.00    ! !60S_NU2 - Small communities | 
-170     0.00    1.00    ! !50_PA2 - Delta - @coeqwal - adding an option to limit this gwpump  | 
+ID	MinFraction	MaxFraction		
+1	0.32	1	!02_NA	Non-District
+2	0	    1	!02_PA	Clear Creek CSD
+3	0.06	1	!02_SA	Anderson Cottonwood ID, Non-District (short-form)
+4	0.22	1	!03_NA	Non-District
+5	0.01	1	!03_PA	Bella Vista Water District
+6	0.01	1	!03_SA	Anderson Cottonwood ID, Non-District (short-form)
+7	0.84	1	!04_NA	Non-District
+8	0.3	    1	!04_PA1	Corning WD, Proberta WD, Thomes Creek WD
+9	0.2	    1	!04_PA2	Kirkwood WD
+10	0.71	1	!05_NA	Non-District
+11	0.59	1	!06_NA	Non-District 
+12	0.05	1	!06_PA	Orland Unit WUA
+13	0.75	1	!07N_NA	Non-District 
+14	0.12	1	!07N_PA	Glide WD, Holthouse WD, Kanawha WD, Orland-Artois WD
+15	0.86	1	!07S_NA	Non-District 
+16	0.06	1	!07S_PA	4-M WD, Colusa County WD, Cortina WD, Davis WD, Dunnigan WD,Glenn ValleyWD, Holthouse WD, Le Grande WD, Myers-Marsh MWC, Westside WD
+17	0.61	1	!08N_NA	Non-District
+18	0.02	1	!08N_PA	Colusa Drain MWC
+19	0.30	1	!08N_SA1	Maxwell ID, Princeton-Cordora-Glenn ID, Provident ID, Non-District(Short-Form) Was 0.05 02212023
+20	0.07	1	!08N_SA2	Glenn-Colusa ID Was
+21	0.32	1	!08S_NA1	Non-District
+22	0.4	    1	!08S_NA2	Non-District
+23	0.1	    1	!08S_PA	Colusa Drain MWC
+24	0.44	1	!08S_SA1	Maxwell ID, Roberts Ditch Co., Swinford Tract Irrigation Company,Non-District (Short-Form) Was 0.08 02212023
+25	0.00	1	!08S_SA2	Glenn-Colusa ID
+26	0.18	1	!08S_SA3	RD 108, River Garden Farms, Non-District (Short-Form) Was 0.04 02212023
+27	0.6	    1	!09_NA	LLano Seco (Parrot Ranch), Dayton MWC, Non-District
+28	0.21	1	!09_SA1	M&T Chico Ranch Inc.
+29	0.35	1	!09_SA2	RD 1004, Sartain MWC, Colusa Properties, Non-District (Short-Form) Was 0.05 02212023
+30	0.76	1	!10_NA	Rancho  Esquon, Durham MWC, Non-District
+31	0.57	1	!11_NA	Sutter Butte MWC, Non-District
+32	0.06	1	!11_SA1	Western Canal WD
+33	0	    1	!11_SA2	Richvale ID
+34	0.09	1	!11_SA3	Biggs-West Gridley WD, Butte WD
+35	0.04	1	!11_SA4	Sutter Extension WD
+36	0.96	1	!12_NA	Non-District
+37	0.53	1	!12_SA	Feather River riparian
+38	0.36	1	!13_NA	South Feather Water and Power Agency
+39	0.04	1	!14_NA	Browns Valley ID
+40	0.88	1	!15N_NA1	Non-District 
+41	0.02	1	!15N_NA2	Cordua ID, Hallwood ID, Ramirez WD
+42	0.82	1	!15N_SA	Feather River riparian
+43	0.77	1	!15S_NA1	Non-District 
+44	0.30	1	!15S_NA2	Brophy WD, Dry Creek MWC, South Yuba WD, Dantoni Area,Wheatland WD  ! Idy 3/23/2016 based on Water Management Plan Yuba
+45	0.41	1	!15S_SA	Plumas MWC, Feather River riparian
+46	0.94	1	!16_NA1	Non-District
+47	0.13	1	!16_NA2	Non-District 
+48	0.21	1	!16_PA	Feather WD
+49	0.35	1	!16_SA	Garden Highway MWC, Tudor ID, Oswald MWC, Feather River riparian
+50	0.5	    1	!17N_NA	Non-District 
+51	0.29	1	!17S_NA	Sutter Bypass-Butte Slough WUA
+52	0	    1	!17S_SA	Feather River riparian
+53	0.07	1	!18_NA	Butte Slough Irrigation Company, Non-District
+54	0.30	1	!18_SA	Meridian Farms, Newhall Land & Farming, Sutter MWC, TisdaleIDC, Non-District (Short-Form) Was 0.02 02212023
+55	0.07	1	!19_NA	Non-District: Placeholder - zero acreage 
+56	0.01	1	!19_SA	Reynen, Oji Bros. Farm, Inc., Oji Family Partnership, PelgerMWC, SutterMWC,Non-District (Short-Form)
+57	0.50	1	!20_NA1	Yolo County FCWCD
+58	0.81	1	!20_NA2	Non-District 
+59	0.50	1	!20_PA	UC Davis value changed from 0.94 to 0.50 to match historical deliveries
+60	0.06	1	!21_NA	Non-District
+61	0.04	1	!21_PA	Colusa Drain MWC
+62	0.40	1	!21_SA	RD 2035 (Conway Conservancy), Sacramento River Ranch LLC Was 0.01 02212023
+63	0.74	1	!22_NA	Non-District
+64	0.24	1	!22_SA1	Natomas Central MWD, Pleasant Grove-Verona MWC, Non-District(Short-Form) 
+65	0.56	1	!22_SA2	Feather River riparian
+66	0.04	1	!23_NA	Camp Far West ID, South Sutter WD
+67	0.02	1	!24_NA1	Nevada ID
+68	0.80	1	!24_NA2	PCWA Zone 5
+69	0.04	1	!24_NA3	PCWA Zone 1
+70	0.57	1	!25_NA	North Delta WA, Non-District
+71	0.04	1	!25_PA1	Solano ID
+72	0.00	1	!25_PA2	Maine Prairie WD
+73	1.00	1	!26N_NA	Non-District
+74	0.95	1	!26S_NA	Non-District           
+75	0.20	1	!60S_PA2 !to do assumed value - value not identified in AWMP but AWMP suggests high useage, citing 'historical reliance'
+76	0.03	1	!61_PA1_D/61_PA2_D OIDN/OIDS  From AWMP tables 5-13 - 5-15 
+77	0.09	1	!61_PA1_P/61_PA2_P OIDN/OIDS  From AWMP tables 5-13 - 5-15
+78	0.03	1	!61_PA3_D SSJID  From AWMP tables 5-13 - 5-16
+79	0.18	1	!61_PA3_P SSJID  From AWMP tables 5-13 - 5-16
+80	0.10	1.0 !0.65	!61_NA1  @coeqwal - SGMA
+81	0.08	1.0 !0.65	!61_NA2_D  @coeqwal - SGMA !MID, value estimated quickly from 2012 AWMP data (gw supplies ~11% AW demand in '09), check. Increased as river divetsions too large, was 0.03
+82	0.17	1.0  !0.65	!61_NA2_P  @coeqwal - SGMA !MID, value estimated quickly from 2012 AWMP data, (gw supplies ~11% AW demand in '09), check. Increased as river divetsions too large, was 0.09
+83	0.10	1.0  !0.65	!61_NA3   @coeqwal - SGMA
+84	0.10	1.0  !0.65	!61_NA4   @coeqwal - SGMA
+85	0.10	1.0  !0.65	!61_NA5   @coeqwal - SGMA
+86	0.10	1	!61_NA6   @jmg 2017.05.09
+87	0.10	1	!61_NU1   @jmg 2017.05.09
+88	0.10	1	!61_NU2   @jmg 2017.05.09
+89	0.10	1	!61_NU3   @jmg 2017.05.09
+90	0.10	1.0 !0.45	!62_NA1WD   @coeqwal - SGMA
+91	0.10	1.0 !0.55	!62_NA2 @coeqwal - SGMA
+92	0.10	1	!62_NA3_D   @jmg 2017.05.09
+93	0.10	1	!62_NA3_P   @jmg 2017.05.09
+94	0.10	1	!62_NA4   @jmg 2017.05.09
+95	0.10	1	!62_NA5   @jmg 2017.05.09
+96	0.10	1.0 !0.41	!62_NA6_D   @coeqwal - SGMA
+97	0.19	1.0 !0.41	!62_NA6_P  @Ag water management plan 2016 @coeqwal - SGMA
+98	0.10	1	!62_NU   @jmg 2017.05.09
+99	0.00	1	!63_PR1
+100	0.00	1	!63_PR2
+101	0.00	1	!63_PR3
+102	0.10	1.0 !0.57	!63_NA1   @coeqwal - SGMA
+103	0.10	1.0 !0.57	!63_NA2   @coeqwal - SGMA
+104	0.10	1.0 !0.57	!63_NA3_D   @coeqwal - SGMA
+105	0.19	1.0 !0.57	!63_NA3_P   @Ag water management plant 2016 @coeqwal - SGMA @coeqwal - SGMA
+106	0.00    1.0 !0.74   !63_NA4   All surface water sources have upper bounds previously 0.935	 @coeqwal - SGMA
+107	0.10	1	!63_NU   @jmg 2017.05.09
+108	0.10	1.0 !0.515	!64_NA1   @coeqwal - SGMA
+109	0.10	1.0 !0.225	!64_NA2   @coeqwal - SGMA
+110	0.10	1.0 !0.89	!64_PA1   @coeqwal - SGMA
+111	0.10	1.0  !0.683	!64_PA2   @coeqwal - SGMA
+112	0.10	1.0  !0.89	!64_PA3   @coeqwal - SGMA
+113	0.10	1	!64_XA   @jmg 2017.05.09
+114	0.10	1	!64_NU   @jmg 2017.05.09
+115	0.10	1	!50_PA1   @jmg 2017.05.09
+116	0.00	1	!50_PU   @jmg 2017.05.09
+117	0.00	1.0  !0.65	!71_PA1 @coeqwal - SGMA
+118	0.00	1	!71_PA2 @coeqwal - SGMA
+119	0.00	1.0 ! 0.65	!71_PA3 @coeqwal - SGMA
+120	0.00	1	!71_PA4 @coeqwal - SGMA
+121	0.00	1.0  !0.65	!71_PA5 @coeqwal - SGMA
+122	0.00	1.0  !0.65	!71_PA6 @coeqwal - SGMA
+123	0.00	1	!71_PA8 @coeqwal - SGMA
+124	0.00	1	!71_NA1 @coeqwal - SGMA
+125	0.00	1.0 !0.26	!71_NA2 @coeqwal - SGMA
+126	0.00	1	!71_PU1
+127	0.00	1	!71_PU2
+128	0.00	1	!71_NU
+129	0.00	1	!72_NA1 @coeqwal - SGMA
+130	0.00	1	!72_NA2 @coeqwal - SGMA
+131	0.00	1	!72_PA @coeqwal - SGMA
+132	0.00	1	!72_XA1  @coeqwal - SGMA
+133	0.00	1	!72_XA2 @coeqwal - SGMA
+134	0.00	1	!72_XA3 @coeqwal - SGMA
+135	0.00	1	!72_PR1
+136	0.00	1	!72_PR2
+137	0.00	1	!72_PR3
+138	0.00	1	!72_PR4
+139	0.00	1	!72_PR5
+140	0.00	1	!72_PR6
+141	0.00	1	!72_NU
+142	0.00	1	!72_PU
+143	0.00	1.0 !0.61	!73_NA @coeqwal - SGMA
+144	0.00	1.0 !0.61	!73_PA1 @coeqwal - SGMA
+145	0.00	1.0 !0.61	!73_PA2 @coeqwal - SGMA
+146	0.00	1.0 !0.61	!73_PA3 @coeqwal - SGMA
+147	0.00	1.0 !0.61	!73_XA @coeqwal - SGMA
+148	0.00	1	!73_NU
+149 0.00	1.0 !0.94       !90_PA1 @coeqwal - SGMA
+150 0.00	1.0 !0.94     	!90_PA2 @coeqwal - SGMA
+151 0.00	1   !90_PU
+152 0.00	1.0 !0.94     	!91_PA @coeqwal - SGMA
+153 0.00	1     	!91_PR
+154 0.00	1   	!63_NA5 @coeqwal - SGMA
+155 0.00    1.0  !0.79 ! 60N_NA1 @coeqwal - SGMA
+156 0.00    1.0  !0.79 ! 60N_NA2 @coeqwal - SGMA
+157 0.00    1.0  !0.79 ! 60N_NA3 @coeqwal - SGMA
+158 0.00    1.0  !0.79 ! 60N_NA4 @coeqwal - SGMA
+159 0.00    1.0  !0.79  ! 60N_NA5
+160 0.00    1.0  ! 60N_NU1
+161 0.00    1.0  ! 60N_NU2
+162 0.00    1.0  ! 60N_PU
+163 0.00    1.0  ! EBMUD
+164 0.00    1.0  ! 60S_PA1 - Stockton East WD
+165 0.00    1.0  ! 60S_PA2 - Central San Joaquin WCD
+166	0.00   1.0  ! 60S_NA1 - no surface water deliveries
+167 0.00   1.0  ! 60S_NA2 - no surface water deliveries
+168 0.00   1.0  ! 60S_NU1 - City of Stockton
+169 0.00   1.0  ! 60S_NU2 - Small communities
+170 0.00    1.0  !50_PA2 - Delta - @coeqwal - adding an option to limit this gwpump 
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
