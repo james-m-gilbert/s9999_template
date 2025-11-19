@@ -949,6 +949,13 @@ Objective obj_SYS = {
 [MAXTrans_SAC078_22_SA1 ,  1],*/
 
 
+[GP_15N_NA1, -99], !@coeqwal - preventing excessive groundwater pumping
+[GP_15N_NA2, -99],
+[GP_15N_NU, -99],
+[GP_15S_NA1, -99],
+[GP_15S_NA2, -99],
+[GP_16_NA1, -10],
+[GP_16_NA2, -10],
 
 [SHRTG_10_NA,-1], 
 [SHRTG_10_NU1,-1],
