@@ -11,7 +11,7 @@
 <stringAttribute key="wpp.debugModel.ATTR_WPP_DATE" value=""/>
 <stringAttribute key="wpp.debugModel.ATTR_WPP_DESCRIPTION" value="Updated 2020LandIQ land use; built on CalSim 3 2023 DCR Adjusted modified with switches for min flows + test gw limits CV-wide"/>
 <stringAttribute key="wpp.debugModel.ATTR_WPP_DSSENDOUTPUT" value="yes"/>
-<stringAttribute key="wpp.debugModel.ATTR_WPP_DVAR" value="DSS\output\s0020_DCRadjBL_2020LU_wTUCP_DV_v0.1.dss"/>
+<stringAttribute key="wpp.debugModel.ATTR_WPP_DVAR" value="DSS\output\s0020_DCRadjBL_2020LU_wTUCP_DV_v0.2_20251118.dss"/>
 <stringAttribute key="wpp.debugModel.ATTR_WPP_DVAR_MS2" value=""/>
 <stringAttribute key="wpp.debugModel.ATTR_WPP_ENDDAY" value="30"/>
 <stringAttribute key="wpp.debugModel.ATTR_WPP_ENDMONTH" value="sep"/>
