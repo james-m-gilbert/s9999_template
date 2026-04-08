@@ -4,14 +4,14 @@
 <stringAttribute key="wpp.debugModel.ATTR_WPP_ALLRESTARTFILES" value="no"/>
 <stringAttribute key="wpp.debugModel.ATTR_WPP_APART" value="CALSIM"/>
 <stringAttribute key="wpp.debugModel.ATTR_WPP_APART_MS2" value=""/>
-<stringAttribute key="wpp.debugModel.ATTR_WPP_AUTHOR" value="COEQWAL Project"/>
+<stringAttribute key="wpp.debugModel.ATTR_WPP_AUTHOR" value="DWR Modeling Support Office"/>
 <stringAttribute key="wpp.debugModel.ATTR_WPP_COMPILEONLY" value="no"/>
 <stringAttribute key="wpp.debugModel.ATTR_WPP_DATABASEURL" value="none"/>
 <stringAttribute key="wpp.debugModel.ATTR_WPP_DATATRANSFER_MS2" value=""/>
 <stringAttribute key="wpp.debugModel.ATTR_WPP_DATE" value=""/>
-<stringAttribute key="wpp.debugModel.ATTR_WPP_DESCRIPTION" value="Updated 2020LandIQ land use; built on CalSim 3 2023 DCR Adjusted modified with switches for min flows + test gw limits CV-wide"/>
+<stringAttribute key="wpp.debugModel.ATTR_WPP_DESCRIPTION" value="CalSim 3 2023 DCR Adjusted"/>
 <stringAttribute key="wpp.debugModel.ATTR_WPP_DSSENDOUTPUT" value="yes"/>
-<stringAttribute key="wpp.debugModel.ATTR_WPP_DVAR" value="DSS\output\s0020_DCRadjBL_2020LU_wTUCP_DV_v0.1.dss"/>
+<stringAttribute key="wpp.debugModel.ATTR_WPP_DVAR" value="DSS\output\DCR2023_WSIDI_9.3.0_Danube_Adj_v1.7.dss"/>
 <stringAttribute key="wpp.debugModel.ATTR_WPP_DVAR_MS2" value=""/>
 <stringAttribute key="wpp.debugModel.ATTR_WPP_ENDDAY" value="30"/>
 <stringAttribute key="wpp.debugModel.ATTR_WPP_ENDMONTH" value="sep"/>
@@ -41,15 +41,15 @@
 <stringAttribute key="wpp.debugModel.ATTR_WPP_PADVSTARTYEAR" value="2022"/>
 <stringAttribute key="wpp.debugModel.ATTR_WPP_PARESETDVSTART" value="yes"/>
 <stringAttribute key="wpp.debugModel.ATTR_WPP_PASTARTINTERVAL" value="12"/>
-<stringAttribute key="wpp.debugModel.ATTR_WPP_PROGRAM" value="Run\mainCS3_ReOrg_UWplusVF.wresl"/>
+<stringAttribute key="wpp.debugModel.ATTR_WPP_PROGRAM" value="Run\mainCS3_ReOrg_UWplusVF_wsidi.wresl"/>
 <stringAttribute key="wpp.debugModel.ATTR_WPP_PROGRAM_MS2" value=""/>
 <stringAttribute key="wpp.debugModel.ATTR_WPP_SENSITIVITYINDEXTABLENAME" value="SensitivityIndex"/>
 <stringAttribute key="wpp.debugModel.ATTR_WPP_SQLGROUP" value="calsim"/>
 <stringAttribute key="wpp.debugModel.ATTR_WPP_STARTDAY" value="31"/>
 <stringAttribute key="wpp.debugModel.ATTR_WPP_STARTMONTH" value="oct"/>
 <stringAttribute key="wpp.debugModel.ATTR_WPP_STARTYEAR" value="1921"/>
-<stringAttribute key="wpp.debugModel.ATTR_WPP_STUDY" value="s0020_DCRadjBL_2020LU_wTUCP"/>
-<stringAttribute key="wpp.debugModel.ATTR_WPP_SVAR" value="DSS\input\coeqwal_s9999_SV_v0.1.1.dss"/>
+<stringAttribute key="wpp.debugModel.ATTR_WPP_STUDY" value="CalSim 3 2023 DCR Adjusted (WSIDI)"/>
+<stringAttribute key="wpp.debugModel.ATTR_WPP_SVAR" value="DSS\input\DCR2023_SV_Danube_Adj_v1.7.dss"/>
 <stringAttribute key="wpp.debugModel.ATTR_WPP_SVAR_MS2" value=""/>
 <stringAttribute key="wpp.debugModel.ATTR_WPP_SVFPART" value="L2020A"/>
 <stringAttribute key="wpp.debugModel.ATTR_WPP_SVFPART_MS2" value=""/>
